@@ -1,0 +1,12 @@
+# FTB Chunks Configuration
+# Modify keybindings to avoid conflicts with JourneyMap
+
+[client]
+# Change FTB Chunks map keybinding from 'M' to ',' (comma)
+map_key = "key.keyboard.comma"
+# Chunk claiming uses mouse clicks, no keyboard conflicts
+
+[general]
+# Enable chunk loading
+enable_fake_players = true
+max_force_loaded_chunks = 25

@@ -1,0 +1,14 @@
+{
+  "keybinds": {
+    "map_toggle": "key.keyboard.m",
+    "create_waypoint": "key.keyboard.n",
+    "minimap_toggle": "key.keyboard.j"
+  },
+  "ui": {
+    "theme": "OceanMonument"
+  },
+  "waypoint": {
+    "autoCreateDeathWaypoint": true,
+    "maxDistance": 50000
+  }
+}
