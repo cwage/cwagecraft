@@ -1,8 +1,12 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "55851e1686efe9da90e2b4cdf4d7f7bd2ef62b52e3f8e95a31a866b482befec3"
+
+[[files]]
 file = "config/defaultoptions/options.txt"
-hash = "ef4dbb9a6ec291eea675e17d01dbb211974aa53a0bac47b6fb86b33be2ca8ad3"
+hash = "3db13d2494f83b463c5ab791c9beeb9eb667a6a2053af5d52818a9ba46e71043"
 
 [[files]]
 file = "config/oculus.properties"
