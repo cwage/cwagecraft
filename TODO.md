@@ -2,6 +2,6 @@
 - [ ] include individual mod config changes
 - [ ] make tinker's use lapis as fortune
 - [ ] change some of the default keybindings?
-- [ ] questbook
+- [x] questbook - implementing FTB Quests tech tree progression system
 - [ ] swap journeymap keybindings
 - [ ] change GUI scale by default

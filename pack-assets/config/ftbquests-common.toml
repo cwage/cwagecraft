@@ -1,0 +1,30 @@
+# FTB Quests Configuration for CwageCraft
+# This file contains the main settings for the quest system
+
+# Enable quest notifications
+enable_quest_notifications=true
+
+# Show quest progress in chat
+show_progress_in_chat=true
+
+# Enable quest sound effects
+enable_quest_sounds=true
+
+# Auto-pin important quests
+auto_pin_quests=true
+
+# Quest completion rewards
+enable_quest_rewards=true
+
+# Team shared quests (works with FTB Teams)
+team_shared_quests=true
+
+# Reset progress on death (disabled for better UX)
+reset_progress_on_death=false
+
+# Enable quest screen keybind (default: unbound)
+enable_quest_screen_keybind=true
+quest_screen_keybind=key.keyboard.unknown
+
+# Disable quest notifications for optional chapters by default
+disable_notifications_for_optional=false

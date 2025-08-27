@@ -4,11 +4,23 @@ A comprehensive Minecraft 1.20.1 Forge modpack focused on technology, magic, exp
 
 ## Features
 
+- **Tech Tree Progression**: Comprehensive FTB Quests system guiding you through 4 progression tiers
 - **Technology**: Create, Applied Energistics 2, Mekanism, RFTools suite, Thermal series
 - **Magic**: Botania, Tinkers' Construct, Draconic Evolution, Mystical Agriculture
 - **Exploration**: Biomes O' Plenty, Advanced Mining Dimension, Iron Jetpacks
 - **Storage & Automation**: Refined Storage, Industrial Foregoing, Pipez
 - **Quality of Life**: JEI, Waystones, Sophisticated Backpacks, FTB suite
+
+## Quest-Driven Progression
+
+CwageCraft features a structured tech tree progression system with 4 main tiers:
+
+1. **Tier 1 - Early Game Foundation**: Basic power, storage, and exploration
+2. **Tier 2 - Automation & Infrastructure**: Advanced storage networks and mechanical systems
+3. **Tier 3 - Magic & Advanced Tech**: Magical systems and cross-mod integration
+4. **Tier 4 - Endgame Systems**: Ultimate automation and dimensional power networks
+
+Multiple progression paths allow you to focus on technology, magic, exploration, or culinary systems based on your preferences. See `QUEST_GUIDE.md` in the pack for detailed progression information.
 
 ## Included Shader Pack
 

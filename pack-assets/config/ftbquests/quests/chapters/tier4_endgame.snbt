@@ -1,0 +1,179 @@
+{
+	autofocus_id: "45678901234567DD"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tier4_endgame"
+	group: "0000000000000000"
+	icon: "draconic_evolution:draconic_core"
+	id: "45678901234567DD"
+	order_index: 3
+	progression_mode: "flexible"
+	title: "Tier 4: Endgame Systems"
+	version: 10
+}
+
+{
+	dependencies: ["34567890123456DB"]
+	icon: "draconic_evolution:draconic_core"
+	id: "45678901234567DE"
+	rewards: [{
+		id: "45678901234567DF"
+		item: "draconic_evolution:awakened_draconium_ingot"
+		count: 4
+		type: "item"
+	}]
+	subtitle: "Ultimate draconic power"
+	tasks: [{
+		id: "45678901234567DG"
+		item: "draconic_evolution:draconic_core"
+		type: "item"
+	}]
+	title: "Draconic Evolution: Draconic Tier"
+	x: 0.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["45678901234567DE"]
+	icon: "draconic_evolution:energy_core_stabilizer"
+	id: "45678901234567DH"
+	rewards: [{
+		id: "45678901234567DI"
+		item: "draconic_evolution:reactor_core"
+		type: "item"
+	}]
+	subtitle: "Massive energy storage"
+	tasks: [{
+		id: "45678901234567DJ"
+		item: "draconic_evolution:energy_core_stabilizer"
+		count: 4L
+		type: "item"
+	}]
+	title: "Draconic Evolution: Energy Core"
+	x: 1.5d
+	y: 0.0d
+}
+
+{
+	dependencies: ["45678901234567DH"]
+	icon: "draconic_evolution:reactor_core"
+	id: "45678901234567DK"
+	rewards: [{
+		id: "45678901234567DL"
+		item: "draconic_evolution:chaos_shard"
+		type: "item"
+	}]
+	subtitle: "Harness the power of chaos"
+	tasks: [{
+		id: "45678901234567DM"
+		item: "draconic_evolution:reactor_core"
+		type: "item"
+	}]
+	title: "Draconic Evolution: Chaos Reactor"
+	x: 3.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["34567890123456CJ"]
+	icon: "mystical_agriculture:supremium_essence"
+	id: "45678901234567DN"
+	rewards: [{
+		id: "45678901234567DO"
+		item: "mystical_agriculture:supremium_seeds"
+		count: 4
+		type: "item"
+	}]
+	subtitle: "Ultimate resource automation"
+	tasks: [{
+		id: "45678901234567DP"
+		item: "mystical_agriculture:supremium_essence"
+		count: 64L
+		type: "item"
+	}]
+	title: "Mystical Agriculture: Supremium"
+	x: 0.0d
+	y: 1.5d
+}
+
+{
+	dependencies: ["45678901234567DN"]
+	icon: "mystical_agriculture:master_infusion_crystal"
+	id: "45678901234567DQ"
+	rewards: [{
+		id: "45678901234567DR"
+		item: "mystical_agriculture:awakened_supremium_ingot"
+		count: 8
+		type: "item"
+	}]
+	subtitle: "Master-level agriculture automation"
+	tasks: [{
+		id: "45678901234567DS"
+		item: "mystical_agriculture:master_infusion_crystal"
+		type: "item"
+	}]
+	title: "Mystical Agriculture: Master Infusion"
+	x: 1.5d
+	y: 1.5d
+}
+
+{
+	dependencies: ["34567890123456CP"]
+	icon: "ae2:creative_energy_cell"
+	id: "45678901234567DT"
+	rewards: [{
+		id: "45678901234567DU"
+		item: "ae2:spatial_cell_128"
+		type: "item"
+	}]
+	subtitle: "Creative-level ME systems"
+	tasks: [{
+		id: "45678901234567DV"
+		item: "ae2:creative_energy_cell"
+		type: "item"
+	}]
+	title: "AE2: Creative Integration"
+	x: 0.0d
+	y: -1.5d
+}
+
+{
+	dependencies: ["34567890123456CV"]
+	icon: "rftools:creative_powercell"
+	id: "45678901234567DW"
+	rewards: [{
+		id: "45678901234567DX"
+		item: "rftools:matter_beamer"
+		type: "item"
+	}]
+	subtitle: "Unlimited dimensional power"
+	tasks: [{
+		id: "45678901234567DY"
+		item: "rftools:creative_powercell"
+		type: "item"
+	}]
+	title: "RFTools: Creative Power"
+	x: 1.5d
+	y: -1.5d
+}
+
+{
+	dependencies: ["45678901234567DK", "45678901234567DQ", "45678901234567DT", "45678901234567DW"]
+	icon: "minecraft:nether_star"
+	id: "45678901234567DZ"
+	rewards: [{
+		id: "45678901234567EA"
+		item: "minecraft:end_crystal"
+		count: 4
+		type: "item"
+	}]
+	subtitle: "You've mastered CwageCraft!"
+	tasks: [{
+		id: "45678901234567EB"
+		item: "minecraft:nether_star"
+		type: "item"
+	}]
+	title: "Ultimate Achievement: Tech Master"
+	x: 3.0d
+	y: -3.0d
+}

@@ -1,0 +1,47 @@
+{
+	chapter_groups: [ ]
+	order: "linear"
+	reward_tables: [{
+		id: "quest_reward_table_basic"
+		loot_size: 1
+		rewards: [
+			{
+				item: "minecraft:experience_bottle"
+				count: 4
+				type: "item"
+			}
+			{
+				item: "minecraft:emerald"
+				count: 2
+				type: "item"
+			}
+			{
+				item: "thermal:rf_coil"
+				count: 4
+				type: "item"
+			}
+		]
+		title: "Basic Quest Rewards"
+	}
+	{
+		id: "quest_reward_table_advanced"
+		loot_size: 1
+		rewards: [
+			{
+				item: "minecraft:experience_bottle"
+				count: 8
+				type: "item"
+			}
+			{
+				item: "minecraft:diamond"
+				count: 2
+				type: "item"
+			}
+			{
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}
+		]
+		title: "Advanced Quest Rewards"
+	}]
+}

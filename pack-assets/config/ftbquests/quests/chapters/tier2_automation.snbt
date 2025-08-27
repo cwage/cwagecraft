@@ -1,0 +1,204 @@
+{
+	autofocus_id: "23456789012345BB"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tier2_automation"
+	group: "0000000000000000"
+	icon: "create:mechanical_crafter"
+	id: "23456789012345BB"
+	order_index: 1
+	progression_mode: "flexible"
+	title: "Tier 2: Automation & Infrastructure"
+	version: 10
+}
+
+{
+	dependencies: ["12345678901234AU"]
+	icon: "create:andesite_alloy"
+	id: "23456789012345BC"
+	rewards: [{
+		id: "23456789012345BD"
+		item: "create:andesite_alloy"
+		count: 16
+		type: "item"
+	}]
+	subtitle: "Enter the world of Create"
+	tasks: [{
+		id: "23456789012345BE"
+		item: "create:andesite_alloy"
+		count: 8L
+		type: "item"
+	}]
+	title: "Create: Andesite Age"
+	x: 0.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["23456789012345BC"]
+	icon: "create:mechanical_press"
+	id: "23456789012345BF"
+	rewards: [{
+		id: "23456789012345BG"
+		item: "create:copper_sheet"
+		count: 16
+		type: "item"
+	}]
+	subtitle: "Mechanical processing begins"
+	tasks: [{
+		id: "23456789012345BH"
+		item: "create:mechanical_press"
+		type: "item"
+	}]
+	title: "Create: First Machines"
+	x: 1.5d
+	y: 0.0d
+}
+
+{
+	dependencies: ["23456789012345BF"]
+	icon: "create:brass_ingot"
+	id: "23456789012345BI"
+	rewards: [{
+		id: "23456789012345BJ"
+		item: "create:brass_ingot"
+		count: 16
+		type: "item"
+	}]
+	subtitle: "Advanced Create materials"
+	tasks: [{
+		id: "23456789012345BK"
+		item: "create:brass_ingot"
+		count: 8L
+		type: "item"
+	}]
+	title: "Create: Brass Age"
+	x: 3.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["23456789012345BI"]
+	icon: "create:mechanical_crafter"
+	id: "23456789012345BL"
+	rewards: [{
+		id: "23456789012345BM"
+		item: "create:precision_mechanism"
+		count: 4
+		type: "item"
+	}]
+	subtitle: "Automated crafting at last"
+	tasks: [{
+		id: "23456789012345BN"
+		item: "create:mechanical_crafter"
+		count: 9L
+		type: "item"
+	}]
+	title: "Create: Mechanical Crafting"
+	x: 4.5d
+	y: 0.0d
+}
+
+{
+	dependencies: ["12345678901234AO"]
+	icon: "refined_storage:controller"
+	id: "23456789012345BO"
+	rewards: [{
+		id: "23456789012345BP"
+		item: "refined_storage:1k_storage_disk"
+		count: 4
+		type: "item"
+	}]
+	subtitle: "Digital storage revolution"
+	tasks: [{
+		id: "23456789012345BQ"
+		item: "refined_storage:controller"
+		type: "item"
+	}]
+	title: "Refined Storage: Controller"
+	x: 0.0d
+	y: 1.5d
+}
+
+{
+	dependencies: ["23456789012345BO"]
+	icon: "refined_storage:crafter"
+	id: "23456789012345BR"
+	rewards: [{
+		id: "23456789012345BS"
+		item: "refined_storage:pattern"
+		count: 16
+		type: "item"
+	}]
+	subtitle: "Automated crafting through storage"
+	tasks: [{
+		id: "23456789012345BT"
+		item: "refined_storage:crafter"
+		type: "item"
+	}]
+	title: "Refined Storage: Autocrafting"
+	x: 1.5d
+	y: 1.5d
+}
+
+{
+	dependencies: ["12345678901234AU"]
+	icon: "ae2:controller"
+	id: "23456789012345BU"
+	rewards: [{
+		id: "23456789012345BV"
+		item: "ae2:storage_cell_1k"
+		type: "item"
+	}]
+	subtitle: "The ultimate storage network"
+	tasks: [{
+		id: "23456789012345BW"
+		item: "ae2:controller"
+		type: "item"
+	}]
+	title: "Applied Energistics: Getting Started"
+	x: 0.0d
+	y: -1.5d
+}
+
+{
+	dependencies: ["23456789012345BU"]
+	icon: "ae2:inscriber"
+	id: "23456789012345BX"
+	rewards: [{
+		id: "23456789012345BY"
+		item: "ae2:calculation_processor"
+		count: 4
+		type: "item"
+	}]
+	subtitle: "Circuit processing for AE2"
+	tasks: [{
+		id: "23456789012345BZ"
+		item: "ae2:inscriber"
+		type: "item"
+	}]
+	title: "AE2: Circuit Processing"
+	x: 1.5d
+	y: -1.5d
+}
+
+{
+	dependencies: ["23456789012345BC"]
+	icon: "tinkers_construct:seared_heater"
+	id: "23456789012345CA"
+	rewards: [{
+		id: "23456789012345CB"
+		item: "tinkers_construct:grout"
+		count: 32
+		type: "item"
+	}]
+	subtitle: "Build your first smeltery"
+	tasks: [{
+		id: "23456789012345CC"
+		item: "tinkers_construct:seared_heater"
+		type: "item"
+	}]
+	title: "Tinkers: Smeltery Basics"
+	x: 0.0d
+	y: 3.0d
+}

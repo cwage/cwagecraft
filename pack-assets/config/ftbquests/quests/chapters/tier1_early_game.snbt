@@ -1,0 +1,169 @@
+{
+	autofocus_id: "12345678901234AA"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tier1_early_game"
+	group: "0000000000000000"
+	icon: "thermal:dynamo_stirling"
+	id: "12345678901234AA"
+	order_index: 0
+	progression_mode: "flexible"
+	title: "Tier 1: Early Game Foundation"
+	version: 10
+}
+
+{
+	icon: "thermal:dynamo_stirling"
+	id: "12345678901234AB"
+	shape: "square"
+	subtitle: "Start your technological journey"
+	tasks: [{
+		id: "12345678901234AC"
+		item: "minecraft:cobblestone"
+		type: "item"
+	}]
+	title: "Welcome to CwageCraft!"
+	x: 0.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["12345678901234AB"]
+	icon: "minecraft:coal"
+	id: "12345678901234AD"
+	rewards: [{
+		id: "12345678901234AE"
+		item: "minecraft:coal"
+		count: 16
+		type: "item"
+	}]
+	subtitle: "Fuel for your first machines"
+	tasks: [{
+		id: "12345678901234AF"
+		item: "minecraft:coal"
+		count: 8L
+		type: "item"
+	}]
+	title: "Fuel Gathering"
+	x: 1.5d
+	y: 0.0d
+}
+
+{
+	dependencies: ["12345678901234AD"]
+	icon: "thermal:dynamo_stirling"
+	id: "12345678901234AG"
+	rewards: [{
+		id: "12345678901234AH"
+		item: "thermal:rf_coil"
+		count: 4
+		type: "item"
+	}]
+	subtitle: "Your first power generation"
+	tasks: [{
+		id: "12345678901234AI"
+		item: "thermal:dynamo_stirling"
+		type: "item"
+	}]
+	title: "Basic Power: Stirling Dynamo"
+	x: 3.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["12345678901234AG"]
+	icon: "thermal:machine_furnace"
+	id: "12345678901234AJ"
+	rewards: [{
+		id: "12345678901234AK"
+		item: "minecraft:iron_ingot"
+		count: 8
+		type: "item"
+	}]
+	subtitle: "Automated smelting begins"
+	tasks: [{
+		id: "12345678901234AL"
+		item: "thermal:machine_furnace"
+		type: "item"
+	}]
+	title: "Thermal Machines: Redstone Furnace"
+	x: 4.5d
+	y: 0.0d
+}
+
+{
+	dependencies: ["12345678901234AB"]
+	icon: "minecraft:chest"
+	id: "12345678901234AM"
+	subtitle: "Storage solutions"
+	tasks: [{
+		id: "12345678901234AN"
+		item: "minecraft:chest"
+		count: 8L
+		type: "item"
+	}]
+	title: "Basic Storage"
+	x: 0.0d
+	y: 1.5d
+}
+
+{
+	dependencies: ["12345678901234AM"]
+	icon: "iron_chests:iron_chest"
+	id: "12345678901234AO"
+	rewards: [{
+		id: "12345678901234AP"
+		item: "iron_chests:gold_chest"
+		type: "item"
+	}]
+	subtitle: "Upgrade your storage capacity"
+	tasks: [{
+		id: "12345678901234AQ"
+		item: "iron_chests:iron_chest"
+		type: "item"
+	}]
+	title: "Better Chests"
+	x: 1.5d
+	y: 1.5d
+}
+
+{
+	dependencies: ["12345678901234AB"]
+	icon: "waystones:waystone"
+	id: "12345678901234AR"
+	rewards: [{
+		id: "12345678901234AS"
+		item: "waystones:warp_scroll"
+		count: 4
+		type: "item"
+	}]
+	subtitle: "Fast travel network"
+	tasks: [{
+		id: "12345678901234AT"
+		item: "waystones:waystone"
+		type: "item"
+	}]
+	title: "Exploration: First Waystone"
+	x: 0.0d
+	y: -1.5d
+}
+
+{
+	dependencies: ["12345678901234AJ"]
+	icon: "mekanism:basic_energy_cube"
+	id: "12345678901234AU"
+	rewards: [{
+		id: "12345678901234AV"
+		item: "mekanism:energy_tablet"
+		type: "item"
+	}]
+	subtitle: "Store your power efficiently"
+	tasks: [{
+		id: "12345678901234AW"
+		item: "mekanism:basic_energy_cube"
+		type: "item"
+	}]
+	title: "Energy Storage: Basic Energy Cube"
+	x: 6.0d
+	y: 0.0d
+}

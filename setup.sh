@@ -236,6 +236,7 @@ add_mod "FTB Library" "ftb-library-forge" "" "404465"                      # Cor
 add_mod "FTB Teams" "ftb-teams-forge" "" "404468"                          # Team management system
 add_mod "FTB Chunks" "ftb-chunks-forge" "" "314906"                        # Chunk claiming and loading
 add_mod "FTB Essentials" "ftb-essentials" "" "386134"                      # Home/TPA commands
+add_mod "FTB Quests" "ftb-quests-forge" "" "289412"                          # Quest and progression system
 
 echo "==> Additional utilities"
 add_mod "Light Overlay" "light-overlay" "YfOlc91N" "325492"                 # Mob spawn light level overlay

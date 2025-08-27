@@ -1,0 +1,201 @@
+{
+	autofocus_id: "34567890123456CC"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tier3_magic_advanced"
+	group: "0000000000000000"
+	icon: "botania:mana_pool"
+	id: "34567890123456CC"
+	order_index: 2
+	progression_mode: "flexible"
+	title: "Tier 3: Magic & Advanced Tech"
+	version: 10
+}
+
+{
+	dependencies: ["23456789012345BL"]
+	icon: "botania:mana_pool"
+	id: "34567890123456CD"
+	rewards: [{
+		id: "34567890123456CE"
+		item: "botania:mana_tablet"
+		type: "item"
+	}]
+	subtitle: "Harness the power of nature"
+	tasks: [{
+		id: "34567890123456CF"
+		item: "botania:mana_pool"
+		type: "item"
+	}]
+	title: "Botania: First Mana Pool"
+	x: 0.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["34567890123456CD"]
+	icon: "botania:runic_altar"
+	id: "34567890123456CG"
+	rewards: [{
+		id: "34567890123456CH"
+		item: "botania:rune_water"
+		count: 2
+		type: "item"
+	}]
+	subtitle: "Craft magical runes"
+	tasks: [{
+		id: "34567890123456CI"
+		item: "botania:runic_altar"
+		type: "item"
+	}]
+	title: "Botania: Runic Altar"
+	x: 1.5d
+	y: 0.0d
+}
+
+{
+	dependencies: ["34567890123456CG"]
+	icon: "botania:terra_plate"
+	id: "34567890123456CJ"
+	rewards: [{
+		id: "34567890123456CK"
+		item: "botania:terrasteel_ingot"
+		type: "item"
+	}]
+	subtitle: "Create the ultimate material"
+	tasks: [{
+		id: "34567890123456CL"
+		item: "botania:terra_plate"
+		type: "item"
+	}]
+	title: "Botania: Terrasteel Creation"
+	x: 3.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["23456789012345BZ"]
+	icon: "ae2:molecular_assembler"
+	id: "34567890123456CM"
+	rewards: [{
+		id: "34567890123456CN"
+		item: "ae2:blank_pattern"
+		count: 16
+		type: "item"
+	}]
+	subtitle: "Advanced AE2 autocrafting"
+	tasks: [{
+		id: "34567890123456CO"
+		item: "ae2:molecular_assembler"
+		type: "item"
+	}]
+	title: "AE2: Molecular Assembly"
+	x: 0.0d
+	y: 1.5d
+}
+
+{
+	dependencies: ["34567890123456CM"]
+	icon: "ae2:quantum_ring"
+	id: "34567890123456CP"
+	rewards: [{
+		id: "34567890123456CQ"
+		item: "ae2:quantum_entangled_singularity"
+		count: 2
+		type: "item"
+	}]
+	subtitle: "Quantum tunneling networks"
+	tasks: [{
+		id: "34567890123456CR"
+		item: "ae2:quantum_ring"
+		count: 8L
+		type: "item"
+	}]
+	title: "AE2: Quantum Networks"
+	x: 1.5d
+	y: 1.5d
+}
+
+{
+	dependencies: ["23456789012345CA"]
+	icon: "enderio:powered_spawner"
+	id: "34567890123456CS"
+	rewards: [{
+		id: "34567890123456CT"
+		item: "enderio:basic_capacitor"
+		count: 4
+		type: "item"
+	}]
+	subtitle: "Advanced machine networks"
+	tasks: [{
+		id: "34567890123456CU"
+		item: "enderio:powered_spawner"
+		type: "item"
+	}]
+	title: "EnderIO: Advanced Machines"
+	x: 0.0d
+	y: -1.5d
+}
+
+{
+	dependencies: ["34567890123456CS"]
+	icon: "enderio:dimensional_transceiver"
+	id: "34567890123456CV"
+	rewards: [{
+		id: "34567890123456CW"
+		item: "enderio:ender_crystal"
+		count: 4
+		type: "item"
+	}]
+	subtitle: "Cross-dimensional connectivity"
+	tasks: [{
+		id: "34567890123456CX"
+		item: "enderio:dimensional_transceiver"
+		type: "item"
+	}]
+	title: "EnderIO: Dimensional Networks"
+	x: 1.5d
+	y: -1.5d
+}
+
+{
+	dependencies: ["23456789012345CA"]
+	icon: "draconic_evolution:basic_crafting_injector"
+	id: "34567890123456CY"
+	rewards: [{
+		id: "34567890123456CZ"
+		item: "draconic_evolution:draconium_ingot"
+		count: 8
+		type: "item"
+	}]
+	subtitle: "Begin your draconic journey"
+	tasks: [{
+		id: "34567890123456DA"
+		item: "draconic_evolution:basic_crafting_injector"
+		count: 4L
+		type: "item"
+	}]
+	title: "Draconic Evolution: Fusion Crafting"
+	x: 0.0d
+	y: 3.0d
+}
+
+{
+	dependencies: ["34567890123456CY"]
+	icon: "draconic_evolution:wyvern_core"
+	id: "34567890123456DB"
+	rewards: [{
+		id: "34567890123456DC"
+		item: "draconic_evolution:wyvern_energy_core"
+		type: "item"
+	}]
+	subtitle: "Mid-tier draconic power"
+	tasks: [{
+		id: "34567890123456DD"
+		item: "draconic_evolution:wyvern_core"
+		type: "item"
+	}]
+	title: "Draconic Evolution: Wyvern Tier"
+	x: 1.5d
+	y: 3.0d
+}

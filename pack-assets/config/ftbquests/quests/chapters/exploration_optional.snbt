@@ -1,0 +1,181 @@
+{
+	autofocus_id: "56789012345678EE"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "exploration_optional"
+	group: "0000000000000000"
+	icon: "iron_jetpacks:jetpack_diamond"
+	id: "56789012345678EE"
+	order_index: 4
+	progression_mode: "flexible"
+	title: "Exploration & Optional Paths"
+	version: 10
+}
+
+{
+	dependencies: ["12345678901234AR"]
+	icon: "explorers_compass:explorers_compass"
+	id: "56789012345678EF"
+	rewards: [{
+		id: "56789012345678EG"
+		item: "natures_compass:natures_compass"
+		type: "item"
+	}]
+	shape: "circle"
+	subtitle: "Find structures and biomes"
+	tasks: [{
+		id: "56789012345678EH"
+		item: "explorers_compass:explorers_compass"
+		type: "item"
+	}]
+	title: "Explorer's Tools"
+	x: 0.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["56789012345678EF"]
+	icon: "iron_jetpacks:jetpack_iron"
+	id: "56789012345678EI"
+	rewards: [{
+		id: "56789012345678EJ"
+		item: "iron_jetpacks:jetpack_gold"
+		type: "item"
+	}]
+	shape: "circle"
+	subtitle: "Take to the skies"
+	tasks: [{
+		id: "56789012345678EK"
+		item: "iron_jetpacks:jetpack_iron"
+		type: "item"
+	}]
+	title: "Flight: Iron Jetpack"
+	x: 1.5d
+	y: 0.0d
+}
+
+{
+	dependencies: ["56789012345678EI"]
+	icon: "iron_jetpacks:jetpack_diamond"
+	id: "56789012345678EL"
+	rewards: [{
+		id: "56789012345678EM"
+		item: "iron_jetpacks:jetpack_emerald"
+		type: "item"
+	}]
+	shape: "circle"
+	subtitle: "Advanced flight capabilities"
+	tasks: [{
+		id: "56789012345678EN"
+		item: "iron_jetpacks:jetpack_diamond"
+		type: "item"
+	}]
+	title: "Flight: Diamond Jetpack"
+	x: 3.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["12345678901234AR"]
+	icon: "advanced_mining_dimension:teleporter"
+	id: "56789012345678EO"
+	rewards: [{
+		id: "56789012345678EP"
+		item: "minecraft:diamond_pickaxe"
+		type: "item"
+	}]
+	shape: "circle"
+	subtitle: "Dedicated mining dimension"
+	tasks: [{
+		id: "56789012345678EQ"
+		item: "advanced_mining_dimension:teleporter"
+		type: "item"
+	}]
+	title: "Mining: Dimensional Access"
+	x: 0.0d
+	y: 1.5d
+}
+
+{
+	dependencies: ["23456789012345BC"]
+	icon: "sophisticatedbackpacks:backpack"
+	id: "56789012345678ER"
+	rewards: [{
+		id: "56789012345678ES"
+		item: "sophisticatedbackpacks:iron_backpack"
+		type: "item"
+	}]
+	shape: "circle"
+	subtitle: "Portable storage solutions"
+	tasks: [{
+		id: "56789012345678ET"
+		item: "sophisticatedbackpacks:backpack"
+		type: "item"
+	}]
+	title: "Storage: Sophisticated Backpacks"
+	x: 0.0d
+	y: -1.5d
+}
+
+{
+	dependencies: ["12345678901234AB"]
+	icon: "farmers_delight:cooking_pot"
+	id: "56789012345678EU"
+	rewards: [{
+		id: "56789012345678EV"
+		item: "cooking_for_blockheads:cooking_table"
+		type: "item"
+	}]
+	shape: "circle"
+	subtitle: "Culinary adventures await"
+	tasks: [{
+		id: "56789012345678EW"
+		item: "farmers_delight:cooking_pot"
+		type: "item"
+	}]
+	title: "Cooking: Farmer's Delight"
+	x: -1.5d
+	y: 0.0d
+}
+
+{
+	dependencies: ["56789012345678EU"]
+	icon: "croptopia:artichoke"
+	id: "56789012345678EX"
+	rewards: [{
+		id: "56789012345678EY"
+		item: "croptopia:food_press"
+		type: "item"
+	}]
+	shape: "circle"
+	subtitle: "Hundreds of new crops"
+	tasks: [{
+		id: "56789012345678EZ"
+		item: "croptopia:artichoke"
+		type: "item"
+	}]
+	title: "Cooking: Croptopia Expansion"
+	x: -3.0d
+	y: 0.0d
+}
+
+{
+	dependencies: ["23456789012345BC"]
+	icon: "compact_machines:machine_tiny"
+	id: "56789012345678FA"
+	rewards: [{
+		id: "56789012345678FB"
+		item: "compact_machines:machine_small"
+		type: "item"
+	}]
+	shape: "circle"
+	subtitle: "Miniaturized factory spaces"
+	tasks: [{
+		id: "56789012345678FC"
+		item: "compact_machines:machine_tiny"
+		type: "item"
+	}]
+	title: "Space: Compact Machines"
+	x: 1.5d
+	y: 1.5d
+}
