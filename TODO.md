@@ -1,7 +1,0 @@
-- [ ] See if we can add complementary shaders by default
-- [x] include individual mod config changes (FTB Ultimine ore-only config added)
-- [ ] make tinker's use lapis as fortune
-- [ ] change some of the default keybindings?
-- [ ] questbook
-- [ ] swap journeymap keybindings
-- [ ] change GUI scale by default

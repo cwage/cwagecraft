@@ -1,10 +1,11 @@
 # Default Minecraft options for cwagecraft modpack
 # Performance and graphics settings optimized for modded gameplay
+# Note: Keybindings are configured separately in keybindings.txt
 renderDistance:12
 maxFps:60
 fullscreen:false
 enableVsync:false
-guiScale:0
+guiScale:2
 particles:0
 fboEnable:true
 useVbo:true
