@@ -41,11 +41,14 @@ modelPart_hat:true
 key_journeymap.fullscreen_map:key.keyboard.m
 key_journeymap.create_waypoint:key.keyboard.n
 key_journeymap.map_toggle_alt:key.keyboard.unknown
-key_journeymap.minimap_preset:key.keyboard.unknown
+key_journeymap.minimap_preset:key.keyboard.backslash
 
 # FTB related keybindings - reassign to avoid conflicts with JourneyMap
 key_ftbchunks.map:key.keyboard.comma
 key_ftbteams.open_gui:key.keyboard.period
+
+# Additional mod keybinding adjustments
+key_controlling.open_controls:key.keyboard.f1
 
 # Disable conflicting default keybindings
 key_key.categories.misc:key.keyboard.unknown

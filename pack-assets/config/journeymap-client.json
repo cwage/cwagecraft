@@ -2,13 +2,21 @@
   "keybinds": {
     "map_toggle": "key.keyboard.m",
     "create_waypoint": "key.keyboard.n",
-    "minimap_toggle": "key.keyboard.j"
+    "minimap_toggle": "key.keyboard.j",
+    "minimap_preset": "key.keyboard.backslash"
   },
   "ui": {
-    "theme": "OceanMonument"
+    "theme": "OceanMonument",
+    "enable_minimap": true,
+    "minimap_position": "TopRight"
   },
   "waypoint": {
     "autoCreateDeathWaypoint": true,
-    "maxDistance": 50000
+    "maxDistance": 50000,
+    "showDistance": true,
+    "showName": true
+  },
+  "webmap": {
+    "enabled": false
   }
 }
