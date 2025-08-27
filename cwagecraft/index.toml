@@ -464,6 +464,11 @@ hash = "426fd37ec95797af16797632e70c63436ca12719c0adb16ffca931970a411ee2"
 metafile = true
 
 [[files]]
+file = "mods/mmmmmmmmmmmm.pw.toml"
+hash = "cb6a545e5739fc0e5df919fd60d729cb20634c9febd29b133eca4f172d90aa97"
+metafile = true
+
+[[files]]
 file = "mods/mob-grinding-utils.pw.toml"
 hash = "22ffca942573f1c39cc6c495122a31706a12eeb655c013c6c017aa1306ccaf7b"
 metafile = true
@@ -471,6 +476,11 @@ metafile = true
 [[files]]
 file = "mods/modular-routers.pw.toml"
 hash = "38eff2e2ce05f4d0a2f0bd8b53e0c71b39900ed530dcda25df28b2a84bbb217d"
+metafile = true
+
+[[files]]
+file = "mods/moonlight.pw.toml"
+hash = "43ab3490d87a5b72af0c1fc676e625985d68e7e453338acc7fd2558fb6a4bf6b"
 metafile = true
 
 [[files]]
@@ -580,7 +590,7 @@ metafile = true
 
 [[files]]
 file = "mods/rftools-dimensions.pw.toml"
-hash = "53a70b48e6400e7ac1ae3d24176d967859d4b382dfbbbc95bb6995992ae43a10"
+hash = "cfe0ab30f0b7a4e145d068855158bdc495d8428b1582ef473338b5389593f66b"
 metafile = true
 
 [[files]]
