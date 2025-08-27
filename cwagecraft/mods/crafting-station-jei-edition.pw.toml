@@ -1,0 +1,13 @@
+name = "Crafting Station: JEI Edition"
+filename = "craftingstation-1.20.1-1.2.3.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/25IAE8wS/versions/dYSnUwyP/craftingstation-1.20.1-1.2.3.jar"
+hash-format = "sha512"
+hash = "a53557ba651c0901db5ace757631433932b71ac4b97ff4092d8d6897ec7e64f7fb893cad5389e86c71c701e5a0c305b422319035dfe17c4dbf18be180c6a7300"
+
+[update]
+[update.modrinth]
+mod-id = "25IAE8wS"
+version = "dYSnUwyP"
