@@ -1,7 +1,0 @@
-- [ ] See if we can add complementary shaders by default
-- [ ] include individual mod config changes
-- [ ] make tinker's use lapis as fortune
-- [ ] change some of the default keybindings?
-- [ ] questbook
-- [x] swap journeymap keybindings (M for map, N for waypoints)
-- [ ] change GUI scale by default
