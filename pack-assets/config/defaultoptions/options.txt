@@ -4,7 +4,7 @@ renderDistance:12
 maxFps:60
 fullscreen:false
 enableVsync:false
-guiScale:0
+guiScale:2
 particles:0
 fboEnable:true
 useVbo:true

@@ -4,13 +4,12 @@ renderDistance:12
 maxFps:60
 fullscreen:false
 enableVsync:false
-guiScale:0
+guiScale:2
 particles:0
 fboEnable:true
 useVbo:true
 bobView:true
 anaglyph3d:false
-maxFps:60
 fancyGraphics:true
 ao:2
 biomeBlendRadius:2
