@@ -1,0 +1,13 @@
+name = "The Afterdark"
+filename = "the_afterdark-1.20.1-forge-1.0.3.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EjqfdsbN/versions/99KZbQ6b/the_afterdark-1.20.1-forge-1.0.3.1.jar"
+hash-format = "sha512"
+hash = "f651250c62631c69642eb3ebe18ea819a00bb525d3e09baa5eb4c4293877ae8616bfda168dabfe784178f129cc6a7c4494fd5b0317abe2786d338b9413d652de"
+
+[update]
+[update.modrinth]
+mod-id = "EjqfdsbN"
+version = "99KZbQ6b"
