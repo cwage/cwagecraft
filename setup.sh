@@ -219,6 +219,7 @@ add_mod "Forestry Community Edition" "forestry-community-edition" "2oORTOi2" "88
 add_mod "Gendustry Community Edition" "gendustry-community-edition" "2zkSGMyK" "882940" # Advanced bee breeding
 
 echo "==> Quality of life additions"
+add_mod "OpenLoader" "open-loader" "dWV6rGSH" "226447"                      # Automatic datapack/resource pack loading
 add_mod "Paragliders" "paragliders" "esqWA0aQ" "328301"                     # Hang gliders for exploration
 add_mod "mmmmmmmmmmmm" "mmmmmmmmmmmm" "fEhFRm5O" ""                        # Target dummy for combat testing
 add_mod "Clean Swing Through Grass" "clean-swing-through-grass" "" "386549" # Attack through plants
@@ -288,6 +289,43 @@ add_mod "Embeddium" "embeddium" "embeddium" "908741"                            
 
 echo "==> Refresh index"
 $PW refresh
+
+echo "==> Copy pack assets"
+PACK_ASSETS_DIR="$OUT_DIR/pack-assets"
+if [[ -d "$PACK_ASSETS_DIR" ]]; then
+    echo "    Copying OpenLoader datapacks..."
+    if [[ -d "$PACK_ASSETS_DIR/config/openloader" ]]; then
+        mkdir -p "$PACK_DIR/config"
+        cp -r "$PACK_ASSETS_DIR/config/openloader" "$PACK_DIR/config/"
+    fi
+    
+    echo "    Copying datapacks..."
+    if [[ -d "$PACK_ASSETS_DIR/datapacks" ]]; then
+        cp -r "$PACK_ASSETS_DIR/datapacks" "$PACK_DIR/"
+    fi
+    
+    echo "    Copying config files..."
+    if [[ -d "$PACK_ASSETS_DIR/config" ]]; then
+        cp -r "$PACK_ASSETS_DIR/config" "$PACK_DIR/"
+    fi
+    
+    echo "    Copying scripts..."
+    if [[ -d "$PACK_ASSETS_DIR/scripts" ]]; then
+        cp -r "$PACK_ASSETS_DIR/scripts" "$PACK_DIR/"
+    fi
+    
+    echo "    Copying resource packs..."
+    if [[ -d "$PACK_ASSETS_DIR/resourcepacks" ]]; then
+        cp -r "$PACK_ASSETS_DIR/resourcepacks" "$PACK_DIR/"
+    fi
+    
+    echo "    Copying default configs..."
+    if [[ -d "$PACK_ASSETS_DIR/defaultconfigs" ]]; then
+        cp -r "$PACK_ASSETS_DIR/defaultconfigs" "$PACK_DIR/"
+    fi
+else
+    echo "    No pack-assets directory found, skipping custom assets"
+fi
 
 echo "==> Export Modrinth pack (.mrpack)"
 $PW modrinth export --output "$MRPACK" --restrictDomains=false

@@ -2,3 +2,4 @@
 - [ ] include individual mod config changes
 - [ ] make tinker's use lapis as fortune
 - [ ] change some of the default keybindings?
+- [ ] questbook

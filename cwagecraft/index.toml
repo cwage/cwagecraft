@@ -1,6 +1,66 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/blood_island.json"
+hash = "e015b280f38b278100740fddee1699fe6a2e541e7d4648e037b38d23a7897068"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/clay_island.json"
+hash = "f2806d7f0342104ed2cf860bbe02006600e53a88fe7b34561fbb815215dcdbcb"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/earth_slime_island.json"
+hash = "f2806d7f0342104ed2cf860bbe02006600e53a88fe7b34561fbb815215dcdbcb"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/end_slime_island.json"
+hash = "ea420a2f68c8aec5c2309e22c01039d511d12ad2913a9a093823c26a84e982bc"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/sky_slime_island.json"
+hash = "f2806d7f0342104ed2cf860bbe02006600e53a88fe7b34561fbb815215dcdbcb"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/islands/blood.json"
+hash = "61876e4e6ea82be32485b15b18bbe420dc4eda30dd603fea31965eb63a3dc0eb"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/islands/clay.json"
+hash = "32585cc68dbf73fca70dd022de1177585adad75d0126e15820d7c21b47b98b89"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/islands/earthslime.json"
+hash = "32585cc68dbf73fca70dd022de1177585adad75d0126e15820d7c21b47b98b89"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/islands/enderslime.json"
+hash = "74baf3b71f24ccfadc7d23e603ef57c04859609d3e2d63d01db84deb2fd76f11"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/islands/skyslime.json"
+hash = "32585cc68dbf73fca70dd022de1177585adad75d0126e15820d7c21b47b98b89"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/worldgen/structure_set/end_sky_island.json"
+hash = "6e4fdc0efb389bd90e0e36e445ef2bc74f0213aa399d3721a07cbb50036cd80c"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/worldgen/structure_set/nether_ocean_island.json"
+hash = "a9fbe11beb40e14535211f65608371581d42c5ea2e1d168ac5139d2a90ddedc1"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/worldgen/structure_set/overworld_ocean_island.json"
+hash = "b4208e8be6ff0df5cc5e4db1e3c1e8960969952df433eefc89aebf5a75061bc3"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/data/tconstruct/worldgen/structure_set/overworld_sky_island.json"
+hash = "7ab847cd38443932a8fb7fa74bd14e09146b695d802ab3f4a3c4e0bf698423a0"
+
+[[files]]
+file = "config/openloader/data/frequent_slime_islands/pack.mcmeta"
+hash = "290c223de0fef61aa7cf4607126e6ce87f43356e7f2a75636660631537486be4"
+
+[[files]]
 file = "mods/advanced-mining-dimension.pw.toml"
 hash = "3de26a366ac7bc92c1b717da3308317b7ddef0e030b1f4826c4116659e5efa90"
 metafile = true
@@ -86,11 +146,6 @@ hash = "0156f093b5a9e07cba491de843e23c84bfb546b6a032ed5c3b364ede2ec15d1f"
 metafile = true
 
 [[files]]
-file = "mods/codechicken-lib-1-8.pw.toml"
-hash = "f88db7aef79947669ba4d736cc2f352a2269eb21770d5597d306c3017ea126dc"
-metafile = true
-
-[[files]]
 file = "mods/codechicken-lib.pw.toml"
 hash = "c93aa0b2389ae4dd6fbd83ffbca5fc2f6307885dd5a21e776fe4a74278e3966c"
 metafile = true
@@ -162,7 +217,7 @@ metafile = true
 
 [[files]]
 file = "mods/draconic-evolution.pw.toml"
-hash = "2ded5af656d072e9d4f33fa02687639b7fe3d3bcd289cd0d161299d7c6d117df"
+hash = "bd39c958001bcdf13acd853692e21d57c34b199ffb5343a14f38eb657a84d65b"
 metafile = true
 
 [[files]]
@@ -438,6 +493,11 @@ metafile = true
 [[files]]
 file = "mods/oculus.pw.toml"
 hash = "f83b253ca6a8e6f2f847952704da0e1fb00e65cbb10b7c9cb15d1a1780618da0"
+metafile = true
+
+[[files]]
+file = "mods/open-loader.pw.toml"
+hash = "f1a2d3a570a6ce0722f0136b4b57371fc067ad7f329e1df9cd3cd765619ac759"
 metafile = true
 
 [[files]]
