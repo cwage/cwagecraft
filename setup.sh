@@ -16,13 +16,30 @@ mkdir -p "$PACK_DIR"
 cd "$PACK_DIR"
 
 echo "==> Init pack ($MC_VERSION Forge $FORGE_VERSION)"
-$PW init \
-  --name "$PACK_NAME" \
-  --author "$AUTHOR" \
-  --version "1.0.0" \
-  --mc-version "$MC_VERSION" \
-  --modloader forge \
-  --forge-version "$FORGE_VERSION"
+# Retry packwiz init on network failures (TLS handshake timeouts, etc.)
+init_success=false
+for attempt in 1 2; do
+    if [[ $attempt -gt 1 ]]; then
+        echo "    Init attempt $attempt/2 (network error, retrying...)"
+        sleep 2
+    fi
+    
+    if $PW init \
+      --name "$PACK_NAME" \
+      --author "$AUTHOR" \
+      --version "1.0.0" \
+      --mc-version "$MC_VERSION" \
+      --modloader forge \
+      --forge-version "$FORGE_VERSION"; then
+        init_success=true
+        break
+    fi
+done
+
+if [[ "$init_success" != "true" ]]; then
+    echo "ERROR: Failed to initialize pack after 2 attempts"
+    exit 1
+fi
 
 echo "==> Accept MC $MC_VERSION family"
 $PW settings acceptable-versions --add 1.20
