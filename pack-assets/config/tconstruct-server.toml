@@ -1,0 +1,76 @@
+# Tinkers' Construct Server Configuration
+# Server-side settings that affect gameplay mechanics and automation
+
+[smeltery]
+    # Maximum internal fluid capacity multiplier for smelteries
+    # Higher values allow more fluid storage, better for automation
+    # Range: 0.5 to 3.0
+    capacityMultiplier = 1.5
+    
+    # Allow smeltery operations to continue with mixed fluid types
+    # Set to false to prevent automation issues with fluid mixing
+    allowFluidMixing = false
+    
+    # Automatically void excess fluids when smeltery is full
+    # Prevents overflow that can break automation systems
+    voidExcessFluids = true
+    
+    # Fuel consumption rate for smeltery operations
+    # Lower values mean fuel lasts longer (better for automation)
+    # Range: 0.1 to 2.0
+    fuelEfficiencyMultiplier = 1.0
+
+[casting]
+    # Force casting tables to clear their contents when fluid supply is disconnected
+    # This is key to preventing the partial ingot sticking issue
+    clearOnFluidDisconnect = true
+    
+    # Minimum fluid threshold before casting operations begin
+    # Prevents starting casts that can't be completed
+    minimumFluidThreshold = 144
+    
+    # Maximum time (in ticks) to wait for casting completion before auto-clearing
+    # After this time, incomplete casts are automatically cleared
+    # Range: 60 to 600
+    maxCastingWaitTime = 120
+    
+    # Enable redstone comparator output for casting blocks
+    # Outputs signal strength based on casting progress (0-15)
+    enableComparatorOutput = true
+    
+    # Comparator output mode:
+    # "progress" = signal strength based on casting progress (0-15)
+    # "state" = full signal (15) when casting, no signal (0) when empty
+    comparatorOutputMode = "state"
+
+[automation]
+    # Global delay for all automation interactions with Tinkers blocks
+    # Helps prevent race conditions in automation systems
+    # Range: 0 to 20
+    globalAutomationDelay = 3
+    
+    # Allow external systems to forcibly extract items from casting tables
+    # even if casting is not complete (can cause partial ingot issues if true)
+    allowForceExtraction = false
+    
+    # Enable enhanced automation support that provides better timing control
+    enhancedAutomationSupport = true
+    
+    # Prevent automation from extracting items until casting is 100% complete
+    preventPartialExtraction = true
+
+[compatibility]
+    # Improve compatibility with common automation mods
+    # These settings help prevent conflicts with automation systems
+    
+    # Enhanced support for Pipez mod
+    enhancedPipezSupport = true
+    
+    # Enhanced support for Thermal Dynamics
+    enhancedThermalSupport = true
+    
+    # Enhanced support for Industrial Foregoing
+    enhancedIndustrialSupport = true
+    
+    # Enhanced support for item extraction systems
+    enhancedExtractionSupport = true

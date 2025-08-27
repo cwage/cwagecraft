@@ -1,0 +1,54 @@
+# Tinkers' Construct Common Configuration
+# Configuration to improve smeltery automation and casting behavior
+# Note: These settings are applied server-wide and affect all players
+
+[general]
+    # Logging level for smeltery operations (useful for debugging automation issues)
+    # Valid values: "OFF", "ERROR", "WARN", "INFO", "DEBUG"
+    smelteryLoggingLevel = "WARN"
+    
+    # Enable advanced automation support features
+    enableAutomationSupport = true
+
+[smeltery]
+    # Allow multiple fuel types to be used simultaneously
+    multipleFuelTypes = true
+    
+    # Fuel consumption rate multiplier (lower = more efficient, better for automation)
+    # Range: 0.1 to 2.0
+    fuelConsumptionMultiplier = 0.9
+    
+    # Maximum size of smeltery structure (larger = better for automation setups)
+    # Range: 3 to 16
+    maxSmelterySize = 9
+
+[casting]
+    # Base casting time for ingots in ticks (lower = faster casting, better automation)
+    # Default: 50, Recommended for automation: 30-40
+    # Range: 10 to 200
+    baseCastingTime = 35
+    
+    # Allow casting to continue even with partial fluid amounts
+    # Set to false to prevent partial ingots getting stuck
+    allowPartialCasting = false
+    
+    # Automatically clear casting tables when they can't complete due to insufficient fluid
+    autoClearIncompleteItems = true
+    
+    # Minimum fluid amount (in mB) required to start a casting operation
+    # This prevents partial ingots from starting when there's insufficient fluid
+    # Standard ingot = 144mB, so this ensures at least one full ingot worth
+    minimumFluidForCasting = 144
+
+[automation]
+    # Enable comparator support for casting tables and basins
+    # This allows redstone automation to detect when casting is complete
+    enableComparatorOutput = true
+    
+    # Delay (in ticks) before casting tables become available for automation extraction
+    # This gives time for the casting process to complete properly
+    automationExtractionDelay = 5
+    
+    # Allow automation systems to detect partial casting states
+    # When true, automation can detect and handle stuck partial ingots
+    detectPartialCasts = true

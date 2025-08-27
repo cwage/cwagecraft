@@ -1,0 +1,75 @@
+# Automation Integration Configuration
+# This file contains configurations for better integration between
+# Tinkers' Construct and the automation mods included in this pack
+
+# Pipez Integration Settings
+# Optimized settings for Pipez pipes working with Tinkers' Construct
+[pipez]
+    # Recommended extraction rate for Pipez fluid pipes with Tinkers
+    # Lower rates prevent partial extraction issues
+    recommendedFluidExtractionRate = 1000
+    
+    # Recommended extraction delay for Pipez item pipes
+    # Allows casting to complete before extraction attempts
+    recommendedItemExtractionDelay = 2
+    
+    # Maximum stack size for Pipez item pipes with Tinkers items
+    # Prevents over-extraction of partial stacks
+    maxStackSize = 64
+
+# Thermal Dynamics Integration Settings
+# Optimized settings for Thermal Dynamics ducts with Tinkers
+[thermal]
+    # Servo settings for fluid extraction from smelteries
+    fluidServoMode = "roundRobin"
+    fluidServoStackSize = 1000
+    
+    # Retriever settings for item extraction from casting tables
+    itemRetrieverMode = "whiteList"
+    itemRetrieverStackSize = 64
+    
+    # Use intelligent extraction that waits for completion
+    intelligentExtraction = true
+
+# Industrial Foregoing Integration Settings
+# Settings for Industrial Foregoing machines with Tinkers
+[industrialForegoing]
+    # Fluid Extractor settings
+    fluidExtractorRate = 100
+    fluidExtractorUpgrades = 2
+    
+    # Conveyor Belt settings for casting table automation
+    conveyorSpeed = 20
+    conveyorUpgrades = 1
+    
+    # Use buffer systems to prevent partial extractions
+    useBufferSystems = true
+
+# Modular Routers Integration Settings
+# Settings for Modular Routers working with Tinkers automation
+[modularRouters]
+    # Recommended tick delay for item extraction modules
+    itemExtractionDelay = 3
+    
+    # Recommended tick delay for fluid extraction modules
+    fluidExtractionDelay = 1
+    
+    # Use smart filtering to prevent partial item extraction
+    useSmartFiltering = true
+    
+    # Stack size limits for Tinkers items
+    tinkersStackLimit = 64
+
+# General Automation Guidelines
+[general]
+    # Always use buffer tanks in fluid automation with Tinkers
+    useBufferTanks = true
+    
+    # Minimum buffer tank size (in mB) for Tinkers automation
+    minBufferTankSize = 2000
+    
+    # Use comparator-controlled extraction when possible
+    useComparatorControl = true
+    
+    # Add overflow protection to all automation setups
+    addOverflowProtection = true

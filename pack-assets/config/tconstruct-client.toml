@@ -1,0 +1,36 @@
+# Tinkers' Construct Client Configuration
+# Client-side settings that can help with automation visibility and debugging
+
+[rendering]
+    # Show fluid levels in smeltery controller GUI with more precision
+    # Helps players monitor automation more effectively
+    preciseFluidDisplay = true
+    
+    # Enable visual indicators for casting progress
+    # Shows progress bars or indicators on casting tables/basins
+    showCastingProgress = true
+    
+    # Highlight casting tables that have partial/stuck items
+    # Visual indicator to help identify problematic casting setups
+    highlightPartialCasts = true
+
+[gui]
+    # Show automation-relevant information in GUIs
+    # Displays additional info useful for setting up automation
+    showAutomationInfo = true
+    
+    # Display comparator output values in casting table tooltips
+    # Helps with redstone automation setup
+    showComparatorValues = true
+    
+    # Show precise fluid amounts in tooltips (instead of just "some" or "lots")
+    preciseFluidTooltips = true
+
+[debug]
+    # Enable debug overlays for automation troubleshooting
+    # Shows additional information when F3 debug is enabled
+    enableDebugOverlays = false
+    
+    # Log client-side casting events for troubleshooting
+    # Useful for debugging automation timing issues
+    logCastingEvents = false
