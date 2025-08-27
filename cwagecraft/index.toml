@@ -580,7 +580,7 @@ metafile = true
 
 [[files]]
 file = "mods/rftools-dimensions.pw.toml"
-hash = "cfe0ab30f0b7a4e145d068855158bdc495d8428b1582ef473338b5389593f66b"
+hash = "53a70b48e6400e7ac1ae3d24176d967859d4b382dfbbbc95bb6995992ae43a10"
 metafile = true
 
 [[files]]
