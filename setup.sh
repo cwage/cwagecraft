@@ -219,6 +219,7 @@ add_mod "Forestry Community Edition" "forestry-community-edition" "2oORTOi2" "88
 add_mod "Gendustry Community Edition" "gendustry-community-edition" "2zkSGMyK" "882940" # Advanced bee breeding
 
 echo "==> Quality of life additions"
+add_mod "Default Options" "default-options" "IWe7P9UP" "447359"            # Ship default options and keybindings
 add_mod "OpenLoader" "open-loader" "dWV6rGSH" "226447"                      # Automatic datapack/resource pack loading
 add_mod "Paragliders" "paragliders" "esqWA0aQ" "328301"                     # Hang gliders for exploration
 add_mod "mmmmmmmmmmmm" "mmmmmmmmmmmm" "fEhFRm5O" ""                        # Target dummy for combat testing
@@ -332,11 +333,6 @@ if [[ -d "$PACK_ASSETS_DIR" ]]; then
     echo "    Copying shader packs..."
     if [[ -d "$PACK_ASSETS_DIR/shaderpacks" ]]; then
         cp -r "$PACK_ASSETS_DIR/shaderpacks" "$PACK_DIR/"
-    fi
-    
-    echo "    Copying default configs..."
-    if [[ -d "$PACK_ASSETS_DIR/defaultconfigs" ]]; then
-        cp -r "$PACK_ASSETS_DIR/defaultconfigs" "$PACK_DIR/"
     fi
 else
     echo "    No pack-assets directory found, skipping custom assets"
