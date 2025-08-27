@@ -28,6 +28,7 @@ This modpack includes **Complementary Unbound r5.5.1** shader pack by Complement
 
 - **Complementary Unbound Shaders**: Created by Complementary Development (https://www.complementary.dev/shaders/)
 - **Tinkers' Construct Slime Island Configuration**: Modified generation frequency via datapack
+- **Tinkers' Construct Lapis Fortune**: Custom datapack configures Lapis Lazuli as the Fortune modifier material
 
 ## License
 

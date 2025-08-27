@@ -1,6 +1,6 @@
 - [ ] See if we can add complementary shaders by default
 - [ ] include individual mod config changes
-- [ ] make tinker's use lapis as fortune
+- [x] make tinker's use lapis as fortune
 - [ ] change some of the default keybindings?
 - [ ] questbook
 - [ ] swap journeymap keybindings
