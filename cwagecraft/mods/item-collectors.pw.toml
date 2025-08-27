@@ -1,0 +1,13 @@
+name = "Item Collectors"
+filename = "itemcollectors-1.1.11-forge-mc1.20.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/y9vDr4Th/versions/9CulBnqc/itemcollectors-1.1.11-forge-mc1.20.2.jar"
+hash-format = "sha512"
+hash = "ec2c687020ddfd3917546f5464ff0c672023a62aa7228a13b76b18fe071b3f308a4642982061b2a9ede383293d2dc2615c69910d23fab7e85bc2b3e1169b2bed"
+
+[update]
+[update.modrinth]
+mod-id = "y9vDr4Th"
+version = "9CulBnqc"
