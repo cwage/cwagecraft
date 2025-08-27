@@ -39,13 +39,16 @@ This is a Minecraft modpack repository using Packwiz for mod management. The mod
 - **Pack Format**: packwiz:1.1.0
 
 ### Mod Categories (as organized in setup.sh)
-1. **Core compute/storage/power**: OpenComputers 2, Refined Storage, Mekanism, Ender IO, Industrial Foregoing
-2. **World/magic/QoL**: Botania, Biomes O' Plenty, Waystones, JEI
-3. **Food systems**: Farmer's Delight, Croptopia, cooking mods
-4. **Technology**: Create, AE2, RFTools suite, Thermal series
-5. **Magic/Adventure**: Tinkers' Construct, Draconic Evolution, Mystical Agriculture
-6. **Exploration/Mining**: Advanced Mining Dimension, Iron Jetpacks
-7. **Utilities**: FTB suite (chunks, teams, essentials), inventory management
+1. **Libraries & Dependencies** (11 mods): Core APIs, libraries, and mod dependencies
+2. **Core Infrastructure** (17 mods): Power generation, storage systems, transport/logistics
+3. **Technology & Automation** (16 mods): Create mechanical systems, industrial processing, advanced machinery
+4. **Magic & Mystical** (5 mods): Botania, Mystical Agriculture, Draconic Evolution, magic-focused mods
+5. **World & Exploration** (10 mods): Biomes, dimensions, exploration tools, movement systems
+6. **Quality of Life** (27 mods): JEI integration, utilities, inventory management, UI/UX improvements
+7. **Food & Cooking** (11 mods): Farmer's Delight, Croptopia, cooking systems, food mechanics
+8. **Tools & Combat** (5 mods): Tinkers' Construct, building tools, combat enhancements
+9. **Mining & Resources** (4 mods): Resource generation, ore processing, storage compression
+10. **Performance & Rendering** (2 mods): Optimization and shader support
 
 ### Mod Configuration Files
 Each mod has a `.pw.toml` file containing:
