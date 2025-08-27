@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:incremental_modifier",
+  "input": {
+    "item": "minecraft:lapis_lazuli"
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable/harvest"
+  },
+  "result": "tconstruct:luck",
+  "needed_per_level": [3, 5, 7],
+  "upgrade_slots": 1,
+  "ability_slots": 0
+}

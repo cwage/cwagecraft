@@ -1,0 +1,13 @@
+name = "Light Overlay"
+filename = "light-overlay-8.0.0-forge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/YfOlc91N/versions/xHBA44Di/light-overlay-8.0.0-forge.jar"
+hash-format = "sha512"
+hash = "e555d40bddd0d8a8499cac6012035f7476bcce695e41c8d0b1d48aa44f72c8c356d3fb8ba074103ecd2f7db26edeba7487d5d27597b3b761e10f33fc2f097a09"
+
+[update]
+[update.modrinth]
+mod-id = "YfOlc91N"
+version = "xHBA44Di"
