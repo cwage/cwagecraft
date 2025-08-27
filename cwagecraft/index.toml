@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/oculus.properties"
+hash = "a8230edabb98fbbe0b6a35a40fa85bb546c5a3334ae54e0721e0356b1bd6693e"
+
+[[files]]
 file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/blood_island.json"
 hash = "e015b280f38b278100740fddee1699fe6a2e541e7d4648e037b38d23a7897068"
 
@@ -58,7 +62,11 @@ hash = "7ab847cd38443932a8fb7fa74bd14e09146b695d802ab3f4a3c4e0bf698423a0"
 
 [[files]]
 file = "config/openloader/data/frequent_slime_islands/pack.mcmeta"
-hash = "290c223de0fef61aa7cf4607126e6ce87f43356e7f2a75636660631537486be4"
+hash = "d6236766bd54d110368f5cef57ef2f1dd6e18ce8fa04d6c444caf07bddbafc1e"
+
+[[files]]
+file = "defaultconfigs/options.txt"
+hash = "8a451efe6731c3753da3f2e2ac8cf4ceeb29f72fd3e003ef24e85e25d8111c0d"
 
 [[files]]
 file = "mods/advanced-mining-dimension.pw.toml"
@@ -689,3 +697,7 @@ metafile = true
 file = "mods/zerocore.pw.toml"
 hash = "824e624db9e75492a8f461f0b2ea61251729957d6645242ae83daaece0333020"
 metafile = true
+
+[[files]]
+file = "shaderpacks/ComplementaryUnbound_r5.5.1.zip"
+hash = "61d133b24b6a92e46a3d7df791bb2ff163bbba10eed59df979b9bd727c24fbaf"

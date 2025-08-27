@@ -329,6 +329,11 @@ if [[ -d "$PACK_ASSETS_DIR" ]]; then
         cp -r "$PACK_ASSETS_DIR/resourcepacks" "$PACK_DIR/"
     fi
     
+    echo "    Copying shader packs..."
+    if [[ -d "$PACK_ASSETS_DIR/shaderpacks" ]]; then
+        cp -r "$PACK_ASSETS_DIR/shaderpacks" "$PACK_DIR/"
+    fi
+    
     echo "    Copying default configs..."
     if [[ -d "$PACK_ASSETS_DIR/defaultconfigs" ]]; then
         cp -r "$PACK_ASSETS_DIR/defaultconfigs" "$PACK_DIR/"
