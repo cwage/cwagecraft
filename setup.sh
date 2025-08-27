@@ -124,7 +124,7 @@ add_mod "Storage Drawers" "storagedrawers" "guitPqEi" "223852"              # Co
 add_mod "Iron Chests" "iron-chests" "P3iIrPH3" "228756"                     # Upgraded chest variants
 add_mod "Mekanism" "mekanism" "Ce6I4WUE" "268560"                           # Tech mod with ore processing
 add_mod "Mekanism Generators" "mekanism-generators" "OFVYKsAk" "268566"   # Power generation for Mekanism
-add_mod "Ender IO" "ender-io" "enderio" "64578"                          # Conduits and advanced machines (beta but functional)
+add_mod "Ender IO" "ender-io" "49ZofO4f" "64578"                        # Conduits and advanced machines - updated for better persistence
 add_mod "Industrial Foregoing" "industrial-foregoing" "industrial-foregoing" "266515"         # Automation and mob farming
 
 echo "==> World / magic / QoL"

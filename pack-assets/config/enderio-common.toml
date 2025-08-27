@@ -1,0 +1,56 @@
+# EnderIO Common Configuration
+# This configuration file contains server-side settings that affect gameplay
+# Focus on improving conduit persistence and reliability
+
+[conduits]
+    # Improved conduit persistence settings
+    # Time in ticks that conduit settings persist after connected block is removed (default: 100)
+    # Setting this higher helps preserve settings during block replacement
+    conduitPersistenceTime = 600
+    
+    # Delay before conduits attempt to reconnect to blocks (default: 20)
+    # Slightly higher delay can improve reconnection reliability  
+    conduitReconnectDelay = 40
+    
+    # Whether conduits should preserve their settings when connected blocks change (default: true)
+    preserveConduitSettings = true
+    
+    # How frequently conduit data is saved to world data (default: 20)
+    # More frequent saves help prevent data loss
+    conduitDataSaveFrequency = 10
+    
+    # Enable enhanced block change detection for better persistence
+    enhancedBlockChangeDetection = true
+    
+    # Keep conduit connections active longer during block changes
+    extendedConnectionTimeout = 400
+
+[automation]
+    # Settings that help with automation reliability
+    # Disable automatic conduit setting resets on world load
+    resetSettingsOnWorldLoad = false
+    
+    # Preserve filter configurations more aggressively
+    aggressiveFilterPersistence = true
+    
+    # Maintain redstone mode settings during block replacement
+    persistRedstoneSettings = true
+
+[performance]
+    # Performance settings that don't sacrifice persistence
+    # Balance performance with data safety
+    conduitUpdateFrequency = 10
+    
+    # Enable conduit state caching for better persistence
+    enableStateCache = true
+    
+    # Cache timeout in ticks (10 seconds)
+    stateCacheTimeout = 200
+
+[debug]
+    # Enable logging for conduit persistence debugging
+    # Helps identify when and why settings are lost
+    logConduitPersistence = false
+    
+    # Log when conduit settings are reset
+    logSettingResets = false

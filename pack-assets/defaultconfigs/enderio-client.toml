@@ -1,0 +1,16 @@
+# EnderIO Default Client Configuration  
+# These settings will be applied to new worlds/clients by default
+
+[client]
+    showConnectionStatus = true
+    showConduitOverlay = true
+    highlightResetConduits = true
+    warnOnBlockChanges = true
+
+[rendering]
+    enhancedConduitRendering = true
+    showStatusIndicators = true
+
+[tooltips]
+    detailedConduitTooltips = true
+    showPersistenceWarnings = true

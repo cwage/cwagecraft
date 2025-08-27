@@ -1,0 +1,25 @@
+# EnderIO Default Common Configuration
+# These settings will be applied to new worlds by default
+# Focus on conduit persistence and reliability
+
+[conduits]
+    conduitPersistenceTime = 600
+    conduitReconnectDelay = 40
+    preserveConduitSettings = true
+    conduitDataSaveFrequency = 10
+    enhancedBlockChangeDetection = true
+    extendedConnectionTimeout = 400
+
+[automation]
+    resetSettingsOnWorldLoad = false
+    aggressiveFilterPersistence = true
+    persistRedstoneSettings = true
+
+[performance]
+    conduitUpdateFrequency = 10
+    enableStateCache = true
+    stateCacheTimeout = 200
+
+[debug]
+    logConduitPersistence = false
+    logSettingResets = false

@@ -1,0 +1,32 @@
+# EnderIO Client Configuration
+# Client-side settings that can help with conduit UI and persistence feedback
+
+[client]
+    # UI settings that help users understand conduit persistence
+    # Show conduit connection status in tooltip
+    showConnectionStatus = true
+    
+    # Display conduit settings in overlay when looking at conduits
+    showConduitOverlay = true
+    
+    # Highlight conduits that have lost their settings
+    highlightResetConduits = true
+    
+    # Show warning when placing/removing blocks near configured conduits
+    warnOnBlockChanges = true
+
+[rendering]
+    # Rendering settings that don't affect persistence but improve usability
+    # Render conduit connections more clearly
+    enhancedConduitRendering = true
+    
+    # Show conduit status indicators
+    showStatusIndicators = true
+
+[tooltips]
+    # Enhanced tooltips to help users understand conduit behavior
+    # Show current conduit settings in tooltip
+    detailedConduitTooltips = true
+    
+    # Display persistence warnings
+    showPersistenceWarnings = true
