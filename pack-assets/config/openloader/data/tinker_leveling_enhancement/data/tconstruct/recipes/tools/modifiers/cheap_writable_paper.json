@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "modifier": "tinkerslevelling:writable",
+  "level": 1,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tinkerslevelling"
+    }
+  ]
+}

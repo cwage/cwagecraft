@@ -1,0 +1,29 @@
+# Tinkers Levelling Addon Configuration
+# This file enhances the early game experience by making tool leveling more accessible
+
+[general]
+    # Allow all tools to gain XP without requiring a writable modifier first (if supported)
+    # This would be the ideal solution but may not be available in this version
+    toolsStartWithLeveling = true
+    
+    # Reduce XP requirements for leveling (making progression faster)
+    xpMultiplier = 2.0
+    
+    # Enable more frequent attribute bonuses
+    moreFrequentBonuses = true
+
+[modifiers]
+    # Make writable modifier cheaper by reducing material requirements
+    cheapWritableModifier = true
+    
+    # Allow tools to be modified more easily
+    easierModification = true
+
+[experience]
+    # Increase XP gain from various activities
+    miningXpMultiplier = 1.5
+    combatXpMultiplier = 1.5
+    blockBreakingXpMultiplier = 1.5
+    
+    # Allow XP gain from more activities
+    enableMoreXpSources = true

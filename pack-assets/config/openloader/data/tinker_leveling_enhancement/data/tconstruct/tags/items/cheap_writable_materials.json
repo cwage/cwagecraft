@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:paper",
+    "minecraft:stick",
+    "#minecraft:planks",
+    "minecraft:cobblestone",
+    "minecraft:dirt",
+    "minecraft:sand"
+  ]
+}

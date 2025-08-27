@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "tag": "tconstruct:cheap_writable_materials"
+    }
+  ],
+  "modifier": "tinkerslevelling:writable",
+  "level": 1,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tinkerslevelling"
+    }
+  ]
+}

@@ -5,3 +5,4 @@
 - [ ] questbook
 - [ ] swap journeymap keybindings
 - [ ] change GUI scale by default
+- [x] enable immediate tinker's construct tool leveling (added cheap writable modifier recipes and enhanced configs)
