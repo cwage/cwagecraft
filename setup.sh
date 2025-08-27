@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PACK_NAME="Revelationish-OC2R-Forge-1.20.1"
+PACK_NAME="cwagecraft"
 MC_VERSION="1.20.1"
 FORGE_VERSION="47.3.22"
 AUTHOR="cwage"
@@ -51,6 +51,9 @@ mr_add natures-compass
 # Locate structures (pair with Nature's Compass)
 mr_add "explorers-compass" || cf_add "explorers-compass"
 mr_add jei
+# JER (ore graphs in JEI)
+cf_add just-enough-resources-jer
+
 mr_add jade
 mr_add mouse-tweaks
 mr_add journeymap
@@ -185,10 +188,8 @@ cf_add architectury-api         # dep (safe to add even if already present)
 cf_add ftb-library-forge        # core FTB library
 cf_add ftb-teams-forge          # required by Chunks (and AdminShop if it appears)
 cf_add ftb-chunks-forge         # claims + chunkloading UI
-
-
-# Infinite cave layer below bedrock
-mr_add infinity-cave
+# Homes/TPA commands
+cf_add ftb-essentials
 
 mr_add light-overlay
 
@@ -208,6 +209,35 @@ mr_add supermartijn642s-core-lib
 mr_add trash-cans
 
 mr_add the-afterdark
+
+# Keybind management (search + conflict highlight)
+mr_add controlling "Controlling" || cf_add controlling "Controlling"
+
+mr_add crafting-station
+
+mr_add ae2
+
+cf_add cyclic
+
+mr_add botany-pots
+mr_add botany-trees    # optional
+
+mr_add create
+cf_add create-ore-excavation
+
+cf_add ender-crop
+
+cf_add spice-of-life-carrot-edition
+
+cf_add inventory-sorter
+
+mr_add pipez
+
+# (Optional, larger catalog / higher tiers)
+cf_add allthecompressed
+
+echo "==> Gravestones"
+mr_add gravestone
 
 echo "==> Reactors"
 cf_add zerocore                     # correct CF slug for “ZeroCore 2”
