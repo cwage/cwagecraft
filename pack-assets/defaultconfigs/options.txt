@@ -10,7 +10,6 @@ fboEnable:true
 useVbo:true
 bobView:true
 anaglyph3d:false
-maxFps:60
 fancyGraphics:true
 ao:2
 biomeBlendRadius:2
