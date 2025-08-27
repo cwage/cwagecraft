@@ -3,3 +3,5 @@
 - [ ] make tinker's use lapis as fortune
 - [ ] change some of the default keybindings?
 - [ ] questbook
+- [ ] swap journeymap keybindings
+- [ ] change GUI scale by default
