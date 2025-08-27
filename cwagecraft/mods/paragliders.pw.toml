@@ -1,0 +1,13 @@
+name = "Paragliders"
+filename = "Paraglider-forge-20.1.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/esqWA0aQ/versions/nudKlXXT/Paraglider-forge-20.1.3.jar"
+hash-format = "sha512"
+hash = "81212fb4b3a0cf7af4ce8df2f9bab0c0f05527bd7c022ae65dbe97032e06083401d81bc03c3b41f04651140a0261196e2cb14a0431b9b8d096e18de8129340a1"
+
+[update]
+[update.modrinth]
+mod-id = "esqWA0aQ"
+version = "nudKlXXT"

@@ -1,0 +1,13 @@
+name = "Gendustry: Community Edition"
+filename = "gendustry-1.20.1-1.0.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2zkSGMyK/versions/FlKzMztH/gendustry-1.20.1-1.0.3.jar"
+hash-format = "sha512"
+hash = "740c4470637afa33155ff32dfa26b9ae5498884bf9baf8f8393418c3252a8c9d34cd4deeff0bcb7d1f5e7ce8533591312fe275cedd37cf797f5115e220b4cda2"
+
+[update]
+[update.modrinth]
+mod-id = "2zkSGMyK"
+version = "FlKzMztH"

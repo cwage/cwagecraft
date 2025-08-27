@@ -1,0 +1,13 @@
+name = "Draconic Evolution"
+filename = "Draconic-Evolution-1.20.1-3.1.2.621-universal.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nBqivi8H/versions/YR33MHbk/Draconic-Evolution-1.20.1-3.1.2.621-universal.jar"
+hash-format = "sha512"
+hash = "202d3a0147f7a0614ab1fabf7c5795451f0f2fef91cf1cbd6dff3447c3d41ce8a62a43d8e8836ba80ef76752c46851f03390c32dee6a7a073803ebea8e5aec9a"
+
+[update]
+[update.modrinth]
+mod-id = "nBqivi8H"
+version = "YR33MHbk"
