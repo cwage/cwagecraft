@@ -1,0 +1,25 @@
+{
+    "values": [
+        "#minecraft:coal_ores",
+        "#minecraft:iron_ores",
+        "#minecraft:gold_ores",
+        "#minecraft:diamond_ores",
+        "#minecraft:emerald_ores",
+        "#minecraft:lapis_ores",
+        "#minecraft:redstone_ores",
+        "#minecraft:copper_ores",
+        "#forge:ores",
+        "#forge:ores/tin",
+        "#forge:ores/lead",
+        "#forge:ores/nickel",
+        "#forge:ores/silver",
+        "#forge:ores/uranium",
+        "#forge:ores/aluminum",
+        "#forge:ores/zinc",
+        "#forge:ores/osmium",
+        "#forge:ores/fluorite",
+        "minecraft:nether_gold_ore",
+        "minecraft:nether_quartz_ore",
+        "minecraft:ancient_debris"
+    ]
+}
