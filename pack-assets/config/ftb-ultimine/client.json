@@ -1,0 +1,22 @@
+{
+  "whitelist_mode": true,
+  "enable_ultimine": true,
+  "ore_only_mode": true,
+  "allowed_tags": [
+    "minecraft:coal_ores",
+    "minecraft:iron_ores",
+    "minecraft:gold_ores",
+    "minecraft:diamond_ores", 
+    "minecraft:emerald_ores",
+    "minecraft:lapis_ores",
+    "minecraft:redstone_ores",
+    "minecraft:copper_ores",
+    "forge:ores"
+  ],
+  "blocked_tags": [
+    "minecraft:logs",
+    "minecraft:leaves",
+    "minecraft:crops", 
+    "minecraft:planks"
+  ]
+}

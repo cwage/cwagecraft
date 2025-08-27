@@ -1,0 +1,50 @@
+{
+  "_comment": "FTB Ultimine Server Configuration - Restrict to ore blocks only",
+  "general": {
+    "enabled": true,
+    "mode": "whitelist", 
+    "require_tool": false,
+    "max_blocks": 64,
+    "exhaustion_per_block": 0.005,
+    "prevent_block_updates": false,
+    "shape": "tunnel"
+  },
+  "whitelist": {
+    "enabled": true,
+    "blocks": [],
+    "tags": [
+      "minecraft:coal_ores",
+      "minecraft:iron_ores", 
+      "minecraft:gold_ores",
+      "minecraft:diamond_ores",
+      "minecraft:emerald_ores",
+      "minecraft:lapis_ores",
+      "minecraft:redstone_ores",
+      "minecraft:copper_ores",
+      "forge:ores",
+      "mekanism:ores",
+      "thermal:ores"
+    ]
+  },
+  "blacklist": {
+    "enabled": true,
+    "blocks": [
+      "minecraft:wheat",
+      "minecraft:carrots", 
+      "minecraft:potatoes",
+      "minecraft:beetroots"
+    ],
+    "tags": [
+      "minecraft:logs",
+      "minecraft:leaves",
+      "minecraft:planks", 
+      "minecraft:crops",
+      "minecraft:saplings",
+      "minecraft:flowers",
+      "forge:dirt", 
+      "forge:stone",
+      "forge:sand",
+      "forge:gravel"
+    ]
+  }
+}
