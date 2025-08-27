@@ -296,6 +296,11 @@ if [[ -d "$PACK_ASSETS_DIR" ]]; then
     echo "    Copying OpenLoader datapacks..."
     if [[ -d "$PACK_ASSETS_DIR/config/openloader" ]]; then
         mkdir -p "$PACK_DIR/config"
+        if [[ -d "$PACK_DIR/config/openloader" ]]; then
+            echo "    Warning: Existing OpenLoader config found in $PACK_DIR/config/openloader. Backing up to openloader.bak."
+            rm -rf "$PACK_DIR/config/openloader.bak"
+            mv "$PACK_DIR/config/openloader" "$PACK_DIR/config/openloader.bak"
+        fi
         cp -r "$PACK_ASSETS_DIR/config/openloader" "$PACK_DIR/config/"
     fi
     
@@ -304,9 +309,14 @@ if [[ -d "$PACK_ASSETS_DIR" ]]; then
         cp -r "$PACK_ASSETS_DIR/datapacks" "$PACK_DIR/"
     fi
     
-    echo "    Copying config files..."
+    echo "    Copying config files (excluding openloader)..."
     if [[ -d "$PACK_ASSETS_DIR/config" ]]; then
-        cp -r "$PACK_ASSETS_DIR/config" "$PACK_DIR/"
+        # Use rsync to exclude openloader directory to avoid double-copying
+        rsync -a --exclude='openloader' "$PACK_ASSETS_DIR/config/" "$PACK_DIR/config/" 2>/dev/null || {
+            # Fallback to manual copy if rsync is not available
+            echo "    rsync not available, using manual copy with exclusions..."
+            find "$PACK_ASSETS_DIR/config" -mindepth 1 -maxdepth 1 ! -name 'openloader' -exec cp -r {} "$PACK_DIR/config/" \;
+        }
     fi
     
     echo "    Copying scripts..."
