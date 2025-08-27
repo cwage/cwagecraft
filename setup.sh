@@ -28,228 +28,246 @@ echo "==> Accept MC $MC_VERSION family"
 $PW settings acceptable-versions --add 1.20
 $PW settings acceptable-versions --add 1.20.1
 
-mr_add() { echo "MR  $1"; $PW modrinth add "$1"; }
-cf_add() { echo "CF  $1"; $PW curseforge add "$1"; }
+# Helper function - prefer Modrinth with CurseForge fallback with retry logic
+# Usage: add_mod "display-name" "slug" "modrinth-id" ["curseforge-id"]
+add_mod() {
+    local display_name="$1"
+    local slug="$2"
+    local modrinth_id="$3"
+    local curseforge_id="${4:-}"
+    local max_attempts=2
+    local attempt=1
+    
+    echo "Adding: $display_name ($slug)"
+    
+    # Helper function to attempt adding a mod with retry logic
+    try_add_with_retry() {
+        local add_command="$1"
+        local source_name="$2"
+        
+        for ((attempt=1; attempt<=max_attempts; attempt++)); do
+            if [[ $attempt -gt 1 ]]; then
+                local backoff_time=$((attempt - 1))
+                echo "    Retry attempt $attempt/$max_attempts (waiting ${backoff_time}s)..."
+                sleep $backoff_time
+            fi
+            
+            # Capture output and exit code, suppress output
+            local output
+            local exit_code
+            output=$(eval "$add_command" 2>&1)
+            exit_code=$?
+            
+            if [[ $exit_code -eq 0 ]]; then
+                echo "    ✓ $source_name"
+                return 0
+            fi
+            
+            # Only retry on network/connection errors, not "mod not found" errors
+            if [[ $output == *"network"* ]] || [[ $output == *"connection"* ]] || [[ $output == *"TLS"* ]] || [[ $output == *"timeout"* ]] || [[ $output == *"SSL"* ]]; then
+                if [[ $attempt -lt $max_attempts ]]; then
+                    echo "    $source_name network error, retrying..."
+                else
+                    echo "    ✗ $source_name (network error)"
+                fi
+            else
+                # For non-network errors, fail silently since export may still work
+                return 1
+            fi
+        done
+        
+        return 1
+    }
+    
+    # Try Modrinth first (preferred)
+    if [[ -n "$modrinth_id" ]]; then
+        if try_add_with_retry "$PW modrinth add '$modrinth_id'" "MR"; then
+            return 0
+        fi
+    fi
+    
+    # Fallback to CurseForge
+    if [[ -n "$curseforge_id" ]]; then
+        # Try as project ID first, then as slug if that fails
+        if try_add_with_retry "$PW curseforge add '$curseforge_id'" "CF" || \
+           try_add_with_retry "$PW curseforge add '$slug'" "CF"; then
+            return 0
+        fi
+    fi
+    
+    # Always return success so script continues
+    return 0
+}
 
 echo "==> Core compute / storage / power"
-mr_add oc2r                         # OpenComputers 2: Reimagined (adds Markdown Manual dep)
-mr_add refined-storage              # Refined Storage
-mr_add extrastorage                 # RS addon
-mr_add storagedrawers               # correct MR slug (not storage-drawers)
-mr_add iron-chests
-mr_add mekanism
-mr_add mekanism-generators
-# cf_add laserio
-cf_add "ender-io" 6911764
-cf_add industrial-foregoing         # pulls Titanium dep
+add_mod "OpenComputers 2 Reimagined" "oc2r" "F1gm4RsH" "864686"           # Programmable computers with Lua
+add_mod "Refined Storage" "refined-storage" "KDvYkUg3" "243076"             # Digital storage system
+add_mod "Extra Storage" "extrastorage" "T34cBZKl" "404074"                 # RS addon for larger disks
+add_mod "Storage Drawers" "storagedrawers" "guitPqEi" "223852"              # Compact item storage blocks
+add_mod "Iron Chests" "iron-chests" "P3iIrPH3" "228756"                     # Upgraded chest variants
+add_mod "Mekanism" "mekanism" "Ce6I4WUE" "268560"                           # Tech mod with ore processing
+add_mod "Mekanism Generators" "mekanism-generators" "OFVYKsAk" "268566"   # Power generation for Mekanism
+add_mod "Ender IO" "ender-io" "enderio" "64578"                          # Conduits and advanced machines (beta but functional)
+add_mod "Industrial Foregoing" "industrial-foregoing" "industrial-foregoing" "266515"         # Automation and mob farming
 
 echo "==> World / magic / QoL"
-mr_add botania                      # pulls Curios + Patchouli
-mr_add biomes-o-plenty              # pulls TerraBlender + GlitchCore
-mr_add waystones                    # pulls Balm
-mr_add natures-compass
-# Locate structures (pair with Nature's Compass)
-mr_add "explorers-compass" || cf_add "explorers-compass"
-mr_add jei
-# JER (ore graphs in JEI)
-cf_add just-enough-resources-jer
-
-mr_add jade
-mr_add mouse-tweaks
-mr_add journeymap
-cf_add fast-leaf-decay
+add_mod "Botania" "botania" "pfjLUfGv" "225643"                             # Nature magic mod
+add_mod "Biomes O' Plenty" "biomes-o-plenty" "HXF82T3G" "220318"           # Additional biomes
+add_mod "Waystones" "waystones" "LOpKHB2A" "245755"                         # Fast travel waypoints
+add_mod "Nature's Compass" "natures-compass" "fPetb5Kh" "252848"            # Biome locator
+add_mod "Explorer's Compass" "explorers-compass" "RV1qfVQ8" "313536"       # Structure locator
+add_mod "Just Enough Items" "jei" "u6dRKJwZ" "238222"                       # Recipe viewer
+add_mod "Just Enough Resources" "just-enough-resources-jer" "just-enough-resources-jer" "240630"    # JEI addon for ore info
+add_mod "Jade" "jade" "nvQzSEkH" "324717"                                   # Block/entity info overlay
+add_mod "Mouse Tweaks" "mouse-tweaks" "aC3cM3Vq" "60089"                   # Inventory mouse improvements
+add_mod "JourneyMap" "journeymap" "lfHFW1mp" "32274"                       # Minimap and waypoints
+add_mod "Fast Leaf Decay" "fast-leaf-decay" "fld" "230976"                   # Faster tree cleanup
 
 echo "==> Immersive Engineering"
-cf_add immersive-engineering
+add_mod "Immersive Engineering" "immersive-engineering" "immersiveengineering" "231951"        # Multiblock machines and tech
 
 echo "==> Mystical Agriculture"
-mr_add cucumber                 # required library
-mr_add mystical-agriculture     # core mod
-# Optional late-game add-on:
-mr_add mystical-agradditions    # extra high-tier seeds
+add_mod "Cucumber Library" "cucumber" "cucumber" "272335"                           # Required library
+add_mod "Mystical Agriculture" "mystical-agriculture" "C95ReXie" "246640"  # Grow resources with crops
+add_mod "Mystical Agradditions" "mystical-agradditions" "pl0jGXIx" "256247" # Extra high-tier seeds
 
 echo "==> Inventory QoL: Dank-like storage & magnets"
-# Dank Null–style portable filtered storage:
-cf_add dank-storage
-
-# Backpack-based alternative with pickup/void/filter/magnet upgrades:
-mr_add sophisticated-backpacks
-
-# Simple vacuum block for early automation:
-mr_add item-collectors
+add_mod "Dank Storage" "dank-storage" "" "225469"                          # Portable filtered storage
+add_mod "Sophisticated Backpacks" "sophisticated-backpacks" "TyCTlI4b" "422301" # Advanced backpacks with upgrades
+add_mod "Item Collectors" "item-collectors" "y9vDr4Th" "330482"            # Vacuum blocks for automation
 
 echo "==> Mob farming utilities"
-cf_add mob-grinding-utils
+add_mod "Mob Grinding Utils" "mob-grinding-utils" "" "314906"             # Mob farm blocks and tools
 
 echo "==> RFTools"
-cf_add rftools-base
-cf_add rftools-builder
-cf_add rftools-control
-cf_add rftools-dimensions
-cf_add rftools-power
-cf_add rftools-storage
-cf_add rftools-utility
+add_mod "RFTools Base" "rftools-base" "rftools-base" "326041"                          # Core RFTools library
+add_mod "RFTools Builder" "rftools-builder" "rftools-builder" "275376"                    # Quarry and building tools
+add_mod "RFTools Control" "rftools-control" "rftools-control" "385194"                   # Computer control systems
+add_mod "RFTools Dimensions" "rftools-dimensions" "rftools-dimensions" "343887"              # Custom dimension creation
+add_mod "RFTools Power" "rftools-power" "rftools-power" "326043"                       # Power generation
+add_mod "RFTools Storage" "rftools-storage" "" "326045"                   # Modular storage system
+add_mod "RFTools Utility" "rftools-utility" "rftools-utility" "326044"                   # Utility blocks
 
 echo "==> Exploration / adventure"
-cf_add cucumber         # library
-cf_add iron-jetpacks    # tiered jetpacks
+add_mod "Cucumber Library" "cucumber" "cucumber" "272335"                           # Library (duplicate but needed)
+add_mod "Iron Jetpacks" "iron-jetpacks" "iron-jetpacks" "253560"                       # Tiered flight packs
 
 echo "==> Mining dimension"
-cf_add advanced-mining-dimension
+add_mod "Advanced Mining Dimension" "advanced-mining-dimension" "advanced-mining-dimension" "384976" # Separate mining world
 
-# Chisel-style decorative variants
-mr_add chipped || cf_add chipped
+add_mod "Chipped" "chipped" "BAscRYKm" "456956"                             # Decorative block variants
+add_mod "CodeChicken Lib 1.8" "codechicken-lib-1-8" "codechicken-lib" "242818"          # Legacy library
+add_mod "EnderStorage 1.8" "ender-storage-1-8" "ender-storage" "245174"               # Cross-dimensional storage
+add_mod "Flux Networks" "flux-networks" "" "248020"                       # Wireless power networks
 
-# EnderStorage (ender chests/tanks) + dependency
-cf_add codechicken-lib-1-8
-cf_add ender-storage-1-8
+echo "==> Core food/cooking"
+add_mod "Croptopia" "croptopia" "" "415438"                                 # Expanded food system
+add_mod "Farmer's Delight" "farmers-delight" "farmers-delight" "398521"                   # Enhanced farming and cooking
+add_mod "Cooking for Blockheads" "cooking-for-blockheads" "cooking-for-blockheads" "231484"     # Kitchen multiblocks
+add_mod "AppleSkin" "appleskin" "appleskin" "248787"                                # Food/hunger info overlay
+add_mod "Nether's Delight" "nethers-delight" "" "624489"                  # Nether-themed foods
+add_mod "End's Delight" "ends-delight" "" "638577"                         # End-themed foods
 
-# Wireless FE power networks (cross-dimension)
-cf_add flux-networks
+add_mod "Reap Mod" "reap" "NYHbcKK1" "225833"                               # Right-click crop harvesting
+add_mod "Snad" "snad" "" "319121"                                           # Faster cactus/sugarcane growth
 
-# Core food/cooking
-cf_add croptopia
-cf_add farmers-delight
-cf_add cooking-for-blockheads
-cf_add appleskin
-cf_add nethers-delight
-cf_add ends-delight
-
-# Right-click harvesting (Serilum) + required library
-mr_add reap || cf_add reap
-
-# Faster sugar cane/cactus growth
-cf_add snad
-
-# --- Thermal Series (1.20.1 Forge) ---
-# Required base
-cf_add cofh-core
-cf_add thermal-foundation
-
-# Machines (Magma Crucible, Fluid Transposer, Pulverizer, etc.)
-cf_add thermal-expansion
-
-# Nice-to-haves (optional)
-cf_add thermal-dynamics     # item/energy/fluid ducts
-cf_add thermal-integration  # extra recipes & cross-mod hooks
+echo "==> Thermal Series"
+add_mod "CoFH Core" "cofh-core" "cofh-core" "69162"                                  # Thermal foundation
+add_mod "Thermal Foundation" "thermal-foundation" "thermal-foundation" "222880"              # Base thermal mod
+add_mod "Thermal Expansion" "thermal-expansion" "thermal-expansion" "69163"                 # Machines and processing
+add_mod "Thermal Dynamics" "thermal-dynamics" "thermal-dynamics" "227443"                  # Ducts for items/energy/fluids
+add_mod "Thermal Integration" "thermal-integration" "thermal-integration" "291737"            # Cross-mod integration
 
 
 
 echo "==> Builder wands"
-cf_add construction-wand
-
+add_mod "Construction Wand" "construction-wand" "construction-wand" "284074"                 # Multi-block building tool
 
 echo "==> Tinkers"
-mr_add tinkers-construct            # pulls Mantle
+add_mod "Tinkers' Construct" "tinkers-construct" "rxIIYO6c" "74072"         # Tool crafting and customization
+add_mod "Tinkers Levelling Addon" "tinkers-levelling-addon" "" "644662"    # XP progression for tools
 
-# XP leveling for Tinkers tools (Forge 1.20.1)
-cf_add tinkers-levelling-addon
+add_mod "Torchmaster" "torchmaster" "torchmaster" "269849"                             # Torch placement and mob spawning control
 
-cf_add torchmaster
+echo "==> Mob synthesis (Hostile Neural Networks)"
+add_mod "Placebo" "placebo" "placebo" "283644"                                     # Required library
+add_mod "Hostile Neural Networks" "hostile-neural-networks" "" "377196"   # Mob data and simulation
 
-# === Mob synthesis (Hostile Neural Networks) ===
-cf_add placebo
-cf_add hostile-neural-networks
+echo "==> Draconic Evolution"
+add_mod "Draconic Evolution" "draconic-evolution" "nBqivi8H" "223565"       # End-game power and tools
+add_mod "Brandon's Core" "brandons-core" "brandons-core" "231382"                       # Required library
 
-# Draconic Evolution + required library
-mr_add draconic-evolution
-cf_add brandons-core
+echo "==> Forestry & bee genetics"
+add_mod "Forestry Community Edition" "forestry-community-edition" "2oORTOi2" "882938" # Trees and bees
+add_mod "Gendustry Community Edition" "gendustry-community-edition" "2zkSGMyK" "882940" # Advanced bee breeding
 
-# Forestry & bee genetics
-mr_add forestry-community-edition
-mr_add gendustry-community-edition
+echo "==> Quality of life additions"
+add_mod "Paragliders" "paragliders" "esqWA0aQ" "328301"                     # Hang gliders for exploration
+add_mod "mmmmmmmmmmmm" "mmmmmmmmmmmm" "fEhFRm5O" ""                        # Target dummy for combat testing
+add_mod "Clean Swing Through Grass" "clean-swing-through-grass" "" "386549" # Attack through plants
+add_mod "Cobble For Days" "cobblefordays" "hi71AUZ0" "351748"              # Tiered cobblestone generators
+add_mod "Compact Machines" "compact-machines" "" "224218"                  # Pocket dimension rooms
+add_mod "Easy Villagers" "easy-villagers" "easy-villagers" "400514"                     # Portable villager management
+add_mod "Easy Piglins" "easy-piglins" "easy-piglins" "398578"                          # Portable piglin bartering
+add_mod "FindMe" "findme" "rEuzehyH" "291936"                               # Highlight items in chests
+add_mod "FTB Backups 2" "ftb-backups-2" "" "309674"                        # Automatic world backups
 
-mr_add paragliders
+echo "==> FTB Teams + Chunkloading"
+add_mod "Architectury API" "architectury-api" "architectury-api" "419699"                   # Cross-platform mod library
+add_mod "FTB Library" "ftb-library-forge" "" "404465"                      # Core FTB functionality
+add_mod "FTB Teams" "ftb-teams-forge" "" "404468"                          # Team management system
+add_mod "FTB Chunks" "ftb-chunks-forge" "" "314906"                        # Chunk claiming and loading
+add_mod "FTB Essentials" "ftb-essentials" "" "386134"                      # Home/TPA commands
 
-mr_add "target-dummy"
+echo "==> Additional utilities"
+add_mod "Light Overlay" "light-overlay" "YfOlc91N" "325492"                 # Mob spawn light level overlay
+add_mod "Modular Routers" "modular-routers" "EuTS81Z3" "250294"            # Item routing and automation
+add_mod "Elevator Mod" "elevatormod" "hi2dSXTu" "250832"                   # Multi-floor elevators
+add_mod "Pylons" "pylons" "pylons" "219758"                                       # Wireless item transfer
 
-# Clean Swing Through Grass (hit through plants)
-mr_add "clean-swing-through-grass" || cf_add "clean-swing-through-grass"
+echo "==> Powah (Power system)"
+add_mod "Powah Rearchitected" "powah-rearchitected" "powah" "440979"             # Energy generation and storage
+add_mod "Cloth Config API" "cloth-config" "cloth-config" "348521"                      # Configuration library
+add_mod "GuideMe" "guideme" "Ck4E7v7R" "457134"                             # In-game guide system
 
-# Cobblegen alternative (tiers up to Netherite)
-mr_add "cobble-for-days" || cf_add "cobble-for-days"
+echo "==> Utility systems"
+add_mod "SuperMartijn642's Core Lib" "supermartijn642s-core-lib" "rOUBggPv" "454372" # Library
+add_mod "Trash Cans" "trash-cans" "4QrnfueM" "283995"                       # Disposal for items/fluids/energy
+add_mod "The Afterdark" "the-afterdark" "EjqfdsbN" "502372"                # Night-focused content
+add_mod "Controlling" "controlling" "xv94TkTM" "250398"                    # Keybind conflict management
 
-# Pocket dimensions for machines
-cf_add "compact-machines"
+echo "==> Core technology mods"
+add_mod "Crafting Station" "crafting-station" "25IAE8wS" "272407"           # Extended crafting table
+add_mod "Applied Energistics 2" "ae2" "XxWD5pD3" "223794"                 # Digital storage and autocrafting
+add_mod "Cyclic" "cyclic" "cyclic" "239286"                                       # Utility blocks and tools
 
-# Pick-up/trade/breed villagers in item form
-cf_add "easy-villagers"
-# Barter piglins the same way
-cf_add "easy-piglins"
+echo "==> Botany and Create"
+add_mod "Botany Pots" "botany-pots" "U6BUTZ7K" "400975"                     # Compact crop growing
+add_mod "Botany Trees" "botany-trees" "mvs7RoIW" "577420"                  # Tree growing in pots
+add_mod "Create" "create" "create" "328085"                                         # Mechanical contraptions
+add_mod "Create Ore Excavation" "create-ore-excavation" "" "724426"       # Large-scale mining
 
-# Highlight matching items in nearby chests
-mr_add "findme" || cf_add "findme"
-
-# Automatic world backups (1.20.1)
-mr_add "ftb-backups-2" || cf_add "ftb-backups-2"
-
-# --- FTB Teams + Chunkloading ---
-cf_add architectury-api         # dep (safe to add even if already present)
-cf_add ftb-library-forge        # core FTB library
-cf_add ftb-teams-forge          # required by Chunks (and AdminShop if it appears)
-cf_add ftb-chunks-forge         # claims + chunkloading UI
-# Homes/TPA commands
-cf_add ftb-essentials
-
-mr_add light-overlay
-
-mr_add modular-routers
-
-mr_add elevatormod
-
-cf_add pylons
-
-# --- Powah (Forge 1.20.1) + deps ---
-cf_add powah-rearchitected
-cf_add cloth-config
-cf_add guideme
-
-# Trash cans (items / fluids / energy)
-mr_add supermartijn642s-core-lib
-mr_add trash-cans
-
-mr_add the-afterdark
-
-# Keybind management (search + conflict highlight)
-mr_add controlling "Controlling" || cf_add controlling "Controlling"
-
-mr_add crafting-station
-
-mr_add ae2
-
-cf_add cyclic
-
-mr_add botany-pots
-mr_add botany-trees    # optional
-
-mr_add create
-cf_add create-ore-excavation
-
-cf_add ender-crop
-
-cf_add spice-of-life-carrot-edition
-
-cf_add inventory-sorter
-
-mr_add pipez
-
-# (Optional, larger catalog / higher tiers)
-cf_add allthecompressed
+echo "==> Specialized crops and storage"
+add_mod "Ender Crop" "ender-crop" "" "455826"                              # Teleporting crop items
+add_mod "Spice of Life: Carrot Edition" "spice-of-life-carrot-edition" "" "277616" # Food variety rewards
+add_mod "Inventory Sorter" "inventory-sorter" "" "327266"                 # Auto-sorting inventory
+add_mod "Pipez" "pipez" "iRmWy6ga" "443900"                                 # Simple item/fluid/energy pipes
+add_mod "AllTheCompressed" "allthecompressed" "" "317269"                 # Compressed storage blocks
 
 echo "==> Gravestones"
-mr_add gravestone
+add_mod "Gravestone Mod" "gravestone" "RYtXKJPr" "238551"                   # Death recovery system
 
 echo "==> Reactors"
-cf_add zerocore                     # correct CF slug for “ZeroCore 2”
-cf_add extreme-reactors
+add_mod "ZeroCore 2" "zerocore" "" "267602"                                # Multiblock reactor library
+add_mod "Extreme Reactors" "extreme-reactors" "" "250277"                  # Big Reactors successor
 
 echo "==> Mining QoL"
-cf_add ftb-library-forge
-cf_add ftb-ultimine-forge
+add_mod "FTB Library" "ftb-library-forge" "" "404465"                      # Library (duplicate)
+add_mod "FTB Ultimine" "ftb-ultimine-forge" "" "386135"                   # Veinmining functionality
 
 echo "==> Shaders / renderer"
-cf_add oculus
-cf_add embeddium                    # Do NOT add Rubidium
+add_mod "Oculus" "oculus" "oculus" "581495"                                       # Shader support for Forge
+add_mod "Embeddium" "embeddium" "embeddium" "908741"                                # Performance renderer (NOT Rubidium)
 
 echo "==> Refresh index"
 $PW refresh
