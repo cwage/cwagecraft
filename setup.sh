@@ -254,6 +254,10 @@ add_mod "Trash Cans" "trash-cans" "4QrnfueM" "283995"                       # Di
 add_mod "The Afterdark" "the-afterdark" "EjqfdsbN" "502372"                # Night-focused content
 add_mod "Controlling" "controlling" "xv94TkTM" "250398"                    # Keybind conflict management
 
+echo "==> Scripting support"
+add_mod "KubeJS" "kubejs" "umyGl7zF" "238086"                              # JavaScript-based mod scripting
+add_mod "Rhino" "rhino" "jyWGGJ1y" "416294"                                # JavaScript engine for KubeJS
+
 echo "==> Core technology mods"
 add_mod "Crafting Station" "crafting-station" "25IAE8wS" "272407"           # Extended crafting table
 add_mod "Applied Energistics 2" "ae2" "XxWD5pD3" "223794"                 # Digital storage and autocrafting
