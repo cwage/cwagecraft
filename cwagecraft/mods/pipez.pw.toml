@@ -1,0 +1,13 @@
+name = "Pipez"
+filename = "pipez-forge-1.20.1-1.2.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/iRmWy6ga/versions/Nel5AmIr/pipez-forge-1.20.1-1.2.21.jar"
+hash-format = "sha512"
+hash = "13844b8e1fa819f9b9237d499cfddf08a4cf5cc1f69223f238b05efd3dc171750809e75e5b76df7f412facc65b0931e8e5b414dfd2326099521813aa94fcf2b9"
+
+[update]
+[update.modrinth]
+mod-id = "iRmWy6ga"
+version = "Nel5AmIr"
