@@ -130,6 +130,7 @@ add_mod "Industrial Foregoing" "industrial-foregoing" "industrial-foregoing" "26
 echo "==> World / magic / QoL"
 add_mod "Botania" "botania" "pfjLUfGv" "225643"                             # Nature magic mod
 add_mod "Biomes O' Plenty" "biomes-o-plenty" "HXF82T3G" "220318"           # Additional biomes
+add_mod "Flat Bedrock" "flat-bedrock" "" "398623"                           # Flat bedrock generation for easier Grains of Infinity
 add_mod "Waystones" "waystones" "LOpKHB2A" "245755"                         # Fast travel waypoints
 add_mod "Nature's Compass" "natures-compass" "fPetb5Kh" "252848"            # Biome locator
 add_mod "Explorer's Compass" "explorers-compass" "RV1qfVQ8" "313536"       # Structure locator
