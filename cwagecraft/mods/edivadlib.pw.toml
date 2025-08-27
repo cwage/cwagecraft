@@ -1,0 +1,13 @@
+name = "EdivadLib"
+filename = "EdivadLib-1.20.1-2.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/a8Jk9kpK/versions/vN5I1S1f/EdivadLib-1.20.1-2.0.1.jar"
+hash-format = "sha512"
+hash = "1cfd9460c73fd7633bac7df8820f6a8c787a6cb7f28b4a847a4e80d078c87eed30bc54d1ebb68f0a2052a4d2deed97d610ee8d8ccc909b7dd7e87415e09bf104"
+
+[update]
+[update.modrinth]
+mod-id = "a8Jk9kpK"
+version = "vN5I1S1f"
