@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "minecraft:cobblestone"
+    }
+  ],
+  "result": {
+    "name": "tconstruct:writable"
+  },
+  "max_level": 1
+}

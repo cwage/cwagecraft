@@ -1,0 +1,15 @@
+# Tinkers Levelling Addon Configuration
+# Enable faster tool leveling for early game accessibility
+
+[general]
+# XP multiplier for tool leveling (default: 1.0)
+xp_multiplier = 1.5
+
+# Enable cheaper writable book alternative
+enable_cheap_writable = true
+
+# Bonus XP for mining blocks
+mining_xp_bonus = 1.2
+
+# Bonus XP for combat
+combat_xp_bonus = 1.2

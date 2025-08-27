@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "tag": "minecraft:planks"
+    }
+  ],
+  "result": {
+    "name": "tconstruct:writable"
+  },
+  "max_level": 1
+}
