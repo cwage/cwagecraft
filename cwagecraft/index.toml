@@ -17,24 +17,24 @@ file = "config/oculus.properties"
 hash = "a8230edabb98fbbe0b6a35a40fa85bb546c5a3334ae54e0721e0356b1bd6693e"
 
 [[files]]
-file = "config/openloader/data/frequent_draconium_ore/data/draconicevolution/worldgen/configured_feature/overworld_draconium_ore.json"
-hash = "4bae44a981e37a6c992e297c2a29166ea620d669d4a2eeac596ba7f03e0dadde"
-
-[[files]]
-file = "config/openloader/data/frequent_draconium_ore/data/draconicevolution/worldgen/placed_feature/overworld_draconium_ore_large.json"
-hash = "6fde661f907f22955083f3c1dbb82e4f327e11269054624063bc942f6c5fef2f"
-
-[[files]]
-file = "config/openloader/data/frequent_draconium_ore/data/draconicevolution/worldgen/placed_feature/overworld_draconium_ore_small.json"
-hash = "8653d52863d09910a3075f763c74519c4efa8012fc69f50eaa1e71e12745a5f8"
-
-[[files]]
 file = "config/openloader/data/frequent_draconium_ore/data/forge/biome_modifier/add_draconium_ore.json"
-hash = "4a4d93104bbdf7ac275b7c5edad98a4cb84fa252579fe7f1a169246376cdd4d0"
+hash = "cce6cd804b452d490689eb42b61f5a26ec93f89c062bb99a60f9e81bee071bd4"
 
 [[files]]
 file = "config/openloader/data/frequent_draconium_ore/data/forge/biome_modifier/add_draconium_ore_c.json"
-hash = "fd91735d7b39b6d1ae786840faa5a2b7e94011d394c4cc03c7efde3b106b3100"
+hash = "844fb8ac562649ac9d1f651df35f5e661fb1642f9e8e1b6c727dde5921681cf5"
+
+[[files]]
+file = "config/openloader/data/frequent_draconium_ore/data/frequent_draconium_ore/worldgen/configured_feature/overworld_draconium_ore.json"
+hash = "3825c4b52fc926e2581a9efe2d3ec0c153400847f60fe116584a1fb069c88d9b"
+
+[[files]]
+file = "config/openloader/data/frequent_draconium_ore/data/frequent_draconium_ore/worldgen/placed_feature/overworld_draconium_ore_large.json"
+hash = "14ff25f17a77f107be5012ea94b2b55b2f55868c284c9049d15e25728e734edd"
+
+[[files]]
+file = "config/openloader/data/frequent_draconium_ore/data/frequent_draconium_ore/worldgen/placed_feature/overworld_draconium_ore_small.json"
+hash = "ccb55bfd822c248d8699aa6bac9c125011dc17e121ebffe14aafb854eed50e7b"
 
 [[files]]
 file = "config/openloader/data/frequent_draconium_ore/pack.mcmeta"
