@@ -17,6 +17,26 @@ file = "config/oculus.properties"
 hash = "a8230edabb98fbbe0b6a35a40fa85bb546c5a3334ae54e0721e0356b1bd6693e"
 
 [[files]]
+file = "config/openloader/data/frequent_draconium_ore/data/draconicevolution/worldgen/configured_feature/overworld_draconium_ore.json"
+hash = "4bae44a981e37a6c992e297c2a29166ea620d669d4a2eeac596ba7f03e0dadde"
+
+[[files]]
+file = "config/openloader/data/frequent_draconium_ore/data/draconicevolution/worldgen/placed_feature/overworld_draconium_ore_large.json"
+hash = "a36208cb65515f568273f201aebfc63736da75f141b11440241a698e8368fe27"
+
+[[files]]
+file = "config/openloader/data/frequent_draconium_ore/data/draconicevolution/worldgen/placed_feature/overworld_draconium_ore_small.json"
+hash = "f3d91c029eaa43b87dae5a4ccef001dfa993621fd3bb2855ac14bf53442dd5cc"
+
+[[files]]
+file = "config/openloader/data/frequent_draconium_ore/data/forge/biome_modifier/add_draconium_ore.json"
+hash = "e58d433f1dc6297e427e027765de7afd62c7e2d6563b47145f1b98db5842cfbe"
+
+[[files]]
+file = "config/openloader/data/frequent_draconium_ore/pack.mcmeta"
+hash = "a1abb2fb6fc0acb876b7e113cc56b35611518df9df4591e080c53b0b3c399853"
+
+[[files]]
 file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/blood_island.json"
 hash = "e015b280f38b278100740fddee1699fe6a2e541e7d4648e037b38d23a7897068"
 
