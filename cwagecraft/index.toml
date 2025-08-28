@@ -1,6 +1,18 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "3e1f8656482c38c053f57b0f7221325827f8a3cb63044186798431aee3567473"
+
+[[files]]
+file = "config/defaultoptions/options.txt"
+hash = "19923594ac098f712057b4153294f2393f955f5fa3d35afe0dea8d6676d10cfe"
+
+[[files]]
+file = "config/ftb-ultimine-forge.toml"
+hash = "346e63db210e2a2bd87504728adbef9a782d86b1aa462fe34b35372aece5c405"
+
+[[files]]
 file = "config/oculus.properties"
 hash = "a8230edabb98fbbe0b6a35a40fa85bb546c5a3334ae54e0721e0356b1bd6693e"
 
@@ -65,8 +77,20 @@ file = "config/openloader/data/frequent_slime_islands/pack.mcmeta"
 hash = "d6236766bd54d110368f5cef57ef2f1dd6e18ce8fa04d6c444caf07bddbafc1e"
 
 [[files]]
-file = "defaultconfigs/options.txt"
-hash = "8a451efe6731c3753da3f2e2ac8cf4ceeb29f72fd3e003ef24e85e25d8111c0d"
+file = "config/openloader/data/ftb_ultimine_ores_only/data/ftbultimine/tags/blocks/block_whitelist.json"
+hash = "f2324c3bd1f267308b37f850b85680a3b279bc93834ce2c95d64ab6c2ba619a4"
+
+[[files]]
+file = "config/openloader/data/ftb_ultimine_ores_only/data/ftbultimine/tags/blocks/excluded_blocks.json"
+hash = "b3893f89ac5ee1ea34c14081bd817ecb9940c61f39e0c4342d0b9c4cf50d022e"
+
+[[files]]
+file = "config/openloader/data/ftb_ultimine_ores_only/pack.mcmeta"
+hash = "6728e13dc1323a6cea478f4f0b0ea8eb730232ef642845b10619a8ff12ac15cd"
+
+[[files]]
+file = "defaultconfigs/ftb-ultimine-forge.toml"
+hash = "a4d1f7501d81af76a804d181e80ac854fa904cf4484d7f108e67b5bfb50ca16b"
 
 [[files]]
 file = "mods/advanced-mining-dimension.pw.toml"
@@ -100,7 +124,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "94910057d9bf56c60c393a3cfe745f78c971005d74d9992462be7527c13315c2"
+hash = "03d143a3507e525e5553cab391fd8c4d27b445164dc299501dd1f2678fbfb23f"
 metafile = true
 
 [[files]]
@@ -224,6 +248,11 @@ hash = "d2c29a7e6aebacb12654cd31d533afd43da5b8a2e88169b5eef6db974bd9ba96"
 metafile = true
 
 [[files]]
+file = "mods/default-options.pw.toml"
+hash = "28c55ef9f5218480df984ad56a5c84b89c4ed144387c5dd7a7e0c7019c9947f7"
+metafile = true
+
+[[files]]
 file = "mods/draconic-evolution.pw.toml"
 hash = "bd39c958001bcdf13acd853692e21d57c34b199ffb5343a14f38eb657a84d65b"
 metafile = true
@@ -306,6 +335,11 @@ metafile = true
 [[files]]
 file = "mods/findme.pw.toml"
 hash = "f608b8ea0277a4a27e4f61f17ac689f9d2d105e5ebcd2b0893caa437fd576af4"
+metafile = true
+
+[[files]]
+file = "mods/flat-bedrock.pw.toml"
+hash = "ab3457be92e9835f4063fe5ad75bb49658680702f3d47278cdeb43e16a1ca800"
 metafile = true
 
 [[files]]
@@ -459,6 +493,11 @@ hash = "426fd37ec95797af16797632e70c63436ca12719c0adb16ffca931970a411ee2"
 metafile = true
 
 [[files]]
+file = "mods/mmmmmmmmmmmm.pw.toml"
+hash = "cb6a545e5739fc0e5df919fd60d729cb20634c9febd29b133eca4f172d90aa97"
+metafile = true
+
+[[files]]
 file = "mods/mob-grinding-utils.pw.toml"
 hash = "22ffca942573f1c39cc6c495122a31706a12eeb655c013c6c017aa1306ccaf7b"
 metafile = true
@@ -466,6 +505,11 @@ metafile = true
 [[files]]
 file = "mods/modular-routers.pw.toml"
 hash = "38eff2e2ce05f4d0a2f0bd8b53e0c71b39900ed530dcda25df28b2a84bbb217d"
+metafile = true
+
+[[files]]
+file = "mods/moonlight.pw.toml"
+hash = "43ab3490d87a5b72af0c1fc676e625985d68e7e453338acc7fd2558fb6a4bf6b"
 metafile = true
 
 [[files]]

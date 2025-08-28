@@ -1,0 +1,30 @@
+{
+    "values": [
+        "#minecraft:logs",
+        "#minecraft:leaves",
+        "#minecraft:planks", 
+        "#minecraft:crops",
+        "#minecraft:saplings",
+        "#minecraft:flowers",
+        "#minecraft:small_flowers",
+        "#minecraft:tall_flowers",
+        "#forge:dirt",
+        "#forge:stone",
+        "#forge:sand",
+        "#forge:gravel",
+        "#forge:cobblestone",
+        "minecraft:grass_block",
+        "minecraft:dirt",
+        "minecraft:stone",
+        "minecraft:cobblestone",
+        "minecraft:wheat",
+        "minecraft:carrots", 
+        "minecraft:potatoes",
+        "minecraft:beetroots",
+        "minecraft:melon",
+        "minecraft:pumpkin",
+        "minecraft:sugar_cane",
+        "minecraft:bamboo",
+        "minecraft:cactus"
+    ]
+}

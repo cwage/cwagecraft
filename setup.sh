@@ -11,39 +11,43 @@ MRPACK="$OUT_DIR/${PACK_NAME}.mrpack"
 PW="packwiz -y"
 
 echo "==> Reset"
-rm -rf "$PACK_DIR" "$MRPACK"
+rm -rf "$MRPACK"
 mkdir -p "$PACK_DIR"
 cd "$PACK_DIR"
 
-echo "==> Init pack ($MC_VERSION Forge $FORGE_VERSION)"
-# Retry packwiz init on network failures (TLS handshake timeouts, etc.)
-init_success=false
-for attempt in 1 2; do
-    if [[ $attempt -gt 1 ]]; then
-        echo "    Init attempt $attempt/2 (network error, retrying...)"
-        sleep 2
-    fi
-    
-    if $PW init \
-      --name "$PACK_NAME" \
-      --author "$AUTHOR" \
-      --version "1.0.0" \
-      --mc-version "$MC_VERSION" \
-      --modloader forge \
-      --forge-version "$FORGE_VERSION"; then
-        init_success=true
-        break
-    fi
-done
+if [[ ! -f "$PACK_DIR/pack.toml" ]]; then
+    echo "==> Init pack ($MC_VERSION Forge $FORGE_VERSION)"
+    # Retry packwiz init on network failures (TLS handshake timeouts, etc.)
+    init_success=false
+    for attempt in 1 2; do
+        if [[ $attempt -gt 1 ]]; then
+            echo "    Init attempt $attempt/2 (network error, retrying...)"
+            sleep 2
+        fi
+        
+        if $PW init \
+          --name "$PACK_NAME" \
+          --author "$AUTHOR" \
+          --version "1.0.0" \
+          --mc-version "$MC_VERSION" \
+          --modloader forge \
+          --forge-version "$FORGE_VERSION"; then
+            init_success=true
+            break
+        fi
+    done
 
-if [[ "$init_success" != "true" ]]; then
-    echo "ERROR: Failed to initialize pack after 2 attempts"
-    exit 1
+    if [[ "$init_success" != "true" ]]; then
+        echo "ERROR: Failed to initialize pack after 2 attempts"
+        exit 1
+    fi
+
+    echo "==> Accept MC $MC_VERSION family"
+    $PW settings acceptable-versions --add 1.20
+    $PW settings acceptable-versions --add 1.20.1
+else
+    echo "==> Pack already exists, skipping init"
 fi
-
-echo "==> Accept MC $MC_VERSION family"
-$PW settings acceptable-versions --add 1.20
-$PW settings acceptable-versions --add 1.20.1
 
 # Helper function - prefer Modrinth with CurseForge fallback with retry logic
 # Usage: add_mod "display-name" "slug" "modrinth-id" ["curseforge-id"]
@@ -130,6 +134,7 @@ add_mod "Industrial Foregoing" "industrial-foregoing" "industrial-foregoing" "26
 echo "==> World / magic / QoL"
 add_mod "Botania" "botania" "pfjLUfGv" "225643"                             # Nature magic mod
 add_mod "Biomes O' Plenty" "biomes-o-plenty" "HXF82T3G" "220318"           # Additional biomes
+add_mod "Flat Bedrock" "flat-bedrock" "" "398623"                           # Flat bedrock generation for easier Grains of Infinity
 add_mod "Waystones" "waystones" "LOpKHB2A" "245755"                         # Fast travel waypoints
 add_mod "Nature's Compass" "natures-compass" "fPetb5Kh" "252848"            # Biome locator
 add_mod "Explorer's Compass" "explorers-compass" "RV1qfVQ8" "313536"       # Structure locator
@@ -219,9 +224,10 @@ add_mod "Forestry Community Edition" "forestry-community-edition" "2oORTOi2" "88
 add_mod "Gendustry Community Edition" "gendustry-community-edition" "2zkSGMyK" "882940" # Advanced bee breeding
 
 echo "==> Quality of life additions"
+add_mod "Default Options" "default-options" "IWe7P9UP" "232131"            # Ship default options and keybindings
 add_mod "OpenLoader" "open-loader" "dWV6rGSH" "226447"                      # Automatic datapack/resource pack loading
 add_mod "Paragliders" "paragliders" "esqWA0aQ" "328301"                     # Hang gliders for exploration
-add_mod "mmmmmmmmmmmm" "mmmmmmmmmmmm" "fEhFRm5O" ""                        # Target dummy for combat testing
+add_mod "mmmmmmmmmmmm" "mmmmmmmmmmmm" "mmmmmmmmmmmm" ""                   # Target dummy for combat testing
 add_mod "Clean Swing Through Grass" "clean-swing-through-grass" "" "386549" # Attack through plants
 add_mod "Cobble For Days" "cobblefordays" "hi71AUZ0" "351748"              # Tiered cobblestone generators
 add_mod "Compact Machines" "compact-machines" "" "224218"                  # Pocket dimension rooms
@@ -289,58 +295,6 @@ add_mod "Embeddium" "embeddium" "embeddium" "908741"                            
 
 echo "==> Refresh index"
 $PW refresh
-
-echo "==> Copy pack assets"
-PACK_ASSETS_DIR="$OUT_DIR/pack-assets"
-if [[ -d "$PACK_ASSETS_DIR" ]]; then
-    echo "    Copying OpenLoader datapacks..."
-    if [[ -d "$PACK_ASSETS_DIR/config/openloader" ]]; then
-        mkdir -p "$PACK_DIR/config"
-        if [[ -d "$PACK_DIR/config/openloader" ]]; then
-            echo "    Warning: Existing OpenLoader config found in $PACK_DIR/config/openloader. Backing up to openloader.bak."
-            rm -rf "$PACK_DIR/config/openloader.bak"
-            mv "$PACK_DIR/config/openloader" "$PACK_DIR/config/openloader.bak"
-        fi
-        cp -r "$PACK_ASSETS_DIR/config/openloader" "$PACK_DIR/config/"
-    fi
-    
-    echo "    Copying datapacks..."
-    if [[ -d "$PACK_ASSETS_DIR/datapacks" ]]; then
-        cp -r "$PACK_ASSETS_DIR/datapacks" "$PACK_DIR/"
-    fi
-    
-    echo "    Copying config files (excluding openloader)..."
-    if [[ -d "$PACK_ASSETS_DIR/config" ]]; then
-        # Use rsync to exclude openloader directory to avoid double-copying
-        rsync -a --exclude='openloader' "$PACK_ASSETS_DIR/config/" "$PACK_DIR/config/" 2>/dev/null || {
-            # Fallback to manual copy if rsync is not available
-            echo "    rsync not available, using manual copy with exclusions..."
-            find "$PACK_ASSETS_DIR/config" -mindepth 1 -maxdepth 1 ! -name 'openloader' -exec cp -r {} "$PACK_DIR/config/" \;
-        }
-    fi
-    
-    echo "    Copying scripts..."
-    if [[ -d "$PACK_ASSETS_DIR/scripts" ]]; then
-        cp -r "$PACK_ASSETS_DIR/scripts" "$PACK_DIR/"
-    fi
-    
-    echo "    Copying resource packs..."
-    if [[ -d "$PACK_ASSETS_DIR/resourcepacks" ]]; then
-        cp -r "$PACK_ASSETS_DIR/resourcepacks" "$PACK_DIR/"
-    fi
-    
-    echo "    Copying shader packs..."
-    if [[ -d "$PACK_ASSETS_DIR/shaderpacks" ]]; then
-        cp -r "$PACK_ASSETS_DIR/shaderpacks" "$PACK_DIR/"
-    fi
-    
-    echo "    Copying default configs..."
-    if [[ -d "$PACK_ASSETS_DIR/defaultconfigs" ]]; then
-        cp -r "$PACK_ASSETS_DIR/defaultconfigs" "$PACK_DIR/"
-    fi
-else
-    echo "    No pack-assets directory found, skipping custom assets"
-fi
 
 echo "==> Export Modrinth pack (.mrpack)"
 $PW modrinth export --output "$MRPACK" --restrictDomains=false
