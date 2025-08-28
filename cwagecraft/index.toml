@@ -30,7 +30,7 @@ hash = "f3d91c029eaa43b87dae5a4ccef001dfa993621fd3bb2855ac14bf53442dd5cc"
 
 [[files]]
 file = "config/openloader/data/frequent_draconium_ore/data/forge/biome_modifier/add_draconium_ore.json"
-hash = "e58d433f1dc6297e427e027765de7afd62c7e2d6563b47145f1b98db5842cfbe"
+hash = "4a4d93104bbdf7ac275b7c5edad98a4cb84fa252579fe7f1a169246376cdd4d0"
 
 [[files]]
 file = "config/openloader/data/frequent_draconium_ore/pack.mcmeta"
