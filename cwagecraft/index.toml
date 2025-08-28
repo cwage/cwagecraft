@@ -90,11 +90,11 @@ hash = "6728e13dc1323a6cea478f4f0b0ea8eb730232ef642845b10619a8ff12ac15cd"
 
 [[files]]
 file = "config/openloader/data/lapis_luck_override/data/tconstruct/recipes/tools/modifiers/lapis.json"
-hash = "17c328fd977d66debaf10cce488d9978e3e105ffb17823ad90124dca5c393b64"
+hash = "061f608bc0e110d4b5f38d49186b19f3026cc13fd402a52d4cfc5ddbd11a0b3d"
 
 [[files]]
 file = "config/openloader/data/lapis_luck_override/data/tconstruct/tinkering/modifiers/lapis.json"
-hash = "5b9889fb05b06266d15197221012b6733ebafc122b47911463c6e89ebb32339b"
+hash = "56f2e33b8e00cec3533dc28c9a51ad03c5f0679a55740dbbe3e3c843230cba0e"
 
 [[files]]
 file = "config/openloader/data/lapis_luck_override/pack.mcmeta"
