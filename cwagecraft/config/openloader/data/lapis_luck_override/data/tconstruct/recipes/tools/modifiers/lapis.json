@@ -6,7 +6,7 @@
   "tools": {
     "tag": "tconstruct:modifiable/harvest"
   },
-  "result": "tconstruct:luck",
+  "result": "tconstruct:lapis",
   "needed_per_level": [3, 5, 7],
   "upgrade_slots": 1,
   "ability_slots": 0

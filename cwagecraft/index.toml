@@ -89,6 +89,18 @@ file = "config/openloader/data/ftb_ultimine_ores_only/pack.mcmeta"
 hash = "6728e13dc1323a6cea478f4f0b0ea8eb730232ef642845b10619a8ff12ac15cd"
 
 [[files]]
+file = "config/openloader/data/lapis_luck_override/data/tconstruct/recipes/tools/modifiers/lapis.json"
+hash = "17c328fd977d66debaf10cce488d9978e3e105ffb17823ad90124dca5c393b64"
+
+[[files]]
+file = "config/openloader/data/lapis_luck_override/data/tconstruct/tinkering/modifiers/lapis.json"
+hash = "5b9889fb05b06266d15197221012b6733ebafc122b47911463c6e89ebb32339b"
+
+[[files]]
+file = "config/openloader/data/lapis_luck_override/pack.mcmeta"
+hash = "386e0690cc229e38f41c1b67df21cab9dbd34994454962c49582c420f2035fbf"
+
+[[files]]
 file = "defaultconfigs/ftb-ultimine-forge.toml"
 hash = "a4d1f7501d81af76a804d181e80ac854fa904cf4484d7f108e67b5bfb50ca16b"
 
