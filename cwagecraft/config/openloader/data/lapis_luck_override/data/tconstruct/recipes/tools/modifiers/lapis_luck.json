@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "inputs": [
+    { "ingredient": [ { "item": "minecraft:lapis_lazuli" } ] },
+    { "ingredient": [ { "item": "minecraft:lapis_lazuli" } ] },
+    { "ingredient": [ { "item": "minecraft:lapis_lazuli" } ] }
+  ],
+  "level": 1,
+  "result": "tconstruct:luck",
+  "slots": { "upgrades": 1 },
+  "tools": [
+    { "tag": "tconstruct:modifiable/harvest" }
+  ]
+}
