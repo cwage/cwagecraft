@@ -295,8 +295,6 @@ add_mod "Embeddium" "embeddium" "embeddium" "908741"                            
 echo "==> Refresh index"
 $PW refresh
 
-echo "==> Configs and assets already in git, skipping pack-assets copy"
-
 echo "==> Export Modrinth pack (.mrpack)"
 $PW modrinth export --output "$MRPACK" --restrictDomains=false
 
