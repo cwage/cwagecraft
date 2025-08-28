@@ -338,6 +338,11 @@ hash = "f608b8ea0277a4a27e4f61f17ac689f9d2d105e5ebcd2b0893caa437fd576af4"
 metafile = true
 
 [[files]]
+file = "mods/flat-bedrock.pw.toml"
+hash = "ab3457be92e9835f4063fe5ad75bb49658680702f3d47278cdeb43e16a1ca800"
+metafile = true
+
+[[files]]
 file = "mods/flib.pw.toml"
 hash = "ec9b48d07fdb821f60236006aeb33bb129abcee2ba044611a4758e31b2fa0bca"
 metafile = true
