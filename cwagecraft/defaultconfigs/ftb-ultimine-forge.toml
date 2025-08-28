@@ -1,0 +1,12 @@
+# FTB Ultimine Forge Default Configuration
+# This restricts ultimine functionality to preserve game balance
+
+[server]
+	# Require a proper tool (pickaxe for ores, etc.)
+	require_tool = true
+	
+	# Maximum blocks that can be ultimined at once
+	max_blocks = 64
+	
+	# Cooldown between ultimine operations (in ticks, 0 = no cooldown)
+	ultimine_cooldown = 10
