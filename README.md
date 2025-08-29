@@ -24,6 +24,14 @@ This modpack includes **Complementary Unbound r5.5.1** shader pack by Complement
 2. Import into Prism Launcher, MultiMC, or similar launcher
 3. Launch and enjoy!
 
+## Custom Configurations
+
+### Tinkers' Construct Early Levelling
+This modpack includes a custom datapack that provides an early-game recipe for making tools improvable:
+- **Recipe**: 5 Flint + Tinker Anvil → Improvable modifier
+- **Purpose**: Allows tool levelling progression without requiring expensive materials
+- **Location**: `config/openloader/data/tla_early_leveling/`
+
 ## Attribution
 
 - **Complementary Unbound Shaders**: Created by Complementary Development (https://www.complementary.dev/shaders/)
