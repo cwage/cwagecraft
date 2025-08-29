@@ -18,6 +18,9 @@
         "#forge:ores/zinc",
         "#forge:ores/osmium",
         "#forge:ores/fluorite",
+        "#forge:ores/yellorite",
+        "bigreactors:yellorite_ore",
+        "bigreactors:deepslate_yellorite_ore",
         "minecraft:nether_gold_ore",
         "minecraft:nether_quartz_ore",
         "minecraft:ancient_debris"
