@@ -117,6 +117,14 @@ file = "config/openloader/data/lapis_luck_override/pack.mcmeta"
 hash = "a429284157b8636fc947e7536ad04485b06e4acb44893fabd7cc542bcb1c75c8"
 
 [[files]]
+file = "config/openloader/data/tla_early_leveling/data/tinkerslevellingaddon/recipes/tools/modifiers/ability/improvable_flint.json"
+hash = "43622d5c75fbd0f47bf93c53bb46b2664dd89b5201cc08b420d27ff224ccd2e7"
+
+[[files]]
+file = "config/openloader/data/tla_early_leveling/pack.mcmeta"
+hash = "2c066e13c7f51bf26d0d605a4fececbc8af175d7a2606ac496d0ff25a3aff0f3"
+
+[[files]]
 file = "defaultconfigs/ftb-ultimine-forge.toml"
 hash = "a4d1f7501d81af76a804d181e80ac854fa904cf4484d7f108e67b5bfb50ca16b"
 
