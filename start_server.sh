@@ -205,16 +205,28 @@ setup_mods() {
 setup_configs() {
     log_info "Setting up server configurations..."
     
+    config_count=0
+    
     # Copy config files if they exist
     if [[ -d "$PACK_NAME/config" ]]; then
         cp -r "$PACK_NAME/config" "$SERVER_DIR/"
-        log_success "Config files copied"
+        config_files=$(find "$PACK_NAME/config" -type f | wc -l)
+        config_count=$((config_count + config_files))
+        log_success "Config files copied ($config_files files)"
     fi
     
     # Copy defaultconfigs if they exist
     if [[ -d "$PACK_NAME/defaultconfigs" ]]; then
         cp -r "$PACK_NAME/defaultconfigs" "$SERVER_DIR/"
-        log_success "Default config files copied"
+        default_config_files=$(find "$PACK_NAME/defaultconfigs" -type f | wc -l)
+        config_count=$((config_count + default_config_files))
+        log_success "Default config files copied ($default_config_files files)"
+    fi
+    
+    if [[ $config_count -eq 0 ]]; then
+        log_warning "No config files found to copy"
+    else
+        log_success "Total configuration files: $config_count"
     fi
 }
 
@@ -300,10 +312,28 @@ EOF
 start_server() {
     log_info "Starting cwagecraft server..."
     log_info "JVM Args: $JVM_ARGS"
+    
+    # Check if server jar exists
+    if [[ ! -f "$SERVER_DIR/$SERVER_JAR" ]]; then
+        log_error "Server jar not found: $SERVER_DIR/$SERVER_JAR"
+        log_error "Please run './start_server.sh setup' first"
+        exit 1
+    fi
+    
     log_info "Server will start in 3 seconds..."
     sleep 3
     
     cd "$SERVER_DIR"
+    
+    # Create start script for easier manual restarts
+    cat > start.sh << EOF
+#!/bin/bash
+java $JVM_ARGS -jar "$SERVER_JAR" nogui
+EOF
+    chmod +x start.sh
+    
+    log_info "Server starting... Press Ctrl+C to stop"
+    log_info "You can also restart manually with: cd $SERVER_DIR && ./start.sh"
     
     # Start server with optimized JVM arguments
     exec java $JVM_ARGS -jar "$SERVER_JAR" nogui
@@ -395,12 +425,42 @@ case "${1:-start}" in
         log_success "Analysis complete"
         set -e  # Re-enable exit on error
         ;;
+    "version"|"info")
+        echo "cwagecraft Dedicated Server Script"
+        echo "=================================="
+        echo "Pack: $PACK_NAME"
+        echo "Minecraft: $MC_VERSION"
+        echo "Forge: $FORGE_VERSION"
+        echo "Server jar: $SERVER_JAR"
+        echo "Forge installer: $FORGE_INSTALLER"
+        echo
+        echo "Download URL: $FORGE_DOWNLOAD_URL"
+        echo
+        if [[ -d "$SERVER_DIR" ]]; then
+            echo "Server directory: EXISTS"
+            if [[ -f "$SERVER_DIR/$SERVER_JAR" ]]; then
+                echo "Server jar: INSTALLED"
+            else
+                echo "Server jar: NOT INSTALLED"
+            fi
+            
+            if [[ -d "$SERVER_DIR/mods" ]]; then
+                mod_count=$(find "$SERVER_DIR/mods" -name "*.jar" | wc -l)
+                echo "Mods installed: $mod_count"
+            else
+                echo "Mods: NOT INSTALLED"
+            fi
+        else
+            echo "Server directory: NOT EXISTS"
+        fi
+        ;;
     *)
-        echo "Usage: $0 [setup|start|clean|test]"
-        echo "  setup  - Only setup the server, don't start it"
-        echo "  start  - Setup (if needed) and start the server (default)"
-        echo "  clean  - Remove server directory and exported modpack"
-        echo "  test   - Show mod compatibility analysis (dry run)"
+        echo "Usage: $0 [setup|start|clean|test|version]"
+        echo "  setup    - Only setup the server, don't start it"
+        echo "  start    - Setup (if needed) and start the server (default)"
+        echo "  clean    - Remove server directory and exported modpack"
+        echo "  test     - Show mod compatibility analysis (dry run)"
+        echo "  version  - Show version information and server status"
         exit 1
         ;;
 esac

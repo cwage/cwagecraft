@@ -66,7 +66,31 @@ java -version  # Verify installation shows Java 17+
    
    # Or setup and start in one command
    ./start_server.sh
+   
+   # Test mod compatibility without setup
+   ./start_server.sh test
    ```
+
+#### Script Commands
+
+The `start_server.sh` script supports multiple operations:
+
+- `./start_server.sh` or `./start_server.sh start` - Setup and start server
+- `./start_server.sh setup` - Only setup server without starting  
+- `./start_server.sh test` - Analyze mod compatibility (dry run)
+- `./start_server.sh clean` - Remove server files and start fresh
+- `./start_server.sh version` - Show version and server status information
+
+**Script Features:**
+- Automatically downloads Forge server installer
+- Filters and downloads only server-compatible mods (121 mods)
+- Excludes client-only mods (9 mods: shaders, overlays, UI enhancements)
+- Sets up optimized JVM arguments for server performance
+- Configures server.properties with sensible defaults
+- Accepts EULA automatically
+- Copies all mod configurations and datapacks
+- Provides colored output and progress tracking
+- Includes retry logic for failed downloads
 
 #### Firewall Configuration
 
@@ -135,6 +159,20 @@ java -Xms4G -Xmx8G -XX:+UseG1GC [... other JVM args] -jar forge-1.20.1-47.3.22.j
 - Server logs: `server/logs/latest.log`
 - Check server status: Look for "Done" message in logs
 - Monitor performance: Use `htop` or `top` to watch CPU/RAM usage
+
+**Configuration Customization:**
+- Edit `server/server.properties` to customize server settings
+- Modify JVM arguments in `start_server.sh` for your hardware
+- Server configs are in `server/config/` directory
+
+**Backup Recommendations:**
+```bash
+# Backup server world and configs
+tar -czf backup-$(date +%Y%m%d-%H%M%S).tar.gz server/world server/config
+
+# Restore from backup
+tar -xzf backup-YYYYMMDD-HHMMSS.tar.gz
+```
 
 ## Custom Configurations
 
