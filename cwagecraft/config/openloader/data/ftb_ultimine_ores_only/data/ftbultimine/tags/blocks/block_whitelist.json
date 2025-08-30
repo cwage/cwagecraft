@@ -23,6 +23,7 @@
         "bigreactors:deepslate_yellorite_ore",
         "minecraft:nether_gold_ore",
         "minecraft:nether_quartz_ore",
-        "minecraft:ancient_debris"
+        "minecraft:ancient_debris",
+        "minecraft:glowstone"
     ]
 }
