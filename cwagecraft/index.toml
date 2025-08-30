@@ -78,7 +78,7 @@ hash = "d6236766bd54d110368f5cef57ef2f1dd6e18ce8fa04d6c444caf07bddbafc1e"
 
 [[files]]
 file = "config/openloader/data/ftb_ultimine_ores_only/data/ftbultimine/tags/blocks/block_whitelist.json"
-hash = "f2324c3bd1f267308b37f850b85680a3b279bc93834ce2c95d64ab6c2ba619a4"
+hash = "a550c0711cd1cb728d4deeb3de4ffb2083f38ebc0f427431e87f6a0d94115371"
 
 [[files]]
 file = "config/openloader/data/ftb_ultimine_ores_only/data/ftbultimine/tags/blocks/excluded_blocks.json"
@@ -440,7 +440,7 @@ metafile = true
 
 [[files]]
 file = "mods/guideme.pw.toml"
-hash = "1635aa0e0df9d27f22de030955c8690061970abe26e3e913c4d950227aba4916"
+hash = "4fae5700ea63683044764c374f8651bb60c29e8bea465417d61998421724de5c"
 metafile = true
 
 [[files]]
