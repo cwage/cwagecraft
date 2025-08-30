@@ -17,6 +17,34 @@ file = "config/oculus.properties"
 hash = "a8230edabb98fbbe0b6a35a40fa85bb546c5a3334ae54e0721e0356b1bd6693e"
 
 [[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/README.md"
+hash = "991b32137ec52531f25da17af6060ca4e48ea40cb4b61f53930efcd1fc51d6ab"
+
+[[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/data/cyclic/recipes/cobblestone_1x.json"
+hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
+
+[[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/data/cyclic/recipes/cobblestone_compressed.json"
+hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
+
+[[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/data/cyclic/recipes/compressed_blocks_cobblestone.json"
+hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
+
+[[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/data/cyclic/recipes/compressed_cobble.json"
+hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
+
+[[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/data/cyclic/recipes/compressed_cobblestone.json"
+hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
+
+[[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/pack.mcmeta"
+hash = "415696a16c5e174aa477da502519740dfd1ef5292fe930d60103a34d5ace35fe"
+
+[[files]]
 file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/blood_island.json"
 hash = "e015b280f38b278100740fddee1699fe6a2e541e7d4648e037b38d23a7897068"
 
