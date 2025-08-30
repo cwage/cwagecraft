@@ -17,6 +17,22 @@ file = "config/oculus.properties"
 hash = "a8230edabb98fbbe0b6a35a40fa85bb546c5a3334ae54e0721e0356b1bd6693e"
 
 [[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/data/cyclic/recipes/cobblestone_compressed.json"
+hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
+
+[[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/data/cyclic/recipes/compressed_cobble.json"
+hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
+
+[[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/data/cyclic/recipes/compressed_cobblestone.json"
+hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
+
+[[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/pack.mcmeta"
+hash = "415696a16c5e174aa477da502519740dfd1ef5292fe930d60103a34d5ace35fe"
+
+[[files]]
 file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/blood_island.json"
 hash = "e015b280f38b278100740fddee1699fe6a2e541e7d4648e037b38d23a7897068"
 
@@ -78,7 +94,7 @@ hash = "d6236766bd54d110368f5cef57ef2f1dd6e18ce8fa04d6c444caf07bddbafc1e"
 
 [[files]]
 file = "config/openloader/data/ftb_ultimine_ores_only/data/ftbultimine/tags/blocks/block_whitelist.json"
-hash = "f2324c3bd1f267308b37f850b85680a3b279bc93834ce2c95d64ab6c2ba619a4"
+hash = "0923079f130ad7aabf3247303b1d4fff5d6d18a855775e11b52fe34bc00dc01a"
 
 [[files]]
 file = "config/openloader/data/ftb_ultimine_ores_only/data/ftbultimine/tags/blocks/excluded_blocks.json"

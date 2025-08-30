@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "cwagecraft: Disable Cyclic compressed cobblestone recipe to prevent conflicts with AllTheCompressed"
+  }
+}
