@@ -140,6 +140,9 @@ add_mod "Nature's Compass" "natures-compass" "fPetb5Kh" "252848"            # Bi
 add_mod "Explorer's Compass" "explorers-compass" "RV1qfVQ8" "313536"       # Structure locator
 add_mod "Just Enough Items" "jei" "u6dRKJwZ" "238222"                       # Recipe viewer
 add_mod "Just Enough Resources" "just-enough-resources-jer" "just-enough-resources-jer" "240630"    # JEI addon for ore info
+add_mod "Just Enough Resources Profiler (JEARGH)" "just-enough-resources-profiler-jeargh" "UL1ioLJO" "865827"    # JER profiling command
+add_mod "Rhino" "rhino" "rhino" "416294"                                     # JavaScript engine for KubeJS
+add_mod "KubeJS" "kubejs" "umyGSfug" "238086"                               # Server scripting for automation
 add_mod "Jade" "jade" "nvQzSEkH" "324717"                                   # Block/entity info overlay
 add_mod "Mouse Tweaks" "mouse-tweaks" "aC3cM3Vq" "60089"                   # Inventory mouse improvements
 add_mod "JourneyMap" "journeymap" "lfHFW1mp" "32274"                       # Minimap and waypoints
