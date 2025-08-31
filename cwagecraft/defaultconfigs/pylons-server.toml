@@ -1,0 +1,5 @@
+# Pylons server configuration for new worlds
+# Disables tool requirement for harvester pylons
+
+[harvester_pylon]
+harvesterRequiresTool = false

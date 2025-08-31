@@ -177,8 +177,12 @@ file = "defaultconfigs/ftb-ultimine-forge.toml"
 hash = "a4d1f7501d81af76a804d181e80ac854fa904cf4484d7f108e67b5bfb50ca16b"
 
 [[files]]
+file = "defaultconfigs/pylons-server.toml"
+hash = "41283e5a5c8c99599502ff45aed4a8b31b2673f8fef92b7b0e26ad62d2e34271"
+
+[[files]]
 file = "kubejs/client_scripts/jei_fusion_unhide.js"
-hash = "730d6e3daa6670112ea0f473565e223eb6d460579869ad6ebabc3ff629a82f1d"
+hash = "a9794c0a78d62d3f628052aef13ca1b609dd64e28de7173c321472cccbfc9b0a"
 
 [[files]]
 file = "mods/advanced-mining-dimension.pw.toml"
