@@ -1,0 +1,8 @@
+# Pylons server configuration for new worlds
+# Enables RF/FE power requirement for harvester pylons
+
+[harvester_pylon]
+harvesterRequiresPower = true     # use FE instead of a hoe
+harvesterPowerCost = 5            # FE per block (tune to taste)
+harvesterPowerBuffer = 1000       # default is fine (must be > cost * 80)
+harvesterRequiresTool = false     # optional; power mode ignores tools anyway
