@@ -220,6 +220,7 @@ add_mod "Hostile Neural Networks" "hostile-neural-networks" "" "377196"   # Mob 
 echo "==> Draconic Evolution"
 add_mod "Draconic Evolution" "draconic-evolution" "nBqivi8H" "223565"       # End-game power and tools
 add_mod "Brandon's Core" "brandons-core" "brandons-core" "231382"                       # Required library
+add_mod "Draconic Additions" "draconicadditions" "" "314515"             # Adds missing chaotic/awakened armor
 
 echo "==> Forestry & bee genetics"
 add_mod "Forestry Community Edition" "forestry-community-edition" "2oORTOi2" "882938" # Trees and bees

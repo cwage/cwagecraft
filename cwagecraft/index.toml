@@ -177,6 +177,10 @@ file = "defaultconfigs/ftb-ultimine-forge.toml"
 hash = "a4d1f7501d81af76a804d181e80ac854fa904cf4484d7f108e67b5bfb50ca16b"
 
 [[files]]
+file = "kubejs/client_scripts/jei_fusion_unhide.js"
+hash = "730d6e3daa6670112ea0f473565e223eb6d460579869ad6ebabc3ff629a82f1d"
+
+[[files]]
 file = "mods/advanced-mining-dimension.pw.toml"
 hash = "3de26a366ac7bc92c1b717da3308317b7ddef0e030b1f4826c4116659e5efa90"
 metafile = true
@@ -248,7 +252,7 @@ metafile = true
 
 [[files]]
 file = "mods/brandons-core.pw.toml"
-hash = "b6d8fef872aac09946c194edf3684b64af1a70e150f3703e380676e4f938c982"
+hash = "dcfcb5a0d4132f1baa0f66e824531d1bbcb77c1b7ca2b5d3497514e233564dd8"
 metafile = true
 
 [[files]]
@@ -269,6 +273,11 @@ metafile = true
 [[files]]
 file = "mods/cobblefordays.pw.toml"
 hash = "0156f093b5a9e07cba491de843e23c84bfb546b6a032ed5c3b364ede2ec15d1f"
+metafile = true
+
+[[files]]
+file = "mods/codechicken-lib-1-8.pw.toml"
+hash = "f88db7aef79947669ba4d736cc2f352a2269eb21770d5597d306c3017ea126dc"
 metafile = true
 
 [[files]]
@@ -328,7 +337,7 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
-hash = "9eefd607e0d54ec444e798ccdeede1a09a3939440bd1e11c11b84c07a5134be2"
+hash = "1315cd56b0b4a5b3d53374cebf4f1f3cd0546b05058740847bd226c1d1ccab39"
 metafile = true
 
 [[files]]
@@ -348,7 +357,12 @@ metafile = true
 
 [[files]]
 file = "mods/draconic-evolution.pw.toml"
-hash = "bd39c958001bcdf13acd853692e21d57c34b199ffb5343a14f38eb657a84d65b"
+hash = "2ded5af656d072e9d4f33fa02687639b7fe3d3bcd289cd0d161299d7c6d117df"
+metafile = true
+
+[[files]]
+file = "mods/draconicadditions.pw.toml"
+hash = "0f5551b76857fc9f170270c30f04ad7d423911fdd5732c668aee4fec0404f485"
 metafile = true
 
 [[files]]
