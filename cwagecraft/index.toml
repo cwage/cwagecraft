@@ -568,7 +568,7 @@ metafile = true
 
 [[files]]
 file = "mods/light-overlay.pw.toml"
-hash = "ec1dbea2c473bfd08357e3a31745ba28046debee77242e9c401169ddbc88bcd3"
+hash = "0b9e11096e44f7fe230e3578ddf5d898c0c29bbeeb00cc09026de6eae695b0c3"
 metafile = true
 
 [[files]]
