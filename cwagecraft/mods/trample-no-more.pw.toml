@@ -1,0 +1,13 @@
+name = "Trample No More"
+filename = "TrampleNoMore-Forge-1.20.1-13.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5327dea64d4b7885a0c893fa4c3766cdd193aa77"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5127309
+project-id = 377313

@@ -192,6 +192,8 @@ add_mod "End's Delight" "ends-delight" "" "638577"                         # End
 
 add_mod "Reap Mod" "reap" "NYHbcKK1" "225833"                               # Right-click crop harvesting
 add_mod "Snad" "snad" "" "319121"                                           # Faster cactus/sugarcane growth
+add_mod "Bookshelf" "bookshelf" "" "228525"                                 # Library for Trample No More
+add_mod "Trample No More" "trample-no-more" "" "377313"                     # Farmland trampling protection
 
 echo "==> Thermal Series"
 add_mod "CoFH Core" "cofh-core" "cofh-core" "69162"                                  # Thermal foundation
