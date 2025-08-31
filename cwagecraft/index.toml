@@ -145,6 +145,22 @@ file = "config/openloader/data/lapis_luck_override/pack.mcmeta"
 hash = "a429284157b8636fc947e7536ad04485b06e4acb44893fabd7cc542bcb1c75c8"
 
 [[files]]
+file = "config/openloader/data/no_trample_boots/data/tramplenomore/tags/items/soft_boots.json"
+hash = "63601a1a067a7f980828e74001271562aab13dc5f2cc63b372973585102dda15"
+
+[[files]]
+file = "config/openloader/data/no_trample_boots/pack.mcmeta"
+hash = "25020c506b7f81dae34beef4e236f94e5149770a2c4e52b8d3b61682d677376d"
+
+[[files]]
+file = "config/openloader/data/no_trample_players/data/tramplenomore/tags/entity_types/prevent_trampling.json"
+hash = "7aa6b34bf766caaa1b2ca423480afeb0d4da98cf7777c4d3ff1e3d40f5822790"
+
+[[files]]
+file = "config/openloader/data/no_trample_players/pack.mcmeta"
+hash = "202ebeded6c3c05018ecbac218e797d2ff05552b9d10c2bbf3d3329565e282fa"
+
+[[files]]
 file = "config/openloader/data/tla_early_leveling/data/tinkerslevellingaddon/recipes/tools/modifiers/ability/improvable_flint.json"
 hash = "43622d5c75fbd0f47bf93c53bb46b2664dd89b5201cc08b420d27ff224ccd2e7"
 
@@ -154,7 +170,7 @@ hash = "2c066e13c7f51bf26d0d605a4fececbc8af175d7a2606ac496d0ff25a3aff0f3"
 
 [[files]]
 file = "config/tramplenomore.json"
-hash = "b1ad4561a6c77713332d1efb88a11e54de7390108cf4c86cfe64a573a168368f"
+hash = "39a0e15b06832db57710a1e76682c47254498052c3ec7d5969034775163d01fa"
 
 [[files]]
 file = "defaultconfigs/ftb-ultimine-forge.toml"

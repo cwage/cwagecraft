@@ -1,7 +1,7 @@
 {
-  "featherFalling": false,
-  "taggedItems": false,
-  "taggedEntities": false,
+  "featherFalling": true,
+  "taggedItems": true,
+  "taggedEntities": true,
   "creativeMode": true,
   "barefoot": true
 }
