@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:leather_boots",
+    "mekanism:free_runners",
+    "enderio:dark_steel_boots"
+  ]
+}

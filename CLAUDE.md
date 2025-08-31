@@ -18,7 +18,7 @@ This is a Minecraft modpack repository using Packwiz for mod management. The mod
 - **View Pack Info**: `packwiz -y status` - Shows pack status and mod count
 - **Export Pack**: `packwiz -y modrinth export --output cwagecraft.mrpack --restrictDomains=false`
 
-**CRITICAL**: Never use `packwiz add`, `packwiz remove`, or `packwiz refresh` commands directly. The setup.sh script is the single source of truth and handles all pack modifications.
+**CRITICAL**: Never use `packwiz add`, `packwiz remove`, or `packwiz refresh` commands directly. The setup.sh script is the single source of truth and handles all pack modifications. ONLY use packwiz commands for debugging/investigation - ALL modifications must go through setup.sh.
 
 ### Mod Management Helper Functions (from setup.sh)
 - `mr_add()` - Adds mods from Modrinth with logging
@@ -69,3 +69,8 @@ Each mod has a `.pw.toml` file containing:
 1. **Modify pack**: Edit setup.sh → Run `./setup.sh`
 2. **Query pack**: Use `packwiz -y list` or similar informational commands
 3. **Never**: Use `packwiz add/remove` or modify .pw.toml files directly
+
+## Critical Success Validation
+- **ALWAYS check exit status**: The setup.sh script needs better exit status handling on failures
+- **ALWAYS validate cwagecraft.mrpack**: If this file is 0 bytes after running setup.sh, the build has failed
+- **Licensing failures**: Some mods have licensing restrictions that prevent export - check for manual download warnings in setup.sh output
