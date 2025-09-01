@@ -45,6 +45,134 @@ file = "config/openloader/data/cyclic_recipe_fixes/pack.mcmeta"
 hash = "415696a16c5e174aa477da502519740dfd1ef5292fe930d60103a34d5ace35fe"
 
 [[files]]
+file = "config/openloader/data/enderio_recipe_additions/README.md"
+hash = "f82cce7ea75efeeadfb56099cd950a5bee5720d7a35d6af117232b2e8d125f4e"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/beef_cooking.json"
+hash = "524ff041725d24ccec69f9c5583dd9a9fed0f3a7e86c03f242406a4458f79233"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/chicken_cooking.json"
+hash = "870b5a318ab08c78124387495e58da8184dbb5a1012a5678dc6a7a794aeba166"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/cobblestone_to_stone.json"
+hash = "efd88c7b801b20f56828288be91a327881002490f1fc20cd730ffb52d1e90d55"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/porkchop_cooking.json"
+hash = "031f8a4e15f08067f7d245b30fa0097227339e5f3202e29bfd63eeea1be1bb96"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_aluminum_smelting.json"
+hash = "9c0d18ee4d18ba7f5d6b4b72ccc438c73dea6fd9367fe426ff7408f91cdf0714"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_copper_smelting.json"
+hash = "9a79d2a3a20c01610a76046bfeb5f2b066e1e25b3370773f5ae7e80f45a5297d"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_gold_smelting.json"
+hash = "ee0692d9f609d2f9a4101fc915366ddec0ab81e1a4e22cc9034029afb29bff69"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_iron_smelting.json"
+hash = "e6b4a29443e4bade90cd016281d93d8880f7c557219093e0d18783ba254bd4c4"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_lead_smelting.json"
+hash = "780a11d61084f88ae555f82278f22fca24405707de58c57287ced6d333de3b62"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_nickel_smelting.json"
+hash = "946439f5f8d8a8810c1ee63c0dacd0fc74337d3230f213c2b3d863e73a5a87bd"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_silver_smelting.json"
+hash = "91538a15f19f41eb2bb4e9165b96639de027ce013deed795fe7391a79ea391e1"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_tin_smelting.json"
+hash = "e2f4e1cf3f37d227f2da2ee405190115a1fcbe0a21bdfffadc47985f355faf5e"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_uranium_smelting.json"
+hash = "b8b24da37ab16c78807df7fdc2faba5d0e68f67dbcaa3a08e885cc53776aa8e7"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/sandstone_to_smooth.json"
+hash = "b49ff427d8cf0363f23a68de27307082133327a31fd35f0725c5cfb73b47922d"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/stone_to_smooth.json"
+hash = "9c8cccc9132b950c9d0b4c4e9f5ffa59e3189f75ed5155f85178cf730f2fc23e"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/aluminum_ingot.json"
+hash = "ea7f7cf70074f934302e72c05a7c75df1370c6279e1b29d0fb2fc974d5fed396"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/charcoal_dust.json"
+hash = "757bd2f3a97de7b28cfcc34a43262ee8adcde4937a0048c24e98ffa4628d9b5f"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/coal_dust.json"
+hash = "8fed8d6cb4cc448e153eb629cbb628c066fd876637c0c1b7e5349ce68ab1cd90"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/copper_ingot.json"
+hash = "8226064acf56e839b22733f36b61207ca0533ae01b913badbf22a0abacb318bc"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/copper_ingot_minecraft.json"
+hash = "84837a771f376795eade66c261b60074efe8fc119f6398586b0d1652115c9bde"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/diamond_dust.json"
+hash = "1ffe7b2b70bbbca8b6d98f55072be12f40c8761a7aa8189b5360fa5d007e8488"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/emerald_dust.json"
+hash = "beb083c68af227649ed8d4a67d2ba47924172580223a9920afba718fe540638c"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/gold_ingot.json"
+hash = "f91151371a4226938f1ca0eebde53a046c975d29922baef04a63f20a4cc6f66a"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/iron_ingot.json"
+hash = "c44249432c6cae312e7826a1a0955e844a4bc011b5bde6f4858cfec5cad26b90"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/lapis_dust.json"
+hash = "ec6fe95e8f7752a12fa23e89a3803031b492e853ad7dc1d54c7f755091748657"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/lead_ingot.json"
+hash = "b91077d6835b2185cba27f88f9ab1093b73ae6ceacd2fc239edcb326fcb99812"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/nickel_ingot.json"
+hash = "0352bc70543ae809da33a4a8a854765c4613a6ebfda04f8a2c4cc5ff439b361c"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/silver_ingot.json"
+hash = "26134b7bf1b4f135ef5dbfd1948feb885651e4ad573f18099b0b8b2b7c687f64"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/tin_ingot.json"
+hash = "8045a1956b3cd17debc6dfd41a4e295ea2d6ddc3a5e038f205340590e694723f"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/uranium_ingot.json"
+hash = "3f56cb23546bd938bceabda520d8387fd699a6221d35e4a8dbd4752100d850d1"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/pack.mcmeta"
+hash = "a26b879d4d3f8ec82fa7344701dee8c4a210a033c71cf6cf8a8ffa809616b841"
+
+[[files]]
 file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/blood_island.json"
 hash = "e015b280f38b278100740fddee1699fe6a2e541e7d4648e037b38d23a7897068"
 
