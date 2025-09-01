@@ -1,6 +1,0 @@
-{
-  "type": "thermal:pulverizer",
-  "ingredient": { "item": "minecraft:obsidian" },
-  "result": [ { "item": "thermal:obsidian_dust", "count": 1 } ]
-}
-

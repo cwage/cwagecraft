@@ -1,7 +1,7 @@
 {
   "type": "enderio:sag_milling",
   "input": { "item": "minecraft:quartz" },
-  "outputs": [ { "chance": 1.0, "item": { "item": "thermal:quartz_dust", "count": 1 }, "optional": false } ],
+  "outputs": [ { "chance": 1.0, "item": { "item": "enderio:powdered_quartz", "count": 1 }, "optional": false } ],
   "energy": 1200,
   "bonus": "none"
 }

@@ -1,6 +1,0 @@
-{
-  "type": "thermal:pulverizer",
-  "ingredient": { "item": "ae2:certus_quartz_crystal" },
-  "result": [ { "item": "ae2:certus_quartz_dust", "count": 1 } ]
-}
-

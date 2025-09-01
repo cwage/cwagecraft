@@ -5,6 +5,7 @@
   },
   "filter": {
     "block": [
+      { "namespace": "mob_grinding_utils", "path": "recipes/beheading", "recursive": true },
       { "namespace": "allthecompressed", "path": "recipes", "recursive": true },
       { "namespace": "thermal", "path": "recipes/compat/biomesoplenty/tree_extractor_bop_yellow_autumn.json" },
       { "namespace": "cyclic", "path": "recipes/compat/melter_blood_slimeblock.json" }

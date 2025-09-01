@@ -1,7 +1,7 @@
 {
   "type": "enderio:sag_milling",
   "input": { "item": "minecraft:obsidian" },
-  "outputs": [ { "chance": 1.0, "item": { "item": "thermal:obsidian_dust", "count": 1 }, "optional": false } ],
+  "outputs": [ { "chance": 1.0, "item": { "item": "enderio:powdered_obsidian", "count": 1 }, "optional": false } ],
   "energy": 3200,
   "bonus": "none"
 }
