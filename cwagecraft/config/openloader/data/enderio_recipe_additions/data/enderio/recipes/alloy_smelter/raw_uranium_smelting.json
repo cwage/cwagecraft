@@ -1,0 +1,13 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [
+    {
+      "item": "immersiveengineering:raw_uranium"
+    }
+  ],
+  "result": {
+    "item": "immersiveengineering:ingot_uranium",
+    "count": 1
+  },
+  "energy": 3200
+}

@@ -1,0 +1,13 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [
+    {
+      "item": "minecraft:porkchop"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cooked_porkchop",
+    "count": 1
+  },
+  "energy": 1600
+}

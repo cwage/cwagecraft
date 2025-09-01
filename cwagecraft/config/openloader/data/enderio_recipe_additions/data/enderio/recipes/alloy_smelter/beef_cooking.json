@@ -1,0 +1,13 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [
+    {
+      "item": "minecraft:beef"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cooked_beef",
+    "count": 1
+  },
+  "energy": 1600
+}

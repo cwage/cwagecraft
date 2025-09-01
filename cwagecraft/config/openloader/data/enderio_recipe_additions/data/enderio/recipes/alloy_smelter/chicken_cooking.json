@@ -1,0 +1,13 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [
+    {
+      "item": "minecraft:chicken"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cooked_chicken",
+    "count": 1
+  },
+  "energy": 1600
+}
