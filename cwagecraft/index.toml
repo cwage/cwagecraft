@@ -178,7 +178,7 @@ hash = "a4d1f7501d81af76a804d181e80ac854fa904cf4484d7f108e67b5bfb50ca16b"
 
 [[files]]
 file = "defaultconfigs/pylons-server.toml"
-hash = "41283e5a5c8c99599502ff45aed4a8b31b2673f8fef92b7b0e26ad62d2e34271"
+hash = "51d076ed014be250278963cd6d04910baaf8b08c0d14e017d6d76e3cb3d2578c"
 
 [[files]]
 file = "kubejs/client_scripts/jei_fusion_unhide.js"
@@ -221,7 +221,7 @@ metafile = true
 
 [[files]]
 file = "mods/balm.pw.toml"
-hash = "03d143a3507e525e5553cab391fd8c4d27b445164dc299501dd1f2678fbfb23f"
+hash = "94910057d9bf56c60c393a3cfe745f78c971005d74d9992462be7527c13315c2"
 metafile = true
 
 [[files]]
