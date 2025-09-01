@@ -1,0 +1,15 @@
+{
+  "type": "enderio:sagmill",
+  "input": {
+    "item": "minecraft:iron_ingot"
+  },
+  "outputs": [
+    {
+      "item": "thermal:iron_dust",
+      "count": 1,
+      "chance": 1.0
+    }
+  ],
+  "energy": 2400,
+  "bonus": "none"
+}

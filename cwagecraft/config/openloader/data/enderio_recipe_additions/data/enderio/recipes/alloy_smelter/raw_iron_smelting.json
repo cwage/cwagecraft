@@ -1,0 +1,13 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [
+    {
+      "item": "minecraft:raw_iron"
+    }
+  ],
+  "result": {
+    "item": "minecraft:iron_ingot",
+    "count": 1
+  },
+  "energy": 3200
+}

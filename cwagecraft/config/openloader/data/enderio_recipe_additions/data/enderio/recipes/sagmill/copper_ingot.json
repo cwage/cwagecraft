@@ -1,0 +1,15 @@
+{
+  "type": "enderio:sagmill",
+  "input": {
+    "item": "mekanism:ingot_copper"
+  },
+  "outputs": [
+    {
+      "item": "mekanism:dust_copper",
+      "count": 1,
+      "chance": 1.0
+    }
+  ],
+  "energy": 2400,
+  "bonus": "none"
+}

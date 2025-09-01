@@ -1,0 +1,13 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [
+    {
+      "item": "thermal:raw_lead"
+    }
+  ],
+  "result": {
+    "item": "thermal:lead_ingot",
+    "count": 1
+  },
+  "energy": 3200
+}

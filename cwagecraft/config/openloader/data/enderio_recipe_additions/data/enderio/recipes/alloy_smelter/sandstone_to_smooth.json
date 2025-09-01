@@ -1,0 +1,13 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [
+    {
+      "item": "minecraft:sandstone"
+    }
+  ],
+  "result": {
+    "item": "minecraft:smooth_sandstone",
+    "count": 1
+  },
+  "energy": 1600
+}

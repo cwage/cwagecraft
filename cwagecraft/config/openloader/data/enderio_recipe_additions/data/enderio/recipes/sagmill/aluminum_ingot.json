@@ -1,0 +1,15 @@
+{
+  "type": "enderio:sagmill",
+  "input": {
+    "item": "immersiveengineering:ingot_aluminum"
+  },
+  "outputs": [
+    {
+      "item": "immersiveengineering:dust_aluminum",
+      "count": 1,
+      "chance": 1.0
+    }
+  ],
+  "energy": 2400,
+  "bonus": "none"
+}
