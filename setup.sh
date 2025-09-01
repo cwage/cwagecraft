@@ -70,14 +70,27 @@ fi
 # Locate mod file by update id
 declare -A IDX_MR IDX_CF IDX_SLUG
 
+# Detect common transient network errors in command output
+is_network_error() {
+  local s="$1"
+  [[ "$s" == *network* || "$s" == *connection* || "$s" == *TLS* || "$s" == *timeout* || "$s" == *SSL* ]]
+}
+
 build_index() {
   IDX_MR=(); IDX_CF=(); IDX_SLUG=()
-  local f name slug mr proj
+  local f slug mr proj
   for f in "$PACK_DIR"/mods/*.pw.toml; do
     [[ -e "$f" ]] || continue
-    slug=$(basename "$f" | sed 's/\.pw\.toml$//')
-    mr=$(awk '/\[update.modrinth\]/{flag=1;next}/\[/{flag=0}flag && /mod-id =/{gsub(/.*= \"|\"/,"",$0);print $0}' "$f" || true)
-    proj=$(awk '/\[update.curseforge\]/{flag=1;next}/\[/{flag=0}flag && /project-id =/{gsub(/.*= /,"",$0);print $0}' "$f" || true)
+    slug="${f##*/}"; slug="${slug%.pw.toml}"
+    read mr proj < <(awk '
+        BEGIN{mr="";proj=""}
+        /\[update.modrinth\]/{in_mr=1;next}
+        /\[update.curseforge\]/{in_cf=1;next}
+        /\[/{in_mr=0;in_cf=0}
+        in_mr && /mod-id =/ {gsub(/.*= \"|\"/,"",$0);mr=$0}
+        in_cf && /project-id =/ {gsub(/.*= /,"",$0);proj=$0}
+        END{print mr, proj}
+    ' "$f")
     [[ -n "$mr" ]] && IDX_MR["$mr"]="$f"
     [[ -n "$proj" ]] && IDX_CF["$proj"]="$f"
     IDX_SLUG["$slug"]="$f"
@@ -100,7 +113,7 @@ add_mod_with_retry() {
       output=$($PW modrinth add "$mr" 2>&1); exit_code=$?
       if [[ $exit_code -eq 0 ]]; then
         echo "    ✓ MR"; return 0
-      elif [[ "$output" == *network* || "$output" == *connection* || "$output" == *TLS* || "$output" == *timeout* || "$output" == *SSL* ]]; then
+      elif is_network_error "$output"; then
         continue
       else
         break
@@ -113,13 +126,13 @@ add_mod_with_retry() {
       output=$($PW curseforge add "$cf" 2>&1); exit_code=$?
       if [[ $exit_code -eq 0 ]]; then
         echo "    ✓ CF (id)"; return 0
-      elif [[ "$output" == *network* || "$output" == *connection* || "$output" == *TLS* || "$output" == *timeout* || "$output" == *SSL* ]]; then
+      elif is_network_error "$output"; then
         continue
       fi
       output=$($PW curseforge add "$slug" 2>&1); exit_code=$?
       if [[ $exit_code -eq 0 ]]; then
         echo "    ✓ CF (slug)"; return 0
-      elif [[ "$output" == *network* || "$output" == *connection* || "$output" == *TLS* || "$output" == *timeout* || "$output" == *SSL* ]]; then
+      elif is_network_error "$output"; then
         continue
       else
         break
@@ -159,10 +172,17 @@ export_mods_yaml() {
   for f in "$PACK_DIR"/mods/*.pw.toml; do
     [[ -e "$f" ]] || continue
     local name slug mr cf proj
-    name=$(grep -m1 '^name = ' "$f" | sed 's/^name = \"\(.*\)\"/\1/')
-    slug=$(basename "$f" | sed 's/\.pw\.toml$//')
-    mr=$(awk '/\[update.modrinth\]/{flag=1;next}/\[/{flag=0}flag && /mod-id =/{gsub(/.*= \"|\"/,"",$0);print $0}' "$f" || true)
-    proj=$(awk '/\[update.curseforge\]/{flag=1;next}/\[/{flag=0}flag && /project-id =/{gsub(/.*= /,"",$0);print $0}' "$f" || true)
+    name=$(grep -m1 '^name = ' "$f" | sed -E 's/^name = "?([^"]+)"?/\1/')
+    slug="${f##*/}"; slug="${slug%.pw.toml}"
+    read mr proj < <(awk '
+        BEGIN{mr="";proj=""}
+        /\[update.modrinth\]/{in_mr=1;next}
+        /\[update.curseforge\]/{in_cf=1;next}
+        /\[/{in_mr=0;in_cf=0}
+        in_mr && /mod-id =/ {gsub(/.*= \"|\"/,"",$0);mr=$0}
+        in_cf && /project-id =/ {gsub(/.*= /,"",$0);proj=$0}
+        END{print mr, proj}
+    ' "$f")
     cf="$proj"
     printf "  - name: \"%s\"\n    slug: %s\n    mr: %s\n    cf: %s\n" "$name" "$slug" "${mr:-}" "${cf:-}" >> "$MODS_YAML"
   done
@@ -193,7 +213,7 @@ else
   # Fallback naive parser for constrained schema
   current_key=""; name=""; slug=""; mr=""; cf=""; have_record=0
   while IFS= read -r line || [[ -n "$line" ]]; do
-    trimmed="$(echo "$line" | sed 's/^\s*//')"
+    trimmed=${line#"${line%%[![:space:]]*}"}
     [[ -z "$trimmed" ]] && continue
     [[ "$trimmed" =~ ^# ]] && continue
     if [[ "$trimmed" == -* ]]; then
@@ -205,7 +225,9 @@ else
     fi
     key="${trimmed%%:*}"
     val="${trimmed#*:}"
-    val="$(echo "$val" | sed 's/^\s*//; s/^\"//; s/\"$//')"
+    val=${val#"${val%%[![:space:]]*}"}
+    val="${val#\"}"
+    val="${val%\"}"
     case "$key" in
       name) name="$val" ;;
       slug) slug="$val" ;;
