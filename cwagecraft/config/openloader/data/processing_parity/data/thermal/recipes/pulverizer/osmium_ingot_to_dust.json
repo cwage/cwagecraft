@@ -1,0 +1,6 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": { "item": "mekanism:ingot_osmium" },
+  "result": [ { "item": "mekanism:dust_osmium", "count": 1 } ]
+}
+
