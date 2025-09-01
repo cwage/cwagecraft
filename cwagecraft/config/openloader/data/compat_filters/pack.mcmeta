@@ -1,0 +1,19 @@
+{
+  "pack": {
+    "description": "Filters to block broken upstream recipes that reference missing mods/IDs",
+    "pack_format": 15
+  },
+  "filter": {
+    "block": [
+      { "namespace": "allthecompressed", "path": "recipes/decompress/tin_block_1x.json" },
+      { "namespace": "allthecompressed", "path": "recipes/compress/sapphire_block_1x.json" },
+      { "namespace": "allthecompressed", "path": "recipes/compress/uranium_block_1x.json" },
+      { "namespace": "allthecompressed", "path": "recipes/decompress/constantan_block_1x.json" },
+      { "namespace": "allthecompressed", "path": "recipes/decompress/peridot_block_1x.json" },
+      { "namespace": "allthecompressed", "path": "recipes/compress/lumium_block_1x.json" },
+      { "namespace": "thermal", "path": "recipes/compat/biomesoplenty/tree_extractor_bop_yellow_autumn.json" },
+      { "namespace": "cyclic", "path": "recipes/compat/melter_blood_slimeblock.json" }
+    ]
+  }
+}
+
