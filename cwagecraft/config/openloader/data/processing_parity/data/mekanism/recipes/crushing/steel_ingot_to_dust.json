@@ -1,0 +1,6 @@
+{
+  "type": "mekanism:crushing",
+  "input": { "ingredient": { "item": "mekanism:ingot_steel" } },
+  "output": { "item": "mekanism:dust_steel", "count": 1 }
+}
+

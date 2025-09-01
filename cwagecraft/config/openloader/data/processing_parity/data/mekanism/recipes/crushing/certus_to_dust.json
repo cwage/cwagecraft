@@ -1,0 +1,6 @@
+{
+  "type": "mekanism:crushing",
+  "input": { "ingredient": { "item": "ae2:certus_quartz_crystal" } },
+  "output": { "item": "ae2:certus_quartz_dust", "count": 1 }
+}
+

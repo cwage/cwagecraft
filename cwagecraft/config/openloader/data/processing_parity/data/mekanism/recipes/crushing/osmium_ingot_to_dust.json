@@ -1,0 +1,6 @@
+{
+  "type": "mekanism:crushing",
+  "input": { "ingredient": { "item": "mekanism:ingot_osmium" } },
+  "output": { "item": "mekanism:dust_osmium", "count": 1 }
+}
+
