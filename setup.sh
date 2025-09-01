@@ -23,12 +23,11 @@ Usage: ./setup.sh [--upgrade] [--export-mods]
 EOF
 }
 
-for arg in "${@:-}"; do
+for arg in "$@"; do
   case "$arg" in
     --upgrade) UPGRADE=1 ;;
     --export-mods) EXPORT=1 ;;
     -h|--help) usage; exit 0 ;;
-    "") ;;
     *) echo "Unknown arg: $arg"; usage; exit 1 ;;
   esac
 done
@@ -69,22 +68,25 @@ else
 fi
 
 # Locate mod file by update id
-find_mod_file_by_mr() {
-  local mr_id="$1"
-  grep -RIl --null -- "mod-id = \"$mr_id\"" "$PACK_DIR/mods" 2>/dev/null | tr -d '\0' | head -n1 || true
+declare -A IDX_MR IDX_CF IDX_SLUG
+
+build_index() {
+  IDX_MR=(); IDX_CF=(); IDX_SLUG=()
+  local f name slug mr proj
+  for f in "$PACK_DIR"/mods/*.pw.toml; do
+    [[ -e "$f" ]] || continue
+    slug=$(basename "$f" | sed 's/\.pw\.toml$//')
+    mr=$(awk '/\[update.modrinth\]/{flag=1;next}/\[/{flag=0}flag && /mod-id =/{gsub(/.*= \"|\"/,"",$0);print $0}' "$f" || true)
+    proj=$(awk '/\[update.curseforge\]/{flag=1;next}/\[/{flag=0}flag && /project-id =/{gsub(/.*= /,"",$0);print $0}' "$f" || true)
+    [[ -n "$mr" ]] && IDX_MR["$mr"]="$f"
+    [[ -n "$proj" ]] && IDX_CF["$proj"]="$f"
+    IDX_SLUG["$slug"]="$f"
+  done
 }
 
-find_mod_file_by_cf() {
-  local cf_proj="$1"
-  grep -RIl --null -- "project-id = $cf_proj" "$PACK_DIR/mods" 2>/dev/null | tr -d '\0' | head -n1 || true
-}
-
-# Fallback: locate by slug filename
-find_mod_file_by_slug() {
-  local slug="$1"
-  local cand="$PACK_DIR/mods/${slug}.pw.toml"
-  [[ -f "$cand" ]] && echo "$cand" || true
-}
+find_mod_file_by_mr() { local mr_id="$1"; echo "${IDX_MR[$mr_id]:-}"; }
+find_mod_file_by_cf() { local cf_proj="$1"; echo "${IDX_CF[$cf_proj]:-}"; }
+find_mod_file_by_slug() { local slug="$1"; echo "${IDX_SLUG[$slug]:-}"; }
 
 # Add a mod with retry; prefer Modrinth then CurseForge
 add_mod_with_retry() {
@@ -95,8 +97,10 @@ add_mod_with_retry() {
   if [[ -n "$mr" ]]; then
     for ((attempt=1; attempt<=max_attempts; attempt++)); do
       [[ $attempt -gt 1 ]] && echo "    Retry MR $attempt/$max_attempts..." && sleep $((attempt-1))
-      output=$($PW modrinth add "$mr" 2>&1) && { echo "    ✓ MR"; return 0; } || exit_code=$?
-      if [[ "$output" == *network* || "$output" == *connection* || "$output" == *TLS* || "$output" == *timeout* || "$output" == *SSL* ]]; then
+      output=$($PW modrinth add "$mr" 2>&1); exit_code=$?
+      if [[ $exit_code -eq 0 ]]; then
+        echo "    ✓ MR"; return 0
+      elif [[ "$output" == *network* || "$output" == *connection* || "$output" == *TLS* || "$output" == *timeout* || "$output" == *SSL* ]]; then
         continue
       else
         break
@@ -106,8 +110,20 @@ add_mod_with_retry() {
   if [[ -n "$cf" ]]; then
     for ((attempt=1; attempt<=max_attempts; attempt++)); do
       [[ $attempt -gt 1 ]] && echo "    Retry CF $attempt/$max_attempts..." && sleep $((attempt-1))
-      output=$($PW curseforge add "$cf" 2>&1) && { echo "    ✓ CF (id)"; return 0; } || true
-      output=$($PW curseforge add "$slug" 2>&1) && { echo "    ✓ CF (slug)"; return 0; } || true
+      output=$($PW curseforge add "$cf" 2>&1); exit_code=$?
+      if [[ $exit_code -eq 0 ]]; then
+        echo "    ✓ CF (id)"; return 0
+      elif [[ "$output" == *network* || "$output" == *connection* || "$output" == *TLS* || "$output" == *timeout* || "$output" == *SSL* ]]; then
+        continue
+      fi
+      output=$($PW curseforge add "$slug" 2>&1); exit_code=$?
+      if [[ $exit_code -eq 0 ]]; then
+        echo "    ✓ CF (slug)"; return 0
+      elif [[ "$output" == *network* || "$output" == *connection* || "$output" == *TLS* || "$output" == *timeout* || "$output" == *SSL* ]]; then
+        continue
+      else
+        break
+      fi
     done
   fi
   return 0
@@ -132,20 +148,21 @@ process_mod() {
   if [[ -n "$modfile" && $UPGRADE -eq 1 ]]; then
     echo "    ~ Upgrading: $name"
     rm -f "$modfile"
+    build_index
   fi
   add_mod_with_retry "$name" "$slug" "$mr" "$cf"
+  build_index
 }
 
 export_mods_yaml() {
   echo "mods:" > "$MODS_YAML"
   for f in "$PACK_DIR"/mods/*.pw.toml; do
     [[ -e "$f" ]] || continue
-    local name slug mr cf proj fileid
+    local name slug mr cf proj
     name=$(grep -m1 '^name = ' "$f" | sed 's/^name = \"\(.*\)\"/\1/')
     slug=$(basename "$f" | sed 's/\.pw\.toml$//')
     mr=$(awk '/\[update.modrinth\]/{flag=1;next}/\[/{flag=0}flag && /mod-id =/{gsub(/.*= \"|\"/,"",$0);print $0}' "$f" || true)
     proj=$(awk '/\[update.curseforge\]/{flag=1;next}/\[/{flag=0}flag && /project-id =/{gsub(/.*= /,"",$0);print $0}' "$f" || true)
-    fileid=$(awk '/\[update.curseforge\]/{flag=1;next}/\[/{flag=0}flag && /file-id =/{gsub(/.*= /,"",$0);print $0}' "$f" || true)
     cf="$proj"
     printf "  - name: \"%s\"\n    slug: %s\n    mr: %s\n    cf: %s\n" "$name" "$slug" "${mr:-}" "${cf:-}" >> "$MODS_YAML"
   done
@@ -165,30 +182,40 @@ if [[ ! -f "$MODS_YAML" ]]; then
 fi
 
 echo "==> Ensuring mods from mods.yaml (upgrade=$UPGRADE)"
-current_key=""; name=""; slug=""; mr=""; cf=""; have_record=0
-while IFS= read -r line || [[ -n "$line" ]]; do
-  trimmed="$(echo "$line" | sed 's/^\s*//')"
-  [[ -z "$trimmed" ]] && continue
-  [[ "$trimmed" =~ ^# ]] && continue
-  if [[ "$trimmed" == -* ]]; then
-    if [[ $have_record -eq 1 ]]; then
-      process_mod "$name" "$slug" "$mr" "$cf"
+build_index
+if command -v yq >/dev/null 2>&1; then
+  # Robust YAML parsing if yq is available
+  while IFS=$'\t' read -r name slug mr cf; do
+    [[ -z "$name" || -z "$slug" ]] && continue
+    process_mod "$name" "$slug" "${mr:-}" "${cf:-}"
+  done < <(yq -r '.mods[] | [.name, .slug, (.mr // ""), (.cf // "")] | @tsv' "$MODS_YAML")
+else
+  # Fallback naive parser for constrained schema
+  current_key=""; name=""; slug=""; mr=""; cf=""; have_record=0
+  while IFS= read -r line || [[ -n "$line" ]]; do
+    trimmed="$(echo "$line" | sed 's/^\s*//')"
+    [[ -z "$trimmed" ]] && continue
+    [[ "$trimmed" =~ ^# ]] && continue
+    if [[ "$trimmed" == -* ]]; then
+      if [[ $have_record -eq 1 ]]; then
+        process_mod "$name" "$slug" "$mr" "$cf"
+      fi
+      name=""; slug=""; mr=""; cf=""; have_record=1
+      continue
     fi
-    name=""; slug=""; mr=""; cf=""; have_record=1
-    continue
+    key="${trimmed%%:*}"
+    val="${trimmed#*:}"
+    val="$(echo "$val" | sed 's/^\s*//; s/^\"//; s/\"$//')"
+    case "$key" in
+      name) name="$val" ;;
+      slug) slug="$val" ;;
+      mr) mr="$val" ;;
+      cf) cf="$val" ;;
+    esac
+  done < "$MODS_YAML"
+  if [[ $have_record -eq 1 ]]; then
+    process_mod "$name" "$slug" "$mr" "$cf"
   fi
-  key="${trimmed%%:*}"
-  val="${trimmed#*:}"
-  val="$(echo "$val" | sed 's/^\s*//; s/^\"//; s/\"$//')"
-  case "$key" in
-    name) name="$val" ;;
-    slug) slug="$val" ;;
-    mr) mr="$val" ;;
-    cf) cf="$val" ;;
-  esac
-done < "$MODS_YAML"
-if [[ $have_record -eq 1 ]]; then
-  process_mod "$name" "$slug" "$mr" "$cf"
 fi
 
 echo "==> Refresh index"
