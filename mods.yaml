@@ -7,6 +7,10 @@ mods:
     slug: ae2
     mr: XxWD5pD3
     cf: 
+  - name: "AllTheCompressed"
+    slug: allthecompressed
+    mr: 
+    cf: 514045
   - name: "Angel Block Renewed"
     slug: angel-block-renewed
     mr: 

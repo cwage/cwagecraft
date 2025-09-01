@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["BBB","BBB","BBB"],
+  "key": { "B": { "item": "thermal:silver_block" } },
+  "result": { "item": "allthecompressed:silver_block_1x" }
+}
+

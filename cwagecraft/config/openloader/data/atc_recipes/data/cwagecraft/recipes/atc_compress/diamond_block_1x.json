@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["BBB","BBB","BBB"],
+  "key": { "B": { "item": "minecraft:diamond_block" } },
+  "result": { "item": "allthecompressed:diamond_block_1x" }
+}
+

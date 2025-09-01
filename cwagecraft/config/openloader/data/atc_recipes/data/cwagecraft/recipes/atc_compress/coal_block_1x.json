@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["BBB","BBB","BBB"],
+  "key": { "B": { "item": "minecraft:coal_block" } },
+  "result": { "item": "allthecompressed:coal_block_1x" }
+}
+
