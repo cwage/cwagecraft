@@ -1,8 +1,6 @@
 {
   "type": "enderio:sag_milling",
-  "input": {
-    "item": "immersiveengineering:ingot_uranium"
-  },
+  "input": { "tag": "forge:ingots/uranium" },
   "outputs": [
     {
       "chance": 1.0,

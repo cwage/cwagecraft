@@ -1,8 +1,6 @@
 {
   "type": "enderio:sag_milling",
-  "input": {
-    "item": "minecraft:diamond"
-  },
+  "input": { "tag": "forge:gems/diamond" },
   "outputs": [
     {
       "chance": 1.0,

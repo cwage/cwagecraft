@@ -1,8 +1,6 @@
 {
   "type": "enderio:sag_milling",
-  "input": {
-    "item": "minecraft:iron_ingot"
-  },
+  "input": { "tag": "forge:ingots/iron" },
   "outputs": [
     {
       "chance": 1.0,
