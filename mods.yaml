@@ -1,0 +1,553 @@
+mods:
+  - name: "Advanced Mining Dimension"
+    slug: advanced-mining-dimension
+    mr: XRETyQl3
+    cf: 
+  - name: "Applied Energistics 2"
+    slug: ae2
+    mr: XxWD5pD3
+    cf: 
+  - name: "AllTheCompressed"
+    slug: allthecompressed
+    mr: 
+    cf: 514045
+  - name: "Angel Block Renewed"
+    slug: angel-block-renewed
+    mr: 
+    cf: 659250
+  - name: "AppleSkin"
+    slug: appleskin
+    mr: EsAfCjCV
+    cf: 
+  - name: "Architectury API"
+    slug: architectury-api
+    mr: 
+    cf: 419699
+  - name: "Athena"
+    slug: athena-ctm
+    mr: b1ZV3DIJ
+    cf: 
+  - name: "Balm"
+    slug: balm
+    mr: MBAkmtvl
+    cf: 
+  - name: "Biomes O' Plenty"
+    slug: biomes-o-plenty
+    mr: HXF82T3G
+    cf: 
+  - name: "Bookshelf"
+    slug: bookshelf-lib
+    mr: uy4Cnpcm
+    cf: 
+  - name: "Bookshelf"
+    slug: bookshelf
+    mr: 
+    cf: 228525
+  - name: "Botania"
+    slug: botania
+    mr: pfjLUfGv
+    cf: 
+  - name: "Botany Pots"
+    slug: botany-pots
+    mr: U6BUTZ7K
+    cf: 
+  - name: "Botany Trees"
+    slug: botany-trees
+    mr: mvs7RoIW
+    cf: 
+  - name: "Brandon's Core"
+    slug: brandons-core
+    mr: 
+    cf: 231382
+  - name: "Chipped"
+    slug: chipped
+    mr: BAscRYKm
+    cf: 
+  - name: "Clean Swing Through Grass"
+    slug: clean-swing-through-grass
+    mr: 
+    cf: 915308
+  - name: "Cloth Config API"
+    slug: cloth-config
+    mr: 9s6osm5g
+    cf: 
+  - name: "CobbleForDays"
+    slug: cobblefordays
+    mr: hi71AUZ0
+    cf: 
+  - name: "CodeChicken Lib 1.8.+"
+    slug: codechicken-lib-1-8
+    mr: 
+    cf: 242818
+  - name: "CodeChicken Lib"
+    slug: codechicken-lib
+    mr: 2gq0ALnz
+    cf: 
+  - name: "CoFH Core"
+    slug: cofh-core
+    mr: OWSRM4vD
+    cf: 
+  - name: "Compact Machines"
+    slug: compact-machines
+    mr: 
+    cf: 224218
+  - name: "Construction Wand"
+    slug: construction-wand
+    mr: bV2crgLh
+    cf: 
+  - name: "Controlling"
+    slug: controlling
+    mr: xv94TkTM
+    cf: 
+  - name: "Cooking for Blockheads"
+    slug: cooking-for-blockheads
+    mr: vJnhuDde
+    cf: 
+  - name: "Crafting Station: JEI Edition"
+    slug: crafting-station-jei-edition
+    mr: 25IAE8wS
+    cf: 
+  - name: "Create Ore Excavation"
+    slug: create-ore-excavation
+    mr: 
+    cf: 649832
+  - name: "Create"
+    slug: create
+    mr: 
+    cf: 328085
+  - name: "Croptopia"
+    slug: croptopia
+    mr: 
+    cf: 415438
+  - name: "Cucumber Library"
+    slug: cucumber
+    mr: Rw1NrDzF
+    cf: 
+  - name: "Curios API (Forge/NeoForge)"
+    slug: curios
+    mr: 
+    cf: 309927
+  - name: "Cyclic"
+    slug: cyclic
+    mr: UcVTWyCI
+    cf: 
+  - name: "Dank Storage"
+    slug: dank-storage
+    mr: 
+    cf: 335673
+  - name: "Default Options"
+    slug: default-options
+    mr: 
+    cf: 232131
+  - name: "Draconic Additions"
+    slug: draconicadditions
+    mr: 
+    cf: 314515
+  - name: "Draconic Evolution"
+    slug: draconic-evolution
+    mr: 
+    cf: 223565
+  - name: "Easy Piglins"
+    slug: easy-piglins
+    mr: l6n94pax
+    cf: 
+  - name: "Easy Villagers"
+    slug: easy-villagers
+    mr: Kaov2qgi
+    cf: 
+  - name: "EdivadLib"
+    slug: edivadlib
+    mr: a8Jk9kpK
+    cf: 
+  - name: "ElevatorMod"
+    slug: elevatormod
+    mr: hi2dSXTu
+    cf: 
+  - name: "Embeddium"
+    slug: embeddium
+    mr: sk9rgfiA
+    cf: 
+  - name: "Ender Crop"
+    slug: ender-crop
+    mr: 
+    cf: 242269
+  - name: "Ender IO"
+    slug: enderio
+    mr: 49ZofO4f
+    cf: 
+  - name: "Ender Storage"
+    slug: ender-storage
+    mr: BbrHg80P
+    cf: 
+  - name: "End's Delight"
+    slug: ends-delight
+    mr: 
+    cf: 662675
+  - name: "EpheroLib"
+    slug: epherolib
+    mr: 
+    cf: 885449
+  - name: "Explorer's Compass"
+    slug: explorers-compass
+    mr: RV1qfVQ8
+    cf: 
+  - name: "ExtraStorage"
+    slug: extrastorage
+    mr: T34cBZKl
+    cf: 
+  - name: "Extreme Reactors"
+    slug: extreme-reactors
+    mr: 
+    cf: 250277
+  - name: "Farmer's Delight"
+    slug: farmers-delight
+    mr: 
+    cf: 398521
+  - name: "Fast Leaf Decay"
+    slug: fast-leaf-decay
+    mr: 
+    cf: 230976
+  - name: "FindMe"
+    slug: findme
+    mr: rEuzehyH
+    cf: 
+  - name: "Flat Bedrock (Forge / Fabric)"
+    slug: flat-bedrock
+    mr: 
+    cf: 398623
+  - name: "FLIB"
+    slug: flib
+    mr: FAUSd09K
+    cf: 
+  - name: "Flux Networks"
+    slug: flux-networks
+    mr: 
+    cf: 248020
+  - name: "Forestry: Community Edition"
+    slug: forestry-community-edition
+    mr: 2oORTOi2
+    cf: 
+  - name: "FTB Backups 2"
+    slug: ftb-backups-2
+    mr: 
+    cf: 622737
+  - name: "FTB Chunks (Forge)"
+    slug: ftb-chunks-forge
+    mr: 
+    cf: 314906
+  - name: "FTB Essentials (Forge & Fabric)"
+    slug: ftb-essentials
+    mr: 
+    cf: 410811
+  - name: "FTB Library (Forge)"
+    slug: ftb-library-forge
+    mr: 
+    cf: 404465
+  - name: "FTB Teams (Forge)"
+    slug: ftb-teams-forge
+    mr: 
+    cf: 404468
+  - name: "FTB Ultimine (Forge)"
+    slug: ftb-ultimine-forge
+    mr: 
+    cf: 386134
+  - name: "Gendustry: Community Edition"
+    slug: gendustry-community-edition
+    mr: 2zkSGMyK
+    cf: 
+  - name: "GlitchCore"
+    slug: glitchcore
+    mr: s3dmwKy5
+    cf: 
+  - name: "GraveStone Mod"
+    slug: gravestone-mod
+    mr: RYtXKJPr
+    cf: 
+  - name: "GuideME"
+    slug: guideme
+    mr: Ck4E7v7R
+    cf: 
+  - name: "Hostile Neural Networks"
+    slug: hostile-neural-networks
+    mr: 
+    cf: 552574
+  - name: "Immersive Engineering"
+    slug: immersiveengineering
+    mr: tIm2nV03
+    cf: 
+  - name: "Industrial Foregoing"
+    slug: industrial-foregoing
+    mr: lWxpUd04
+    cf: 
+  - name: "Inventory Sorter"
+    slug: inventory-sorter
+    mr: 
+    cf: 240633
+  - name: "Iron Chests"
+    slug: iron-chests
+    mr: P3iIrPH3
+    cf: 
+  - name: "Iron Jetpacks"
+    slug: iron-jetpacks
+    mr: DWIEOniQ
+    cf: 
+  - name: "Item Collectors"
+    slug: item-collectors
+    mr: y9vDr4Th
+    cf: 
+  - name: "Jade 🔍"
+    slug: jade
+    mr: nvQzSEkH
+    cf: 
+  - name: "Just Enough Items"
+    slug: jei
+    mr: u6dRKJwZ
+    cf: 
+  - name: "JourneyMap"
+    slug: journeymap
+    mr: lfHFW1mp
+    cf: 
+  - name: "Just Enough Resources (JER)"
+    slug: just-enough-resources-jer
+    mr: uEfK2CXF
+    cf: 
+  - name: "Just Enough Resources Profiler (JEARGH)"
+    slug: just-enough-resources-profiler-jeargh
+    mr: 
+    cf: 919773
+  - name: "KubeJS"
+    slug: kubejs
+    mr: 
+    cf: 238086
+  - name: "Light Overlay"
+    slug: light-overlay
+    mr: YfOlc91N
+    cf: 
+  - name: "Mantle"
+    slug: mantle
+    mr: Cg6Uc79H
+    cf: 
+  - name: "Markdown Manual"
+    slug: markdownmanual
+    mr: nPQ9xkPg
+    cf: 
+  - name: "McJtyLib"
+    slug: mcjtylib
+    mr: 1Zu0uTEE
+    cf: 
+  - name: "Mekanism Generators"
+    slug: mekanism-generators
+    mr: OFVYKsAk
+    cf: 
+  - name: "Mekanism"
+    slug: mekanism
+    mr: Ce6I4WUE
+    cf: 
+  - name: "MmmMmmMmmMmm"
+    slug: mmmmmmmmmmmm
+    mr: Adega8YN
+    cf: 
+  - name: "Mob Grinding Utils"
+    slug: mob-grinding-utils
+    mr: 
+    cf: 254241
+  - name: "Modular Routers"
+    slug: modular-routers
+    mr: EuTS81Z3
+    cf: 
+  - name: "Moonlight Lib"
+    slug: moonlight
+    mr: twkfQtEc
+    cf: 
+  - name: "Mouse Tweaks"
+    slug: mouse-tweaks
+    mr: aC3cM3Vq
+    cf: 
+  - name: "Mystical Agradditions"
+    slug: mystical-agradditions
+    mr: pl0jGXIx
+    cf: 
+  - name: "Mystical Agriculture"
+    slug: mystical-agriculture
+    mr: C95ReXie
+    cf: 
+  - name: "Nature's Compass"
+    slug: natures-compass
+    mr: fPetb5Kh
+    cf: 
+  - name: "Nether's Delight"
+    slug: nethers-delight
+    mr: 
+    cf: 496394
+  - name: "OpenComputers 2: Reimagined"
+    slug: oc2r
+    mr: F1gm4RsH
+    cf: 
+  - name: "Oculus"
+    slug: oculus
+    mr: GchcoXML
+    cf: 
+  - name: "Open Loader"
+    slug: open-loader
+    mr: 
+    cf: 354339
+  - name: "Paragliders"
+    slug: paragliders
+    mr: esqWA0aQ
+    cf: 
+  - name: "Patchouli"
+    slug: patchouli
+    mr: nU0bVIaL
+    cf: 
+  - name: "Pipez"
+    slug: pipez
+    mr: iRmWy6ga
+    cf: 
+  - name: "Placebo"
+    slug: placebo
+    mr: 
+    cf: 283644
+  - name: "PolyLib"
+    slug: polylib
+    mr: 
+    cf: 576589
+  - name: "Powah!"
+    slug: powah
+    mr: KZO4S4DO
+    cf: 
+  - name: "Pylons"
+    slug: pylons
+    mr: A82glthi
+    cf: 
+  - name: "Reap Mod"
+    slug: reap-mod
+    mr: NYHbcKK1
+    cf: 
+  - name: "Refined Storage"
+    slug: refined-storage
+    mr: KDvYkUg3
+    cf: 
+  - name: "Resourceful Lib"
+    slug: resourceful-lib
+    mr: G1hIVOrD
+    cf: 
+  - name: "RFTools Base"
+    slug: rftools-base
+    mr: hIO8IsD8
+    cf: 
+  - name: "RFTools Builder"
+    slug: rftools-builder
+    mr: e0IclJLr
+    cf: 
+  - name: "RFTools Control"
+    slug: rftools-control
+    mr: DQjhR62z
+    cf: 
+  - name: "RFTools Dimensions"
+    slug: rftools-dimensions
+    mr: N4D9AicU
+    cf: 
+  - name: "RFTools Power"
+    slug: rftools-power
+    mr: YWbLuPa1
+    cf: 
+  - name: "RFTools Storage"
+    slug: rftools-storage
+    mr: 
+    cf: 350006
+  - name: "RFTools Utility"
+    slug: rftools-utility
+    mr: 7n3HbHSE
+    cf: 
+  - name: "Rhino"
+    slug: rhino
+    mr: 
+    cf: 416294
+  - name: "Searchables"
+    slug: searchables
+    mr: fuuu3xnx
+    cf: 
+  - name: "Snad"
+    slug: snad
+    mr: 
+    cf: 241344
+  - name: "Sophisticated Backpacks"
+    slug: sophisticated-backpacks
+    mr: TyCTlI4b
+    cf: 
+  - name: "Sophisticated Core"
+    slug: sophisticated-core
+    mr: nmoqTijg
+    cf: 
+  - name: "Spice of Life: Carrot Edition"
+    slug: spice-of-life-carrot-edition
+    mr: 
+    cf: 277616
+  - name: "Storage Drawers"
+    slug: storagedrawers
+    mr: guitPqEi
+    cf: 
+  - name: "SuperMartijn642's Config Lib"
+    slug: supermartijn642s-config-lib
+    mr: LN9BxssP
+    cf: 
+  - name: "SuperMartijn642's Core Lib"
+    slug: supermartijn642s-core-lib
+    mr: rOUBggPv
+    cf: 
+  - name: "TerraBlender"
+    slug: terrablender
+    mr: kkmrDlKT
+    cf: 
+  - name: "The Afterdark"
+    slug: the-afterdark
+    mr: EjqfdsbN
+    cf: 
+  - name: "Thermal Dynamics"
+    slug: thermal-dynamics
+    mr: t8bmWGI2
+    cf: 
+  - name: "Thermal Expansion"
+    slug: thermal-expansion
+    mr: hmD6rrUJ
+    cf: 
+  - name: "Thermal Foundation"
+    slug: thermal-foundation
+    mr: Xvg6q5Wp
+    cf: 
+  - name: "Thermal Integration"
+    slug: thermal-integration
+    mr: Ro7yiyD4
+    cf: 
+  - name: "Tinkers' Construct"
+    slug: tinkers-construct
+    mr: rxIIYO6c
+    cf: 
+  - name: "Tinkers' Levelling Addon"
+    slug: tinkers-levelling-addon
+    mr: 
+    cf: 709416
+  - name: "Titanium"
+    slug: titanium
+    mr: 1Ro7m06l
+    cf: 
+  - name: "TorchMaster"
+    slug: torchmaster
+    mr: Tl8ESrhX
+    cf: 
+  - name: "Trample No More"
+    slug: trample-no-more
+    mr: 
+    cf: 377313
+  - name: "Trash Cans"
+    slug: trash-cans
+    mr: 4QrnfueM
+    cf: 
+  - name: "Waystones"
+    slug: waystones
+    mr: LOpKHB2A
+    cf: 
+  - name: "ZeroCore 2"
+    slug: zerocore
+    mr: 
+    cf: 247921

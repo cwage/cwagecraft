@@ -9,9 +9,11 @@ This is a Minecraft modpack repository using Packwiz for mod management. The mod
 ## Commands
 
 ### Primary Command (SOURCE OF TRUTH)
-- **Setup/Reset Pack**: `./setup.sh` - Completely rebuilds the modpack from scratch
+- **Setup/Reset Pack**: `./setup.sh` - Builds the modpack from `mods.yaml`
   - This is the **ONLY** command that should be used to modify the modpack
-  - All mod additions, removals, and changes must be made by editing setup.sh and re-running it
+  - All mod additions/removals are made by editing `mods.yaml` and re-running `./setup.sh`
+  - Default behavior keeps pinned versions (no automatic updates)
+  - Use `./setup.sh --upgrade` to update all mods to their latest compatible versions
 
 ### Packwiz Operations (INFORMATIONAL ONLY)
 - **List Mods**: `packwiz -y list` - Shows all mods in the current pack
@@ -21,8 +23,8 @@ This is a Minecraft modpack repository using Packwiz for mod management. The mod
 **CRITICAL**: Never use `packwiz add`, `packwiz remove`, or `packwiz refresh` commands directly. The setup.sh script is the single source of truth and handles all pack modifications. ONLY use packwiz commands for debugging/investigation - ALL modifications must go through setup.sh.
 
 ### Mod Management Helper Functions (from setup.sh)
-- `mr_add()` - Adds mods from Modrinth with logging
-- `cf_add()` - Adds mods from CurseForge with logging
+- Mods are defined declaratively in `mods.yaml` with `mr` (Modrinth id) and/or `cf` (CurseForge project id)
+- The setup script prefers Modrinth, with CurseForge as fallback
 
 ## Architecture
 
@@ -66,9 +68,10 @@ Each mod has a `.pw.toml` file containing:
 - **Important**: `grep` is aliased to `ripgrep` (rg) in this environment - use ripgrep syntax and arguments
 
 ## Workflow Rules
-1. **Modify pack**: Edit setup.sh → Run `./setup.sh`
-2. **Query pack**: Use `packwiz -y list` or similar informational commands
-3. **Never**: Use `packwiz add/remove` or modify .pw.toml files directly
+1. **Modify pack**: Edit `mods.yaml` → Run `./setup.sh`
+2. **Pinning**: Versions are pinned via generated `.pw.toml` files; only change on `--upgrade`
+3. **Query pack**: Use `packwiz -y list` or similar informational commands
+4. **Never**: Use `packwiz add/remove` or modify .pw.toml files directly
 
 ## Critical Success Validation
 - **ALWAYS check exit status**: The setup.sh script needs better exit status handling on failures
