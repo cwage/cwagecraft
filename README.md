@@ -24,6 +24,17 @@ This modpack includes **Complementary Unbound r5.5.1** shader pack by Complement
 2. Import into Prism Launcher, MultiMC, or similar launcher
 3. Launch and enjoy!
 
+## Development / Building
+
+- Source of truth: run `./setup.sh` to build/export the pack. Do not use `packwiz add/remove` directly.
+- Mods list lives in `mods.yaml`. By default, running `./setup.sh` will:
+  - Ensure each mod listed in `mods.yaml` is present.
+  - Keep existing, pinned versions (no automatic upgrades).
+- To upgrade all mods to latest tracked versions, run: `./setup.sh --upgrade`.
+- To bootstrap `mods.yaml` from the current pack state, run: `./setup.sh --export-mods`.
+
+Pinning behavior: versions are effectively pinned by the generated `cwagecraft/mods/*.pw.toml` files. The `--upgrade` flag will re-resolve versions and update those pins.
+
 ## Custom Configurations
 
 ### Tinkers' Construct Early Levelling
