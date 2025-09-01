@@ -1,8 +1,7 @@
 {
-  "type": "enderio:sagmill",
+  "type": "enderio:sag_milling",
   "input": { "item": "minecraft:bone" },
-  "outputs": [ { "item": "minecraft:bone_meal", "count": 3, "chance": 1.0 } ],
+  "outputs": [ { "chance": 1.0, "item": { "item": "minecraft:bone_meal", "count": 3 }, "optional": false } ],
   "energy": 400,
   "bonus": "none"
 }
-

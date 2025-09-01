@@ -1,10 +1,6 @@
 {
-  "type": "enderio:alloy_smelter",
-  "inputs": [
-    {
-      "item": "thermal:raw_tin"
-    }
-  ],
+  "type": "enderio:alloy_smelting",
+  "inputs": [ { "count": 1, "ingredient": { "item": "thermal:raw_tin" } } ],
   "result": {
     "item": "thermal:tin_ingot",
     "count": 1

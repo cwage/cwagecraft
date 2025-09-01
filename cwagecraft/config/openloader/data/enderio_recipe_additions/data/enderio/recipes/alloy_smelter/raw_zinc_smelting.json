@@ -1,7 +1,6 @@
 {
-  "type": "enderio:alloy_smelter",
-  "inputs": [ { "item": "create:raw_zinc" } ],
+  "type": "enderio:alloy_smelting",
+  "inputs": [ { "count": 1, "ingredient": { "item": "create:raw_zinc" } } ],
   "result": { "item": "create:zinc_ingot", "count": 1 },
   "energy": 3200
 }
-

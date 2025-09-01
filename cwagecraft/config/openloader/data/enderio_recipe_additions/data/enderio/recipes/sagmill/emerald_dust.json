@@ -1,13 +1,13 @@
 {
-  "type": "enderio:sagmill",
+  "type": "enderio:sag_milling",
   "input": {
     "item": "minecraft:emerald"
   },
   "outputs": [
     {
-      "item": "thermal:emerald_dust",
-      "count": 1,
-      "chance": 1.0
+      "chance": 1.0,
+      "item": { "item": "thermal:emerald_dust", "count": 1 },
+      "optional": false
     }
   ],
   "energy": 2400,

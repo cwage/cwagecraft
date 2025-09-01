@@ -1,10 +1,6 @@
 {
-  "type": "enderio:alloy_smelter",
-  "inputs": [
-    {
-      "item": "minecraft:stone"
-    }
-  ],
+  "type": "enderio:alloy_smelting",
+  "inputs": [ { "count": 1, "ingredient": { "item": "minecraft:stone" } } ],
   "result": {
     "item": "minecraft:smooth_stone",
     "count": 1

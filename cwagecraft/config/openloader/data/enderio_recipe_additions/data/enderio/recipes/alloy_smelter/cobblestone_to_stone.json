@@ -1,10 +1,6 @@
 {
-  "type": "enderio:alloy_smelter",
-  "inputs": [
-    {
-      "item": "minecraft:cobblestone"
-    }
-  ],
+  "type": "enderio:alloy_smelting",
+  "inputs": [ { "count": 1, "ingredient": { "item": "minecraft:cobblestone" } } ],
   "result": {
     "item": "minecraft:stone",
     "count": 1

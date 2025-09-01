@@ -1,13 +1,13 @@
 {
-  "type": "enderio:sagmill",
+  "type": "enderio:sag_milling",
   "input": {
     "item": "mekanism:ingot_tin"
   },
   "outputs": [
     {
-      "item": "mekanism:dust_tin",
-      "count": 1,
-      "chance": 1.0
+      "chance": 1.0,
+      "item": { "item": "mekanism:dust_tin", "count": 1 },
+      "optional": false
     }
   ],
   "energy": 2400,

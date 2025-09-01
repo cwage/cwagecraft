@@ -1,10 +1,6 @@
 {
-  "type": "enderio:alloy_smelter",
-  "inputs": [
-    {
-      "item": "thermal:raw_silver"
-    }
-  ],
+  "type": "enderio:alloy_smelting",
+  "inputs": [ { "count": 1, "ingredient": { "item": "thermal:raw_silver" } } ],
   "result": {
     "item": "thermal:silver_ingot",
     "count": 1
