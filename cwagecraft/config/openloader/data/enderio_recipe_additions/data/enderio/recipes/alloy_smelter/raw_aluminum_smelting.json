@@ -5,5 +5,6 @@
     "item": "immersiveengineering:ingot_aluminum",
     "count": 1
   },
-  "energy": 3200
+  "energy": 3200,
+  "experience": 0.1
 }
