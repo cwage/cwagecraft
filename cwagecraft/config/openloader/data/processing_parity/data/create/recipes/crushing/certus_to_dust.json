@@ -1,0 +1,7 @@
+{
+  "type": "create:crushing",
+  "ingredients": [ { "item": "ae2:certus_quartz_crystal" } ],
+  "results": [ { "item": "ae2:certus_quartz_dust", "count": 1 } ],
+  "processingTime": 100
+}
+

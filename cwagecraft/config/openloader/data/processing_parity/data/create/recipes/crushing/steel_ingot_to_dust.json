@@ -1,0 +1,7 @@
+{
+  "type": "create:crushing",
+  "ingredients": [ { "item": "mekanism:ingot_steel" } ],
+  "results": [ { "item": "mekanism:dust_steel", "count": 1 } ],
+  "processingTime": 200
+}
+
