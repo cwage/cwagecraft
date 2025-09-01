@@ -1,8 +1,6 @@
 {
   "type": "enderio:sag_milling",
-  "input": {
-    "item": "thermal:nickel_ingot"
-  },
+  "input": { "tag": "forge:ingots/nickel" },
   "outputs": [
     {
       "chance": 1.0,
