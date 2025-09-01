@@ -2,5 +2,6 @@
   "type": "enderio:alloy_smelting",
   "inputs": [ { "count": 1, "ingredient": { "item": "minecraft:sand" } } ],
   "result": { "item": "minecraft:glass", "count": 1 },
-  "energy": 1200
+  "energy": 1200,
+  "experience": 0.1
 }
