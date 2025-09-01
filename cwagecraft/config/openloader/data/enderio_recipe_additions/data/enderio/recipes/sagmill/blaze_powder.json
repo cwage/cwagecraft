@@ -1,0 +1,8 @@
+{
+  "type": "enderio:sagmill",
+  "input": { "item": "minecraft:blaze_rod" },
+  "outputs": [ { "item": "minecraft:blaze_powder", "count": 2, "chance": 1.0 } ],
+  "energy": 800,
+  "bonus": "none"
+}
+

@@ -1,0 +1,7 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [ { "item": "minecraft:clay_ball" } ],
+  "result": { "item": "minecraft:brick", "count": 1 },
+  "energy": 800
+}
+

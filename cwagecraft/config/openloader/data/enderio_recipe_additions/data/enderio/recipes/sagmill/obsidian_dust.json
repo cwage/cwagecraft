@@ -1,0 +1,8 @@
+{
+  "type": "enderio:sagmill",
+  "input": { "item": "minecraft:obsidian" },
+  "outputs": [ { "item": "thermal:obsidian_dust", "count": 1, "chance": 1.0 } ],
+  "energy": 3200,
+  "bonus": "none"
+}
+

@@ -1,0 +1,8 @@
+{
+  "type": "enderio:sagmill",
+  "input": { "item": "ae2:certus_quartz_crystal" },
+  "outputs": [ { "item": "ae2:certus_quartz_dust", "count": 1, "chance": 1.0 } ],
+  "energy": 1200,
+  "bonus": "none"
+}
+

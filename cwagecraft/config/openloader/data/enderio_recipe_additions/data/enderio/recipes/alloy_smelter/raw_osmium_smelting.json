@@ -1,0 +1,7 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [ { "item": "mekanism:raw_osmium" } ],
+  "result": { "item": "mekanism:ingot_osmium", "count": 1 },
+  "energy": 3200
+}
+

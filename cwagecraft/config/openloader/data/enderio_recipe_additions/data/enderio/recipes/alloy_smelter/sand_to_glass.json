@@ -1,0 +1,7 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [ { "item": "minecraft:sand" } ],
+  "result": { "item": "minecraft:glass", "count": 1 },
+  "energy": 1200
+}
+

@@ -1,0 +1,7 @@
+{
+  "type": "enderio:alloy_smelter",
+  "inputs": [ { "item": "minecraft:clay" } ],
+  "result": { "item": "minecraft:terracotta", "count": 1 },
+  "energy": 1600
+}
+
