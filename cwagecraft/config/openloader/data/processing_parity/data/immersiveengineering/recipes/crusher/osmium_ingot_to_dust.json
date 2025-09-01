@@ -1,7 +1,0 @@
-{
-  "type": "immersiveengineering:crusher",
-  "energy": 2400,
-  "input": { "item": "mekanism:ingot_osmium" },
-  "result": { "item": "mekanism:dust_osmium" }
-}
-

@@ -1,7 +1,0 @@
-{
-  "type": "immersiveengineering:crusher",
-  "energy": 6400,
-  "input": { "item": "minecraft:obsidian" },
-  "result": { "item": "thermal:obsidian_dust" }
-}
-
