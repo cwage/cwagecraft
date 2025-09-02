@@ -1,6 +1,6 @@
 {
   "type": "enderio:alloy_smelting",
-  "inputs": [ { "count": 1, "ingredient": { "item": "create:raw_zinc" } } ],
+  "inputs": [ { "count": 1, "ingredient": { "tag": "forge:raw_materials/zinc" } } ],
   "result": { "item": "create:zinc_ingot", "count": 1 },
   "energy": 3200,
   "experience": 0.1

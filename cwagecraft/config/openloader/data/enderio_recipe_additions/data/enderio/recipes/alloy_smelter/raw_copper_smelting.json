@@ -1,6 +1,6 @@
 {
   "type": "enderio:alloy_smelting",
-  "inputs": [ { "count": 1, "ingredient": { "item": "minecraft:raw_copper" } } ],
+  "inputs": [ { "count": 1, "ingredient": { "tag": "forge:raw_materials/copper" } } ],
   "result": {
     "item": "minecraft:copper_ingot",
     "count": 1

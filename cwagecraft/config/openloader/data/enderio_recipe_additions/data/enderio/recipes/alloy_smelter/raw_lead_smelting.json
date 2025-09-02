@@ -1,6 +1,6 @@
 {
   "type": "enderio:alloy_smelting",
-  "inputs": [ { "count": 1, "ingredient": { "item": "thermal:raw_lead" } } ],
+  "inputs": [ { "count": 1, "ingredient": { "tag": "forge:raw_materials/lead" } } ],
   "result": {
     "item": "thermal:lead_ingot",
     "count": 1
