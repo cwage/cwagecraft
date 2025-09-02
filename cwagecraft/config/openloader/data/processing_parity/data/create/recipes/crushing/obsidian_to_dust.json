@@ -1,0 +1,7 @@
+{
+  "type": "create:crushing",
+  "ingredients": [ { "item": "minecraft:obsidian" } ],
+  "results": [ { "item": "thermal:obsidian_dust", "count": 1 } ],
+  "processingTime": 300
+}
+

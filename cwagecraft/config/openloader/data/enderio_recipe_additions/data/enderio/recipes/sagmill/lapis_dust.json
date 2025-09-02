@@ -1,0 +1,15 @@
+{
+  "type": "enderio:sag_milling",
+  "input": {
+    "item": "minecraft:lapis_lazuli"
+  },
+  "outputs": [
+    {
+      "chance": 1.0,
+      "item": { "item": "thermal:lapis_dust", "count": 1 },
+      "optional": false
+    }
+  ],
+  "energy": 2400,
+  "bonus": "none"
+}

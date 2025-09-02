@@ -17,6 +17,134 @@ file = "config/oculus.properties"
 hash = "a8230edabb98fbbe0b6a35a40fa85bb546c5a3334ae54e0721e0356b1bd6693e"
 
 [[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/aluminum_block_1x.json"
+hash = "b9569a3bf3bb5e1e78c082de40560dc5286210444349b78d0fe53f77926ea08b"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/coal_block_1x.json"
+hash = "3c56cdaea3f8f74059c0fb0dd8bfc4192c1c8e7f98a5f62d97791b22d5255941"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/copper_block_1x.json"
+hash = "ea9596211ce4e9138aca499f0ae20d73f52341f39d58a24794f86451559c9be3"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/diamond_block_1x.json"
+hash = "ba58c80bdbc2b4012fb64a8a7c1711fb444242c720c8f5479e128f931264665c"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/emerald_block_1x.json"
+hash = "e722b89584093fb888199bc8bcc7cf09df1bb7702178ad619d7b56e8b99c97e8"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/gold_block_1x.json"
+hash = "834db80c617730bb9d4d847fd693eb5b47d60fcb60682a36b92773c6aa1b0bd3"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/iron_block_1x.json"
+hash = "aef495c18d8627cdc2a8f5536cfb9f17b23beb1b9663a3032e20f94d6a9a2d7c"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/lapis_block_1x.json"
+hash = "ba71a78178977596debf8713f2821927e8321dbe79f46f9cfe2e1ac8bb3be3f5"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/lead_block_1x.json"
+hash = "698c76828aa0c0a1514fe107318688ab111233a51e9ad96ecc3cb2eab9b1a854"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/nickel_block_1x.json"
+hash = "c150eb9789af41e27dc4cb484306299fab2fed2b2eee1e6386e1427c1e8ed552"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/osmium_block_1x.json"
+hash = "c5dcd12b2760ac5bff45662f8a5c950f106b9ffcd0cb54f49512971ce73a2d3c"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/redstone_block_1x.json"
+hash = "80e216dac21dbe5f794087fd0b300f58cc4e7cc074f833e47904bb6cca10ba1c"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/silver_block_1x.json"
+hash = "9961019ef411586e80ac5a30cf96be56e5d8b8e5cbbd131f119c9db10b4580e5"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/tin_block_1x.json"
+hash = "ba37d17d72fbcaac2125d150249306fd0597658bf1264f6e97fed698668285d4"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_compress/uranium_block_1x.json"
+hash = "1ba347ba9f0b5c4f94f944bce8f865d309ad78aab1283a2e0ba68ff345f3759b"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/aluminum_block_1x.json"
+hash = "62ab2661ddbd20b5be80a81993278c263fb2b75611bdccfc354a47c7c1b14c4b"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/coal_block_1x.json"
+hash = "adbeee9031558f60cd0d28c8ef73670802cb5adc76cdf93a2701ed98a7fef5e2"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/copper_block_1x.json"
+hash = "32a5e2a03e389387ad8634d55c3a30c2f3c7919a2dda8d21cec4beab2424de37"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/diamond_block_1x.json"
+hash = "5547a8fccbccc66cd8edaf5a0a24d8c310f863da4b49fe47479aad02f844442e"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/emerald_block_1x.json"
+hash = "37cae0eaa1836a1135ca07d06bd3ce8273ad6b79f2ef6341508afe3899258a26"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/gold_block_1x.json"
+hash = "c54b9a925dda16a5524ae1e64a33a1aa4c8cb230bcc91d306893e516abd03b49"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/iron_block_1x.json"
+hash = "64ecd1e6120b932130e59d201096959daf635fd35c7b6de0f2e87ed2a3cf2409"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/lapis_block_1x.json"
+hash = "df2d4978d085a1b646ce6043ab494192fb6d328d12a826ad1193b20efa381c77"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/lead_block_1x.json"
+hash = "ca0e9a653d3306fcdea4f05c3f4b0b3e024713b301d1b70442cbb871196d351a"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/nickel_block_1x.json"
+hash = "6fcee60f6863573d205820c01a136092080deef01d23c281a49ffbdfc186824e"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/osmium_block_1x.json"
+hash = "438674a188eef286bd12e36590de49511d955d2b5275918a7182fd3b8f030318"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/redstone_block_1x.json"
+hash = "12b87f1eace86779c1dd8551b7b24720bdf609ce7e05c1a4689ef333df173b42"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/silver_block_1x.json"
+hash = "cffbabb13f5d6b2477ab2a892f19217e7bc045f1c68c22c087d96e3627acbe09"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/tin_block_1x.json"
+hash = "27ead5e386612f598bca3232d415544b48311afbf36d7613ad9f0961c797f695"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/data/cwagecraft/recipes/atc_decompress/uranium_block_1x.json"
+hash = "4b908860bb5d95bf6d7a34a0007b258529ee6399592d6e1f86ab7819d078dde0"
+
+[[files]]
+file = "config/openloader/data/atc_recipes/pack.mcmeta"
+hash = "ab709ea62ffcdd390cc340f67951712d060154f3ab06f84e35b5cbe6016b5a8a"
+
+[[files]]
+file = "config/openloader/data/compat_filters/pack.mcmeta"
+hash = "d1c3baa3561bf3b961ac30aea1dbae0f85fa20d583771b9354226da59ac28feb"
+
+[[files]]
 file = "config/openloader/data/cyclic_recipe_fixes/README.md"
 hash = "991b32137ec52531f25da17af6060ca4e48ea40cb4b61f53930efcd1fc51d6ab"
 
@@ -43,6 +171,178 @@ hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
 [[files]]
 file = "config/openloader/data/cyclic_recipe_fixes/pack.mcmeta"
 hash = "415696a16c5e174aa477da502519740dfd1ef5292fe930d60103a34d5ace35fe"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/README.md"
+hash = "f82cce7ea75efeeadfb56099cd950a5bee5720d7a35d6af117232b2e8d125f4e"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/beef_cooking.json"
+hash = "96a6950c8e331d6835011f840f57c409ab94ab87a74e138f13027c9b528baa29"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/chicken_cooking.json"
+hash = "12ac110fab1d6c1650f1dbd02fc48152ba0f5ea7c8ee3b8791083f3cec0fed69"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/clay_ball_to_brick.json"
+hash = "4441aa0d839ca84b5dd793a46fdd045f7386dbaa0fdcba9d60b5e58ca37c71e2"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/clay_to_terracotta.json"
+hash = "8f4bf25c4f1f677ccfd4b6cbc6a331cedb9085c0cc1144dd1cb8157a93f8969f"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/cobblestone_to_stone.json"
+hash = "b75268e68f06c4a71684fc805a02dde3591f20ac703e21a5fd01a396c4a14ad2"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/porkchop_cooking.json"
+hash = "98074d3c2973e59b13f12197e0a587f766c15efa5bf00e293623df1ad765675f"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_aluminum_smelting.json"
+hash = "5a7cca828e880f00dbcf8515d81ca0a4b2ec571a3f66e933742d22d960bb26da"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_copper_smelting.json"
+hash = "86e1bd087fcaf85ce4214052e47b270cb5cb4c595532f50509e1765c98b7b9b6"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_gold_smelting.json"
+hash = "4d712fc5a8fa2162b37fc6784e467886606e2c90124c66e0e6c49f17f385ea59"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_iron_smelting.json"
+hash = "98e97a7c9ebeda5eedba7f22c2504ff83cb045f86500ae37635a4695b8c538c3"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_lead_smelting.json"
+hash = "fce30378a8a375c11d068ed7a65ed8d15504b6089a285eb98602c15b33405ed2"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_nickel_smelting.json"
+hash = "e2c6ac0c6429c574d29235a4d36e7f7ba568bc41d70d52e23b0b04fb933a177b"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_osmium_smelting.json"
+hash = "17a7049ffb145651d6ce9858441d9a841817fa15e78a0d648d5cfe3e67185f1b"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_silver_smelting.json"
+hash = "74907b89af756d923901a00ce34a791ee89a7bf0a6fa0e368d4a9faacdf5eefd"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_tin_smelting.json"
+hash = "c6ac319098ae7d49ccb0ed2b0540003cd6a483e0302341ebd3f72adf6af934f1"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_uranium_smelting.json"
+hash = "ba2cdc3c963296183d4be2474dd327966063c243cb292e8a88f049c5c8d4d800"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_zinc_smelting.json"
+hash = "05ef3fac18aa99e5bcfa66fcb34af2b36ebe7772b0e0993ebe37ef931ba083b3"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/sand_to_glass.json"
+hash = "a60899ed1f860c323c6c35dd2ffa4b4bbc59fb12e528ca277150c51f0ec730e4"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/sandstone_to_smooth.json"
+hash = "e61f8e13e95c8952ba8d96b8dd8b275e45790c1335c63fbfcf22717246d76a13"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/stone_to_smooth.json"
+hash = "b81ccd42352e6fa4be48e51c6c9160c0e6136f4090333fc22d8e601cc0374d21"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/aluminum_ingot.json"
+hash = "4e957c3b3dd89e3cdc24d2a15f5a7b22491d6d9b4f06c47df186af78794eb05a"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/blaze_powder.json"
+hash = "503bb90271028c9ae21bf4003205db359484cd14a3051b20b338269aaf893892"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/bone_meal.json"
+hash = "5f3e376f672a99815e4c5e7dc16c08dd6fb6cee9765c10169bcdad8541cd2fa5"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/certus_quartz_dust.json"
+hash = "e698e0f80fbcb8a069c8ca11a5f6a56b1ba32d47500ee2d78a9efd5b62d36c30"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/charcoal_dust.json"
+hash = "663809c6543706afa306a521b8da11e496004262c30e42ba181c2e507050089f"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/coal_dust.json"
+hash = "e0e845b57b822f2fd1d9dc61d26241d29b16f57327f67a038be3bbca9b425d1b"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/copper_ingot.json"
+hash = "11ccdf0a2b6430377c29bbb72f46c74d595d73882fda9c8a05e051c70a398690"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/diamond_dust.json"
+hash = "934119cd7241d9763b15db9ca580d9114007371b2c2968abbd24b91f73c76cc1"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/emerald_dust.json"
+hash = "96d97dec4251efa7dc03b12e5c05523fa15fa408cfba2353d5904e1c0c9bce23"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/gold_ingot.json"
+hash = "6bebca01361ac2665177ddf5db98ac9f5bebecbec7741f126a03a7452340502d"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/iron_ingot.json"
+hash = "3628f1ca24052aa4023b47ce1c4118b9251225faaf1a575b3e1ddf482dfeca24"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/lapis_dust.json"
+hash = "8f43f5084e5c5ca1ae764f85e433655a93349f5b6b7242a4f1e149543917edc1"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/lead_ingot.json"
+hash = "77681c1b0ffd9e15255adfde60ea54b8e66e8c2f33910cc0dc8433de884de2e2"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/nickel_ingot.json"
+hash = "804bd37e8525eafd216769f7d9c6eb59d5cd9f22dd81c3f7181db0b96ca18c06"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/obsidian_dust.json"
+hash = "b2a5543b52774c7aee39e628740cca762eec5aae7ed2d274b059ba3df5c01eb3"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/osmium_ingot.json"
+hash = "933a77b3d25b4aa99c3e75178861fd1b65009817cc0e8c9361445cd82c72eb19"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/quartz_dust.json"
+hash = "2561b7508b4212a800932c8b93f000faed472c0276ca1b064883257e8f248208"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/silver_ingot.json"
+hash = "1b73643e0a3f1846a929e0525e39daba7fb706d00805b88737cae4cdccf7bb0f"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/steel_ingot.json"
+hash = "4b66c384bc89d3aa2da6b397c601cdf23636891005eef7f01851bccaf691d1ef"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/tin_ingot.json"
+hash = "1c3058d13e2d9917782a8bf68aa7289c63316db0114a4f94b2be9b563fc35f1d"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/uranium_ingot.json"
+hash = "978a3661fd5dc035ca85f50c305af67193f6899add6394b19bc92dbf52117d89"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/pack.mcmeta"
+hash = "a26b879d4d3f8ec82fa7344701dee8c4a210a033c71cf6cf8a8ffa809616b841"
 
 [[files]]
 file = "config/openloader/data/frequent_slime_islands/data/tconstruct/tags/worldgen/biome/has_structure/blood_island.json"
@@ -159,6 +459,110 @@ hash = "7aa6b34bf766caaa1b2ca423480afeb0d4da98cf7777c4d3ff1e3d40f5822790"
 [[files]]
 file = "config/openloader/data/no_trample_players/pack.mcmeta"
 hash = "202ebeded6c3c05018ecbac218e797d2ff05552b9d10c2bbf3d3329565e282fa"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/create/recipes/crushing/blaze_to_powder.json"
+hash = "e9a0963185c871bef750567061ad3a604e4a784b69f02cd373a9a5c80a685b36"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/create/recipes/crushing/bone_to_meal.json"
+hash = "8aed0c8246f5cada2c592d68f6228937ef4c17749b231d4bbf9c5b6902c7413c"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/create/recipes/crushing/certus_to_dust.json"
+hash = "a6aab7d4dc01c81f7465d08cee9e35e7d194e4e5621a6153474b8baa05b0feeb"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/create/recipes/crushing/obsidian_to_dust.json"
+hash = "42127441490157b103cc97938772c60460cbc99f3bb439593028447ad81e81da"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/create/recipes/crushing/osmium_ingot_to_dust.json"
+hash = "1f5bc6e708c772b777b8c9b52b31299dbd1e3c4f806f73d99b8e8508c317c415"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/create/recipes/crushing/quartz_to_dust.json"
+hash = "737fdf581557fda065b3ef7323e15d09cb9e5f0562e776d8eb5fbd6fc036eeaa"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/create/recipes/crushing/steel_ingot_to_dust.json"
+hash = "080fc4cf92d47cf5d50654fcdfc672cc6c325a3949156d4949b143a6b68c9546"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/immersiveengineering/recipes/crusher/obsidian_to_dust.json"
+hash = "882a054795e567710ee515d7fafae83adb88eefe4646d93d6756ab6527c7c031"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/immersiveengineering/recipes/crusher/osmium_ingot_to_dust.json"
+hash = "3617580100fc64b43e14ede1d3171d298d2597282dae6720414e0330ca5a4bd9"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/immersiveengineering/recipes/crusher/quartz_to_dust.json"
+hash = "55ccdeb1c6be684e679765fd50838863d8c08b15c9a5d5e182118a83db18e2fd"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/immersiveengineering/recipes/crusher/steel_ingot_to_dust.json"
+hash = "366b2fb0ea0322897c99c8d9d72b3d05b39502a771cfc0e1f7622d5bef1369eb"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/blaze_to_powder.json"
+hash = "67e8464fbaba6315b5a579c559524657d8e1b02380244ec47ea6047b50dfe1de"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/bone_to_meal.json"
+hash = "d0a609baedac1c69597c1d86432cd9903d8f8828053d44d2506b1d1991660985"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/certus_to_dust.json"
+hash = "ef833817d4bb1964922e6aa6d6447a6a4c6b2c3e2d495d0be8e700922e11e02c"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/obsidian_to_dust.json"
+hash = "40e3f66dade125f9e68b35c998b6c5028c7802193a171aef12492f49772cd921"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/osmium_ingot_to_dust.json"
+hash = "c4f2e02887115686bccada357b0a032f05ffd9140798fdd50e0ec1adadda9441"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/quartz_to_dust.json"
+hash = "3f653b503745b99a3f802b63b5313d8a8a3c8a1a1390c0026d37c99c6685a589"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/steel_ingot_to_dust.json"
+hash = "76248cca1a022c2bf62ab694cb582e57bc3f57cc0a7bba33fe0d27a2ec4abc5b"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/thermal/recipes/pulverizer/blaze_to_powder.json"
+hash = "33ad337f92445cf99ff91d698375855539de152fec1165b2eac9d4fc0f35741d"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/thermal/recipes/pulverizer/bone_to_meal.json"
+hash = "98959977407f08e4ae5b8bf563f22cc7a381948d551ac0217e4bf70224a08e2a"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/thermal/recipes/pulverizer/certus_to_dust.json"
+hash = "ecba38ea3394e142fe2d25a5d6b3f90b759e878a8e05822599bc9f6462069da1"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/thermal/recipes/pulverizer/obsidian_to_dust.json"
+hash = "fdfd1a04503178fdb8d174d5d9373a9e377fdeff051a77c9c997acbebcb630cb"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/thermal/recipes/pulverizer/osmium_ingot_to_dust.json"
+hash = "226050f8ee74da134f2c4dd643606531b8df91f3fdfa8f5501a4ffd82aa4c63f"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/thermal/recipes/pulverizer/quartz_to_dust.json"
+hash = "df3f73fc1b3671bac94a62c95adaa778eb471447cf225c5ea2ee45669cc46f76"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/thermal/recipes/pulverizer/steel_ingot_to_dust.json"
+hash = "8cc5f1e74e47de409dca968ed59d84ed6ab75627ea8c9fb894380ce42ac54411"
+
+[[files]]
+file = "config/openloader/data/processing_parity/pack.mcmeta"
+hash = "7a3bc1a48e6525ec223a2ffd45e9983a220f48e623baa22ef9aad3f430fed3ee"
 
 [[files]]
 file = "config/openloader/data/tla_early_leveling/data/tinkerslevellingaddon/recipes/tools/modifiers/ability/improvable_flint.json"

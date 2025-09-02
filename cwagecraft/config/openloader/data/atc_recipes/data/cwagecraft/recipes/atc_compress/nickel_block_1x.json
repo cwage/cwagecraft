@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["BBB","BBB","BBB"],
+  "key": { "B": { "item": "thermal:nickel_block" } },
+  "result": { "item": "allthecompressed:nickel_block_1x" }
+}
+

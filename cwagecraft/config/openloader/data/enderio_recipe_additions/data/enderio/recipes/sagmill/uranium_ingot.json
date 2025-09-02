@@ -1,0 +1,13 @@
+{
+  "type": "enderio:sag_milling",
+  "input": { "tag": "forge:ingots/uranium" },
+  "outputs": [
+    {
+      "chance": 1.0,
+      "item": { "item": "immersiveengineering:dust_uranium", "count": 1 },
+      "optional": false
+    }
+  ],
+  "energy": 2400,
+  "bonus": "none"
+}

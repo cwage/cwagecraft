@@ -1,0 +1,10 @@
+{
+  "type": "enderio:alloy_smelting",
+  "inputs": [ { "count": 1, "ingredient": { "item": "minecraft:sandstone" } } ],
+  "result": {
+    "item": "minecraft:smooth_sandstone",
+    "count": 1
+  },
+  "energy": 1600,
+  "experience": 0.1
+}

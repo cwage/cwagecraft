@@ -1,0 +1,7 @@
+{
+  "type": "enderio:sag_milling",
+  "input": { "item": "minecraft:coal" },
+  "outputs": [ { "chance": 1.0, "item": { "item": "enderio:powdered_coal", "count": 1 }, "optional": false } ],
+  "energy": 2400,
+  "bonus": "none"
+}

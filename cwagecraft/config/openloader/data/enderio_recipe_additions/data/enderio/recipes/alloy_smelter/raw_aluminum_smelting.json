@@ -1,0 +1,10 @@
+{
+  "type": "enderio:alloy_smelting",
+  "inputs": [ { "count": 1, "ingredient": { "item": "immersiveengineering:raw_aluminum" } } ],
+  "result": {
+    "item": "immersiveengineering:ingot_aluminum",
+    "count": 1
+  },
+  "energy": 3200,
+  "experience": 0.1
+}

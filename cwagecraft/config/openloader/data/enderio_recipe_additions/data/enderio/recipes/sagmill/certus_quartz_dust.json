@@ -1,0 +1,7 @@
+{
+  "type": "enderio:sag_milling",
+  "input": { "item": "ae2:certus_quartz_crystal" },
+  "outputs": [ { "chance": 1.0, "item": { "item": "ae2:certus_quartz_dust", "count": 1 }, "optional": false } ],
+  "energy": 1200,
+  "bonus": "none"
+}

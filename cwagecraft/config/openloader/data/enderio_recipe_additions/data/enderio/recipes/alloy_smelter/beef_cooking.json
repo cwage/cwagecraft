@@ -1,0 +1,10 @@
+{
+  "type": "enderio:alloy_smelting",
+  "inputs": [ { "count": 1, "ingredient": { "item": "minecraft:beef" } } ],
+  "result": {
+    "item": "minecraft:cooked_beef",
+    "count": 1
+  },
+  "energy": 1600,
+  "experience": 0.35
+}

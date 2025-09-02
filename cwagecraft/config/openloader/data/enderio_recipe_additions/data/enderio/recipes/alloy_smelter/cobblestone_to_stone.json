@@ -1,0 +1,10 @@
+{
+  "type": "enderio:alloy_smelting",
+  "inputs": [ { "count": 1, "ingredient": { "item": "minecraft:cobblestone" } } ],
+  "result": {
+    "item": "minecraft:stone",
+    "count": 1
+  },
+  "energy": 1600,
+  "experience": 0.1
+}

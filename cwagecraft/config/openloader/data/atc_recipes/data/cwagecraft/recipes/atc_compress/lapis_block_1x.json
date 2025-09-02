@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["BBB","BBB","BBB"],
+  "key": { "B": { "item": "minecraft:lapis_block" } },
+  "result": { "item": "allthecompressed:lapis_block_1x" }
+}
+

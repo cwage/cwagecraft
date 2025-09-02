@@ -1,0 +1,7 @@
+{
+  "type": "create:crushing",
+  "ingredients": [ { "item": "mekanism:ingot_osmium" } ],
+  "results": [ { "item": "mekanism:dust_osmium", "count": 1 } ],
+  "processingTime": 200
+}
+

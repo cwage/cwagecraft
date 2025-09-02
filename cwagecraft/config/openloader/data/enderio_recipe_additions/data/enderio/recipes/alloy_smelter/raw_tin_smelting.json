@@ -1,0 +1,10 @@
+{
+  "type": "enderio:alloy_smelting",
+  "inputs": [ { "count": 1, "ingredient": { "item": "thermal:raw_tin" } } ],
+  "result": {
+    "item": "thermal:tin_ingot",
+    "count": 1
+  },
+  "energy": 3200,
+  "experience": 0.1
+}

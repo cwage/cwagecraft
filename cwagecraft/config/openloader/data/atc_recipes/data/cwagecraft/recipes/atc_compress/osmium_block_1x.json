@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["BBB","BBB","BBB"],
+  "key": { "B": { "item": "mekanism:block_osmium" } },
+  "result": { "item": "allthecompressed:osmium_block_1x" }
+}
+
