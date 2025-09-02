@@ -1,0 +1,13 @@
+{
+  "type": "enderio:sag_milling",
+  "input": { "item": "mekanism:tin_ore" },
+  "outputs": [
+    {
+      "chance": 1.0,
+      "item": { "item": "mekanism:dust_tin", "count": 2 },
+      "optional": false
+    }
+  ],
+  "energy": 2400,
+  "bonus": "none"
+}

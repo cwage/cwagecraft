@@ -6,16 +6,17 @@ This datapack adds missing recipes to EnderIO machines to provide better integra
 EnderIO machines (SAG Mill and Alloy Smelter) were missing many common processing recipes that other mod machines could handle, creating gaps in automation and forcing players to use multiple machine types for basic operations.
 
 ## Solution
-Adds comprehensive recipe support to EnderIO machines with 44 total recipes:
+Adds comprehensive recipe support to EnderIO machines with 59 total recipes:
 
-### SAG Mill Additions (30 recipes)
+### SAG Mill Additions (45 recipes)
 - **Metal Ingot Grinding**: copper, tin, nickel, silver, lead, aluminum, uranium, iron, gold
 - **Fuel Processing**: coal and charcoal → dust
 - **Gem Processing**: diamond, emerald, lapis lazuli → dust
 - **Ore Block Processing**: All major ore blocks → 2x dusts/materials (NEW)
   - Metal ores: copper, tin, iron, gold, aluminum, lead, silver, nickel, osmium, uranium
-  - Gem ores: diamond, emerald, lapis, redstone, coal
-  - Modded ores: inferium (Mystical Agriculture), and others
+  - Gem ores: diamond, emerald, lapis, redstone, coal, quartz, certus quartz
+  - Modded ores: inferium, prosperity (Mystical Agriculture), draconium (Draconic Evolution)
+  - Fallback recipes for specific item IDs where tags might not work
 - Consistent with other mod grinding machines like Thermal Pulverizers
 
 ### Alloy Smelter Additions (14 recipes)
@@ -31,7 +32,7 @@ Adds comprehensive recipe support to EnderIO machines with 44 total recipes:
 - Supports early to late-game automation workflows
 
 ## Files
-- `data/enderio/recipes/sagmill/` - 30 SAG Mill grinding recipes (ingots, gems, ore blocks)
+- `data/enderio/recipes/sagmill/` - 45 SAG Mill grinding recipes (ingots, gems, ore blocks)
 - `data/enderio/recipes/alloy_smelter/` - 14 Alloy Smelter recipes
 - `pack.mcmeta` - Data pack metadata (pack format 15)
 

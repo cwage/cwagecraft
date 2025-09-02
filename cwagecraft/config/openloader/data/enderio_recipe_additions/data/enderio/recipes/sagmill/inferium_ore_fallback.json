@@ -1,0 +1,13 @@
+{
+  "type": "enderio:sag_milling",
+  "input": { "item": "mysticalagriculture:inferium_ore" },
+  "outputs": [
+    {
+      "chance": 1.0,
+      "item": { "item": "mysticalagriculture:inferium_essence", "count": 2 },
+      "optional": false
+    }
+  ],
+  "energy": 2400,
+  "bonus": "none"
+}
