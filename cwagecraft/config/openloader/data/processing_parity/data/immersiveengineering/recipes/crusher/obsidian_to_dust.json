@@ -2,6 +2,6 @@
   "type": "immersiveengineering:crusher",
   "energy": 6400,
   "input": { "item": "minecraft:obsidian" },
-  "result": { "item": "thermal:obsidian_dust" },
+  "result": { "item": "mekanism:dust_obsidian" },
   "secondaries": []
 }

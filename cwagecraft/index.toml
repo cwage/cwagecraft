@@ -478,7 +478,7 @@ hash = "a6aab7d4dc01c81f7465d08cee9e35e7d194e4e5621a6153474b8baa05b0feeb"
 
 [[files]]
 file = "config/openloader/data/processing_parity/data/create/recipes/crushing/obsidian_to_dust.json"
-hash = "42127441490157b103cc97938772c60460cbc99f3bb439593028447ad81e81da"
+hash = "2d2ed47bbf292aa21333c1514b337aa9e7d4d78ffe4bf1cf7f536ef4392e11af"
 
 [[files]]
 file = "config/openloader/data/processing_parity/data/create/recipes/crushing/osmium_ingot_to_dust.json"
@@ -494,7 +494,7 @@ hash = "080fc4cf92d47cf5d50654fcdfc672cc6c325a3949156d4949b143a6b68c9546"
 
 [[files]]
 file = "config/openloader/data/processing_parity/data/immersiveengineering/recipes/crusher/obsidian_to_dust.json"
-hash = "882a054795e567710ee515d7fafae83adb88eefe4646d93d6756ab6527c7c031"
+hash = "97454c86973e1f07d0a536b30744b1edb71ce955a26bc66bb77e1a1178a97724"
 
 [[files]]
 file = "config/openloader/data/processing_parity/data/immersiveengineering/recipes/crusher/osmium_ingot_to_dust.json"
