@@ -177,6 +177,42 @@ file = "config/openloader/data/cyclic_recipe_fixes/pack.mcmeta"
 hash = "415696a16c5e174aa477da502519740dfd1ef5292fe930d60103a34d5ace35fe"
 
 [[files]]
+file = "config/openloader/data/de_ore_rates_revelation/data/cwagecraft/forge/biome_modifier/add_draconium_overworld_lower_mid.json"
+hash = "dd88d401ce1d52b91d213b57076095dde07d71896005ec96042aee067857b8e9"
+
+[[files]]
+file = "config/openloader/data/de_ore_rates_revelation/data/cwagecraft/forge/biome_modifier/add_draconium_overworld_upper.json"
+hash = "d05c3c9e33bad3af8ae2a134eed46fcc7139184509c59ddad701625cacbb4b17"
+
+[[files]]
+file = "config/openloader/data/de_ore_rates_revelation/data/cwagecraft/worldgen/placed_feature/overworld_draconium_ore_lower_mid.json"
+hash = "05c72f22de4608b5ced2456a5f1cfd95b6466bff7ed045e530911d5d0cb901f9"
+
+[[files]]
+file = "config/openloader/data/de_ore_rates_revelation/data/cwagecraft/worldgen/placed_feature/overworld_draconium_ore_upper.json"
+hash = "4032bb9a6a575447b81ba055fdd3ca256ad0d939b362461d44936c24f3f6d559"
+
+[[files]]
+file = "config/openloader/data/de_ore_rates_revelation/data/cwagecraft/worldgen/placed_feature/test_overworld_draconium_ore.json"
+hash = "4a1adfb964576d87b5b268878778e74e6cda378bd2047b9c297f82bff6f89f6c"
+
+[[files]]
+file = "config/openloader/data/de_ore_rates_revelation/data/draconicevolution/worldgen/placed_feature/end_draconium_ore.json"
+hash = "7bdcc4fdecf9d73ad57a41a90f8abedcff7bc2278ca3533ccc80233630e59629"
+
+[[files]]
+file = "config/openloader/data/de_ore_rates_revelation/data/draconicevolution/worldgen/placed_feature/nether_draconium_ore.json"
+hash = "4e3180f262eade41ace8a55ea24fa90ee2ba55431719857b530711351f1432b3"
+
+[[files]]
+file = "config/openloader/data/de_ore_rates_revelation/data/draconicevolution/worldgen/placed_feature/overworld_draconium_ore.json"
+hash = "32fbf0590036c86476df42e749a6916dc92c16bef65b72d8cdd84686f04bc3b1"
+
+[[files]]
+file = "config/openloader/data/de_ore_rates_revelation/pack.mcmeta"
+hash = "b6e79d23917a7f0632865a8f0e80f1c3e0702e17ba25ee36bf39ca720389f19f"
+
+[[files]]
 file = "config/openloader/data/enderio_recipe_additions/README.md"
 hash = "f82cce7ea75efeeadfb56099cd950a5bee5720d7a35d6af117232b2e8d125f4e"
 
