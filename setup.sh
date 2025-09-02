@@ -244,7 +244,29 @@ echo "==> Refresh index"
 $PW refresh
 
 echo "==> Export Modrinth pack (.mrpack)"
+set +e
 $PW modrinth export --output "$MRPACK" --restrictDomains=false
+export_exit=$?
+set -e
+
+if [[ $export_exit -ne 0 ]]; then
+  echo "ERROR: packwiz export failed (exit $export_exit). See output above for details."
+  if [[ -f "$MRPACK" ]]; then
+    sz=$(stat -c%s "$MRPACK" 2>/dev/null || echo 0)
+    echo "Note: current '$MRPACK' size=${sz} bytes"
+  fi
+  echo "Common causes:"
+  echo " - CurseForge API/network errors (rate limiting or DNS)."
+  echo " - Mods requiring manual download due to licensing."
+  echo "Action: Re-run and review warnings above; set CURSEFORGE_API_KEY if applicable; or try again."
+  exit $export_exit
+fi
+
+if [[ ! -s "$MRPACK" ]]; then
+  echo "ERROR: '$MRPACK' is empty (0 bytes). Export did not complete successfully."
+  echo "Check for licensing/manual download warnings or network/API errors above."
+  exit 1
+fi
 
 echo
 echo "==> Done."

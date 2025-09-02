@@ -1,0 +1,5 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": { "item": "minecraft:obsidian" },
+  "result": [ { "item": "mekanism:dust_obsidian", "count": 1 } ]
+}
