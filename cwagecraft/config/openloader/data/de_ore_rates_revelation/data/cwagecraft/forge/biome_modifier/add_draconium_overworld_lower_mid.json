@@ -1,0 +1,7 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "cwagecraft:overworld_draconium_ore_lower_mid",
+  "step": "underground_ores"
+}
+

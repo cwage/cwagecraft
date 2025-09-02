@@ -1,0 +1,10 @@
+{
+  "type": "enderio:sag_milling",
+  "input": { "tag": "forge:ingots/draconium" },
+  "outputs": [
+    { "chance": 1.0, "item": { "item": "draconicevolution:draconium_dust", "count": 1 }, "optional": false }
+  ],
+  "energy": 2400,
+  "bonus": "none"
+}
+
