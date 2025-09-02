@@ -551,3 +551,11 @@ mods:
     slug: zerocore
     mr: 
     cf: 247921
+  - name: "Collective"
+    slug: collective
+    mr: 
+    cf: 342584
+  - name: "Wandering Trader May Leave"  
+    slug: wandering-trader-may-leave
+    mr: 
+    cf: 516464
