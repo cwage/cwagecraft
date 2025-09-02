@@ -13,6 +13,10 @@ file = "config/ftb-ultimine-forge.toml"
 hash = "346e63db210e2a2bd87504728adbef9a782d86b1aa462fe34b35372aece5c405"
 
 [[files]]
+file = "config/ironjetpacks/jetpacks/platinum.json"
+hash = "d62a55becd3bd9008288c538708f0cfabb94bf508fd5ff38a90d168ce35747e5"
+
+[[files]]
 file = "config/oculus.properties"
 hash = "a8230edabb98fbbe0b6a35a40fa85bb546c5a3334ae54e0721e0356b1bd6693e"
 
@@ -585,8 +589,16 @@ file = "defaultconfigs/pylons-server.toml"
 hash = "51d076ed014be250278963cd6d04910baaf8b08c0d14e017d6d76e3cb3d2578c"
 
 [[files]]
+file = "kubejs/client_scripts/hide_platinum_jetpack_jei.js"
+hash = "553a625fb6cbbe529a4e00ad3a85b4470e2291dbeb2b03a90378b2a49bc401c0"
+
+[[files]]
 file = "kubejs/client_scripts/jei_fusion_unhide.js"
 hash = "a9794c0a78d62d3f628052aef13ca1b609dd64e28de7173c321472cccbfc9b0a"
+
+[[files]]
+file = "kubejs/server_scripts/disable_platinum_jetpack.js"
+hash = "9fff6c72c629326f2cbd018de485200d65189e6c4e5e677b33afa94189aac149"
 
 [[files]]
 file = "mods/advanced-mining-dimension.pw.toml"
