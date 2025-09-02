@@ -1,0 +1,13 @@
+{
+  "type": "enderio:sag_milling",
+  "input": { "tag": "forge:ores/lead" },
+  "outputs": [
+    {
+      "chance": 1.0,
+      "item": { "item": "thermal:lead_dust", "count": 2 },
+      "optional": false
+    }
+  ],
+  "energy": 2400,
+  "bonus": "none"
+}

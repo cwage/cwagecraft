@@ -1,0 +1,18 @@
+{
+  "type": "enderio:sag_milling",
+  "input": { "tag": "forge:ores/lapis" },
+  "outputs": [
+    {
+      "chance": 1.0,
+      "item": { "item": "minecraft:lapis_lazuli", "count": 6 },
+      "optional": false
+    },
+    {
+      "chance": 0.25,
+      "item": { "item": "minecraft:lapis_lazuli", "count": 3 },
+      "optional": true
+    }
+  ],
+  "energy": 2400,
+  "bonus": "none"
+}

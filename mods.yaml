@@ -9,20 +9,20 @@ mods:
     cf: 
   - name: "AllTheCompressed"
     slug: allthecompressed
-    mr: 
-    cf: 514045
+    mr: 514045
+    cf: 
   - name: "Angel Block Renewed"
     slug: angel-block-renewed
-    mr: 
-    cf: 659250
+    mr: 659250
+    cf: 
   - name: "AppleSkin"
     slug: appleskin
     mr: EsAfCjCV
     cf: 
   - name: "Architectury API"
     slug: architectury-api
-    mr: 
-    cf: 419699
+    mr: 419699
+    cf: 
   - name: "Athena"
     slug: athena-ctm
     mr: b1ZV3DIJ
@@ -41,8 +41,8 @@ mods:
     cf: 
   - name: "Bookshelf"
     slug: bookshelf
-    mr: 
-    cf: 228525
+    mr: 228525
+    cf: 
   - name: "Botania"
     slug: botania
     mr: pfjLUfGv
@@ -57,16 +57,16 @@ mods:
     cf: 
   - name: "Brandon's Core"
     slug: brandons-core
-    mr: 
-    cf: 231382
+    mr: 231382
+    cf: 
   - name: "Chipped"
     slug: chipped
     mr: BAscRYKm
     cf: 
   - name: "Clean Swing Through Grass"
     slug: clean-swing-through-grass
-    mr: 
-    cf: 915308
+    mr: 915308
+    cf: 
   - name: "Cloth Config API"
     slug: cloth-config
     mr: 9s6osm5g
@@ -77,8 +77,8 @@ mods:
     cf: 
   - name: "CodeChicken Lib 1.8.+"
     slug: codechicken-lib-1-8
-    mr: 
-    cf: 242818
+    mr: 242818
+    cf: 
   - name: "CodeChicken Lib"
     slug: codechicken-lib
     mr: 2gq0ALnz
@@ -89,8 +89,8 @@ mods:
     cf: 
   - name: "Compact Machines"
     slug: compact-machines
-    mr: 
-    cf: 224218
+    mr: 224218
+    cf: 
   - name: "Construction Wand"
     slug: construction-wand
     mr: bV2crgLh
@@ -109,44 +109,44 @@ mods:
     cf: 
   - name: "Create Ore Excavation"
     slug: create-ore-excavation
-    mr: 
-    cf: 649832
+    mr: 649832
+    cf: 
   - name: "Create"
     slug: create
-    mr: 
-    cf: 328085
+    mr: 328085
+    cf: 
   - name: "Croptopia"
     slug: croptopia
-    mr: 
-    cf: 415438
+    mr: 415438
+    cf: 
   - name: "Cucumber Library"
     slug: cucumber
     mr: Rw1NrDzF
     cf: 
   - name: "Curios API (Forge/NeoForge)"
     slug: curios
-    mr: 
-    cf: 309927
+    mr: 309927
+    cf: 
   - name: "Cyclic"
     slug: cyclic
     mr: UcVTWyCI
     cf: 
   - name: "Dank Storage"
     slug: dank-storage
-    mr: 
-    cf: 335673
+    mr: 335673
+    cf: 
   - name: "Default Options"
     slug: default-options
-    mr: 
-    cf: 232131
-  - name: "Draconic Additions"
-    slug: draconicadditions
-    mr: 
-    cf: 314515
+    mr: 232131
+    cf: 
   - name: "Draconic Evolution"
     slug: draconic-evolution
-    mr: 
-    cf: 223565
+    mr: 223565
+    cf: 
+  - name: "Draconic Additions"
+    slug: draconicadditions
+    mr: 314515
+    cf: 
   - name: "Easy Piglins"
     slug: easy-piglins
     mr: l6n94pax
@@ -169,24 +169,24 @@ mods:
     cf: 
   - name: "Ender Crop"
     slug: ender-crop
-    mr: 
-    cf: 242269
-  - name: "Ender IO"
-    slug: enderio
-    mr: 49ZofO4f
+    mr: 242269
     cf: 
   - name: "Ender Storage"
     slug: ender-storage
     mr: BbrHg80P
     cf: 
+  - name: "Ender IO"
+    slug: enderio
+    mr: 49ZofO4f
+    cf: 
   - name: "End's Delight"
     slug: ends-delight
-    mr: 
-    cf: 662675
+    mr: 662675
+    cf: 
   - name: "EpheroLib"
     slug: epherolib
-    mr: 
-    cf: 885449
+    mr: 885449
+    cf: 
   - name: "Explorer's Compass"
     slug: explorers-compass
     mr: RV1qfVQ8
@@ -197,60 +197,60 @@ mods:
     cf: 
   - name: "Extreme Reactors"
     slug: extreme-reactors
-    mr: 
-    cf: 250277
+    mr: 250277
+    cf: 
   - name: "Farmer's Delight"
     slug: farmers-delight
-    mr: 
-    cf: 398521
+    mr: 398521
+    cf: 
   - name: "Fast Leaf Decay"
     slug: fast-leaf-decay
-    mr: 
-    cf: 230976
+    mr: 230976
+    cf: 
   - name: "FindMe"
     slug: findme
     mr: rEuzehyH
     cf: 
   - name: "Flat Bedrock (Forge / Fabric)"
     slug: flat-bedrock
-    mr: 
-    cf: 398623
+    mr: 398623
+    cf: 
   - name: "FLIB"
     slug: flib
     mr: FAUSd09K
     cf: 
   - name: "Flux Networks"
     slug: flux-networks
-    mr: 
-    cf: 248020
+    mr: 248020
+    cf: 
   - name: "Forestry: Community Edition"
     slug: forestry-community-edition
     mr: 2oORTOi2
     cf: 
   - name: "FTB Backups 2"
     slug: ftb-backups-2
-    mr: 
-    cf: 622737
+    mr: 622737
+    cf: 
   - name: "FTB Chunks (Forge)"
     slug: ftb-chunks-forge
-    mr: 
-    cf: 314906
+    mr: 314906
+    cf: 
   - name: "FTB Essentials (Forge & Fabric)"
     slug: ftb-essentials
-    mr: 
-    cf: 410811
+    mr: 410811
+    cf: 
   - name: "FTB Library (Forge)"
     slug: ftb-library-forge
-    mr: 
-    cf: 404465
+    mr: 404465
+    cf: 
   - name: "FTB Teams (Forge)"
     slug: ftb-teams-forge
-    mr: 
-    cf: 404468
+    mr: 404468
+    cf: 
   - name: "FTB Ultimine (Forge)"
     slug: ftb-ultimine-forge
-    mr: 
-    cf: 386134
+    mr: 386134
+    cf: 
   - name: "Gendustry: Community Edition"
     slug: gendustry-community-edition
     mr: 2zkSGMyK
@@ -269,8 +269,8 @@ mods:
     cf: 
   - name: "Hostile Neural Networks"
     slug: hostile-neural-networks
-    mr: 
-    cf: 552574
+    mr: 552574
+    cf: 
   - name: "Immersive Engineering"
     slug: immersiveengineering
     mr: tIm2nV03
@@ -281,8 +281,8 @@ mods:
     cf: 
   - name: "Inventory Sorter"
     slug: inventory-sorter
-    mr: 
-    cf: 240633
+    mr: 240633
+    cf: 
   - name: "Iron Chests"
     slug: iron-chests
     mr: P3iIrPH3
@@ -313,12 +313,12 @@ mods:
     cf: 
   - name: "Just Enough Resources Profiler (JEARGH)"
     slug: just-enough-resources-profiler-jeargh
-    mr: 
-    cf: 919773
+    mr: 919773
+    cf: 
   - name: "KubeJS"
     slug: kubejs
-    mr: 
-    cf: 238086
+    mr: 238086
+    cf: 
   - name: "Light Overlay"
     slug: light-overlay
     mr: YfOlc91N
@@ -349,8 +349,8 @@ mods:
     cf: 
   - name: "Mob Grinding Utils"
     slug: mob-grinding-utils
-    mr: 
-    cf: 254241
+    mr: 254241
+    cf: 
   - name: "Modular Routers"
     slug: modular-routers
     mr: EuTS81Z3
@@ -377,8 +377,8 @@ mods:
     cf: 
   - name: "Nether's Delight"
     slug: nethers-delight
-    mr: 
-    cf: 496394
+    mr: 496394
+    cf: 
   - name: "OpenComputers 2: Reimagined"
     slug: oc2r
     mr: F1gm4RsH
@@ -389,8 +389,8 @@ mods:
     cf: 
   - name: "Open Loader"
     slug: open-loader
-    mr: 
-    cf: 354339
+    mr: 354339
+    cf: 
   - name: "Paragliders"
     slug: paragliders
     mr: esqWA0aQ
@@ -405,12 +405,12 @@ mods:
     cf: 
   - name: "Placebo"
     slug: placebo
-    mr: 
-    cf: 283644
+    mr: 283644
+    cf: 
   - name: "PolyLib"
     slug: polylib
-    mr: 
-    cf: 576589
+    mr: 576589
+    cf: 
   - name: "Powah!"
     slug: powah
     mr: KZO4S4DO
@@ -453,24 +453,24 @@ mods:
     cf: 
   - name: "RFTools Storage"
     slug: rftools-storage
-    mr: 
-    cf: 350006
+    mr: 350006
+    cf: 
   - name: "RFTools Utility"
     slug: rftools-utility
     mr: 7n3HbHSE
     cf: 
   - name: "Rhino"
     slug: rhino
-    mr: 
-    cf: 416294
+    mr: 416294
+    cf: 
   - name: "Searchables"
     slug: searchables
     mr: fuuu3xnx
     cf: 
   - name: "Snad"
     slug: snad
-    mr: 
-    cf: 241344
+    mr: 241344
+    cf: 
   - name: "Sophisticated Backpacks"
     slug: sophisticated-backpacks
     mr: TyCTlI4b
@@ -481,8 +481,8 @@ mods:
     cf: 
   - name: "Spice of Life: Carrot Edition"
     slug: spice-of-life-carrot-edition
-    mr: 
-    cf: 277616
+    mr: 277616
+    cf: 
   - name: "Storage Drawers"
     slug: storagedrawers
     mr: guitPqEi
@@ -525,8 +525,8 @@ mods:
     cf: 
   - name: "Tinkers' Levelling Addon"
     slug: tinkers-levelling-addon
-    mr: 
-    cf: 709416
+    mr: 709416
+    cf: 
   - name: "Titanium"
     slug: titanium
     mr: 1Ro7m06l
@@ -537,8 +537,8 @@ mods:
     cf: 
   - name: "Trample No More"
     slug: trample-no-more
-    mr: 
-    cf: 377313
+    mr: 377313
+    cf: 
   - name: "Trash Cans"
     slug: trash-cans
     mr: 4QrnfueM
@@ -549,5 +549,5 @@ mods:
     cf: 
   - name: "ZeroCore 2"
     slug: zerocore
-    mr: 
-    cf: 247921
+    mr: 247921
+    cf: 
