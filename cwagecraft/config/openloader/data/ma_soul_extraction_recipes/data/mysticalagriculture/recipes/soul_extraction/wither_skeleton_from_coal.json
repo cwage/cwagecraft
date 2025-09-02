@@ -1,0 +1,6 @@
+{
+  "type": "mysticalagriculture:soul_extraction",
+  "input": { "item": "minecraft:coal" },
+  "entity": "minecraft:wither_skeleton",
+  "souls": 0.1
+}

@@ -1,0 +1,6 @@
+{
+  "type": "mysticalagriculture:soul_extraction",
+  "input": { "item": "minecraft:ghast_tear" },
+  "entity": "minecraft:ghast",
+  "souls": 1.0
+}

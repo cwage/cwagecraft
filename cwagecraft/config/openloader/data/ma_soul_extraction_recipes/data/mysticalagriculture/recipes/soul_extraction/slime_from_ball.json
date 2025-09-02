@@ -1,0 +1,6 @@
+{
+  "type": "mysticalagriculture:soul_extraction",
+  "input": { "item": "minecraft:slime_ball" },
+  "entity": "minecraft:slime",
+  "souls": 0.25
+}

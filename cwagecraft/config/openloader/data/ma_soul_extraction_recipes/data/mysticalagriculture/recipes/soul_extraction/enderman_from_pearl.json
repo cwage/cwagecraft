@@ -1,0 +1,6 @@
+{
+  "type": "mysticalagriculture:soul_extraction",
+  "input": { "item": "minecraft:ender_pearl" },
+  "entity": "minecraft:enderman",
+  "souls": 0.75
+}

@@ -1,0 +1,6 @@
+{
+  "type": "mysticalagriculture:soul_extraction",
+  "input": { "item": "minecraft:magma_cream" },
+  "entity": "minecraft:magma_cube",
+  "souls": 0.25
+}

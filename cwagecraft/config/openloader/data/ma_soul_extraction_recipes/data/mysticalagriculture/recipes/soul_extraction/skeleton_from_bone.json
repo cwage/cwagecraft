@@ -1,0 +1,6 @@
+{
+  "type": "mysticalagriculture:soul_extraction",
+  "input": { "item": "minecraft:bone" },
+  "entity": "minecraft:skeleton",
+  "souls": 0.25
+}

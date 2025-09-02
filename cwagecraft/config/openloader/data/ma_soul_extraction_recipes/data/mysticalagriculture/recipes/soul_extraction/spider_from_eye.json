@@ -1,0 +1,6 @@
+{
+  "type": "mysticalagriculture:soul_extraction",
+  "input": { "item": "minecraft:spider_eye" },
+  "entity": "minecraft:spider",
+  "souls": 0.25
+}

@@ -1,0 +1,6 @@
+{
+  "type": "mysticalagriculture:soul_extraction",
+  "input": { "item": "minecraft:porkchop" },
+  "entity": "minecraft:pig",
+  "souls": 0.15
+}
