@@ -13,7 +13,7 @@
 	bindPort = 4789
 
 [internet_card]
-	#Whether to enable to internet card, VXLAN must also be enabled
+	#Whether to enable the internet card, VXLAN must also be enabled
 	internetCardEnabled = true
 	#A list of hosts (IPs) that VMs are allowed to access
 	#Only denied hosts or allowed hosts may have a value, or an error will occur
