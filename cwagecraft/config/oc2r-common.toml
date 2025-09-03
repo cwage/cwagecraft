@@ -1,0 +1,40 @@
+[vxlan]
+	#Whether to enable VXLAN support, must be on for the internet card to work
+	enable = true
+	#The remote host that the VXLAN protocol is running on
+	remoteHost = "::1"
+	#The remote port that the VXLAN protocol is exposed on
+	#Range: 1 ~ 65535
+	remotePort = 4789
+	#The address to bind VXLAN to
+	bindHost = "::1"
+	#The port to bind VXLAN to
+	#Range: 1 ~ 65535
+	bindPort = 4789
+
+[internet_card]
+	#Whether to enable to internet card, VXLAN must also be enabled
+	internetCardEnabled = true
+	#A list of hosts (IPs) that VMs are allowed to access
+	#Only denied hosts or allowed hosts may have a value, or an error will occur
+	deniedHosts = []
+	#The default nameserver to be used
+	defaultNameServer = "1.1.1.1"
+	#Number of milliseconds before a timeout should be assumed on ICMP/Echo (ping) packets
+	#Range: > 1
+	defaultEchoRequestTimeoutMs = 1000
+	#Default lifetime of sessions in milliseconds
+	#Range: > 0
+	defaultSessionLifetimeMs = 60000
+	#Number of sessions (connections) allowed per internet card
+	#Range: > 0
+	defaultSessionsNumberPerCardLimit = 10
+	#Number of sessions (connections) allowed in total across all cards
+	#Range: > 0
+	defaultSessionsNumberLimit = 100
+	#Range: > 1
+	tcpRetransmissionTimeoutMs = 2000
+	#Range: > 1
+	streamBufferSize = 2000
+	useSynchronisedNAT = false
+
