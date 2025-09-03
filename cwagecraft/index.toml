@@ -17,6 +17,10 @@ file = "config/ironjetpacks/jetpacks/platinum.json"
 hash = "d62a55becd3bd9008288c538708f0cfabb94bf508fd5ff38a90d168ce35747e5"
 
 [[files]]
+file = "config/oc2r-common.toml"
+hash = "e98e00693f79b4ee8a99eeff621cabdc5f9e3f383809d0ee50ce4ecd7d6cca6a"
+
+[[files]]
 file = "config/oculus.properties"
 hash = "a8230edabb98fbbe0b6a35a40fa85bb546c5a3334ae54e0721e0356b1bd6693e"
 
@@ -193,10 +197,6 @@ file = "config/openloader/data/de_ore_rates_revelation/data/cwagecraft/worldgen/
 hash = "4032bb9a6a575447b81ba055fdd3ca256ad0d939b362461d44936c24f3f6d559"
 
 [[files]]
-file = "config/openloader/data/de_ore_rates_revelation/data/cwagecraft/worldgen/placed_feature/test_overworld_draconium_ore.json"
-hash = "4a1adfb964576d87b5b268878778e74e6cda378bd2047b9c297f82bff6f89f6c"
-
-[[files]]
 file = "config/openloader/data/de_ore_rates_revelation/data/draconicevolution/worldgen/placed_feature/end_draconium_ore.json"
 hash = "7bdcc4fdecf9d73ad57a41a90f8abedcff7bc2278ca3533ccc80233630e59629"
 
@@ -327,6 +327,10 @@ hash = "11ccdf0a2b6430377c29bbb72f46c74d595d73882fda9c8a05e051c70a398690"
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/diamond_dust.json"
 hash = "934119cd7241d9763b15db9ca580d9114007371b2c2968abbd24b91f73c76cc1"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/draconium_ingot.json"
+hash = "0dd544ffeb008f0e5cb36b12efe17e91725a77604146bcb5c596af4196796951"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/emerald_dust.json"
@@ -557,6 +561,10 @@ file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/
 hash = "ef833817d4bb1964922e6aa6d6447a6a4c6b2c3e2d495d0be8e700922e11e02c"
 
 [[files]]
+file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/draconium_ingot_to_dust.json"
+hash = "e9690c9f8804dec2b9ac3c8010f28c46b2b69f5f4e215a036f3fa8a49d425245"
+
+[[files]]
 file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/obsidian_to_dust.json"
 hash = "40e3f66dade125f9e68b35c998b6c5028c7802193a171aef12492f49772cd921"
 
@@ -571,6 +579,10 @@ hash = "3f653b503745b99a3f802b63b5313d8a8a3c8a1a1390c0026d37c99c6685a589"
 [[files]]
 file = "config/openloader/data/processing_parity/data/mekanism/recipes/crushing/steel_ingot_to_dust.json"
 hash = "76248cca1a022c2bf62ab694cb582e57bc3f57cc0a7bba33fe0d27a2ec4abc5b"
+
+[[files]]
+file = "config/openloader/data/processing_parity/data/thermal/recipes/machines/pulverizer/pulverizer_draconium_ingot_to_dust.json"
+hash = "51f122f42ba98c460f124b8b6a44857a7a7850fbfe9e257e8e2c149deab71a0b"
 
 [[files]]
 file = "config/openloader/data/processing_parity/data/thermal/recipes/pulverizer/blaze_to_powder.json"
