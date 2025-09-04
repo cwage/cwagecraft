@@ -1,6 +1,6 @@
 {
   "type": "enderio:alloy_smelting",
-  "inputs": [ { "count": 1, "ingredient": { "item": "immersiveengineering:raw_uranium" } } ],
+  "inputs": [ { "count": 1, "ingredient": { "tag": "forge:raw_materials/uranium" } } ],
   "result": {
     "item": "immersiveengineering:ingot_uranium",
     "count": 1
