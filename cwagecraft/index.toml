@@ -662,11 +662,15 @@ hash = "a9794c0a78d62d3f628052aef13ca1b609dd64e28de7173c321472cccbfc9b0a"
 
 [[files]]
 file = "kubejs/server_scripts/accept_atc_compressed_cobble.js"
-hash = "f8a86b223223762285062897c4b03169ed9462423ba7b8ec91f1140652147197"
+hash = "3c2093b5c6d9548dfd1d9aa1f93af93eb4391f817850157552e96b310492b145"
 
 [[files]]
 file = "kubejs/server_scripts/disable_platinum_jetpack.js"
 hash = "9fff6c72c629326f2cbd018de485200d65189e6c4e5e677b33afa94189aac149"
+
+[[files]]
+file = "kubejs/startup_scripts/constants.js"
+hash = "b7ae87e63de558d941732e368decf95bdb1896a604802f3c9148a0b183977cd7"
 
 [[files]]
 file = "mods/advanced-mining-dimension.pw.toml"
