@@ -3,19 +3,20 @@
 
 ServerEvents.tags('item', event => {
   // Canonical tags for 1x compressed cobblestone used by mods
-  const TAG_COMPRESSED = 'forge:compressed/cobblestone_1x'
-  const TAG_STORAGE = 'forge:storage_blocks/cobblestone'
+  const TAG_COMPRESSED = (globalThis.CW_TAGS && CW_TAGS.COMPRESSED_COBBLE_1X) || 'forge:compressed/cobblestone_1x'
+  const TAG_STORAGE = (globalThis.CW_TAGS && CW_TAGS.STORAGE_COBBLE) || 'forge:storage_blocks/cobblestone'
 
   // Add the ATC 1x compressed cobblestone to both tags
   event.add(TAG_COMPRESSED, 'allthecompressed:cobblestone_1x')
   event.add(TAG_STORAGE, 'allthecompressed:cobblestone_1x')
 
   // Include likely Cyclic item IDs (safe even if missing)
-  ;[
+  const CYCLIC_IDS = [
     'cyclic:compressed_cobblestone',
     'cyclic:compressed_cobble',
     'cyclic:cobblestone_1x',
-  ].forEach(id => {
+  ]
+  CYCLIC_IDS.forEach(id => {
     event.add(TAG_COMPRESSED, id)
     event.add(TAG_STORAGE, id)
   })
@@ -39,8 +40,8 @@ ServerEvents.recipes(event => {
   })
 
   // Be explicit for Cyclic machines just in case
-  ;['cyclic:solidifier', 'cyclic:melter', 'cyclic:crusher', 'cyclic:generator_fluid', 'cyclic:generator_item']
-    .forEach(t => CYCLIC_IDS.forEach(id => event.replaceInput({ type: t }, id, TAG)))
+  const CYCLIC_TYPES = ['cyclic:solidifier', 'cyclic:melter', 'cyclic:crusher', 'cyclic:generator_fluid', 'cyclic:generator_item']
+  CYCLIC_TYPES.forEach(t => CYCLIC_IDS.forEach(id => event.replaceInput({ type: t }, id, TAG)))
 
   // Bridging recipe: allow crafting Cyclic compressed cobblestone from ATC 1x
   // This ensures any hardcoded Cyclic input can be satisfied by converting ATC → Cyclic.
