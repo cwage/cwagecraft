@@ -153,6 +153,18 @@ file = "config/openloader/data/compat_filters/pack.mcmeta"
 hash = "d1c3baa3561bf3b961ac30aea1dbae0f85fa20d583771b9354226da59ac28feb"
 
 [[files]]
+file = "config/openloader/data/compressed_cobble_tags/data/forge/tags/items/compressed/cobblestone_1x.json"
+hash = "f774b43bacdcab665930e8a93336e720b379e98dafe98fc08288eaef2268fc82"
+
+[[files]]
+file = "config/openloader/data/compressed_cobble_tags/data/forge/tags/items/storage_blocks/cobblestone.json"
+hash = "f774b43bacdcab665930e8a93336e720b379e98dafe98fc08288eaef2268fc82"
+
+[[files]]
+file = "config/openloader/data/compressed_cobble_tags/pack.mcmeta"
+hash = "fe8d2276e3eaf60e3b1fb4c413bfb1c8427899e58b28649d9e3db4877eefa7f9"
+
+[[files]]
 file = "config/openloader/data/cyclic_recipe_fixes/README.md"
 hash = "991b32137ec52531f25da17af6060ca4e48ea40cb4b61f53930efcd1fc51d6ab"
 
@@ -175,6 +187,10 @@ hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
 [[files]]
 file = "config/openloader/data/cyclic_recipe_fixes/data/cyclic/recipes/compressed_cobblestone.json"
 hash = "02a3023a944070ee5d209552f1b8bd64f73c206d5d5575f949fd713dd8c9635c"
+
+[[files]]
+file = "config/openloader/data/cyclic_recipe_fixes/data/cyclic/recipes/compressed_cobblestone_u.json"
+hash = "7624acbcc41660ed5ac983282c1e44967e78ef3698871b2513e558c8a6a72e9f"
 
 [[files]]
 file = "config/openloader/data/cyclic_recipe_fixes/pack.mcmeta"
@@ -645,8 +661,16 @@ file = "kubejs/client_scripts/jei_fusion_unhide.js"
 hash = "a9794c0a78d62d3f628052aef13ca1b609dd64e28de7173c321472cccbfc9b0a"
 
 [[files]]
+file = "kubejs/server_scripts/accept_atc_compressed_cobble.js"
+hash = "4adab4f466fa8a67355b364f3cdf0a9898dbe98f0fc8e0ac5aa446324c0df8ec"
+
+[[files]]
 file = "kubejs/server_scripts/disable_platinum_jetpack.js"
 hash = "9fff6c72c629326f2cbd018de485200d65189e6c4e5e677b33afa94189aac149"
+
+[[files]]
+file = "kubejs/startup_scripts/constants.js"
+hash = "24aa6877fadc790405bbee0398e55df7fa7dc4708345ef6e5ac11d23885970d5"
 
 [[files]]
 file = "mods/advanced-mining-dimension.pw.toml"

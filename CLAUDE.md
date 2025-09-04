@@ -72,6 +72,7 @@ Each mod has a `.pw.toml` file containing:
 2. **Pinning**: Versions are pinned via generated `.pw.toml` files; only change on `--upgrade`
 3. **Query pack**: Use `packwiz -y list` or similar informational commands
 4. **Never**: Use `packwiz add/remove` or modify .pw.toml files directly
+5. **Reload vs Rebuild**: Do not rely on in-game `/reload` for validating changes (including OpenLoader datapacks, KubeJS scripts, and config). Always rebuild the pack with `./setup.sh` and reinstall the exported `cwagecraft.mrpack` to apply changes.
 
 ## Critical Success Validation
 - **ALWAYS check exit status**: The setup.sh script needs better exit status handling on failures

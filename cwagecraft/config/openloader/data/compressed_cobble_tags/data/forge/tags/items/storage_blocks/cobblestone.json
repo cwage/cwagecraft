@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "allthecompressed:cobblestone_1x",
+    "cyclic:compressed_cobblestone"
+  ]
+}
