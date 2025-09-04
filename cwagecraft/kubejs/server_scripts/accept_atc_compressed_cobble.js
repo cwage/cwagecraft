@@ -3,8 +3,8 @@
 
 ServerEvents.tags('item', event => {
   // Canonical tags for 1x compressed cobblestone used by mods
-  const TAG_COMPRESSED = (globalThis.CW_TAGS && CW_TAGS.COMPRESSED_COBBLE_1X) || 'forge:compressed/cobblestone_1x'
-  const TAG_STORAGE = (globalThis.CW_TAGS && CW_TAGS.STORAGE_COBBLE) || 'forge:storage_blocks/cobblestone'
+  const TAG_COMPRESSED = (global && global.CW_TAGS && global.CW_TAGS.COMPRESSED_COBBLE_1X) || 'forge:compressed/cobblestone_1x'
+  const TAG_STORAGE = (global && global.CW_TAGS && global.CW_TAGS.STORAGE_COBBLE) || 'forge:storage_blocks/cobblestone'
 
   // Add the ATC 1x compressed cobblestone to both tags
   event.add(TAG_COMPRESSED, 'allthecompressed:cobblestone_1x')
