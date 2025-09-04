@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "cwagecraft: Ensure compressed cobblestone tags include ATC for JEI rotation"
+  }
+}
