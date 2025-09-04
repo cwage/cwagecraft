@@ -294,7 +294,7 @@ hash = "c6ac319098ae7d49ccb0ed2b0540003cd6a483e0302341ebd3f72adf6af934f1"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_uranium_smelting.json"
-hash = "ba2cdc3c963296183d4be2474dd327966063c243cb292e8a88f049c5c8d4d800"
+hash = "078ea8940460f9d22ea5ec07139087e029ea91f7dbc2c3a1d88278c4dee20ab6"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/raw_zinc_smelting.json"
@@ -639,6 +639,18 @@ hash = "43622d5c75fbd0f47bf93c53bb46b2664dd89b5201cc08b420d27ff224ccd2e7"
 [[files]]
 file = "config/openloader/data/tla_early_leveling/pack.mcmeta"
 hash = "2c066e13c7f51bf26d0d605a4fececbc8af175d7a2606ac496d0ff25a3aff0f3"
+
+[[files]]
+file = "config/openloader/data/vanilla_recipe_fixes/data/cwagecraft/recipes/blasting/raw_uranium_blasting.json"
+hash = "25c84b873255ea987eaa7cdb5456890ee9fdfb7cff89e42329041ac8b45be2c5"
+
+[[files]]
+file = "config/openloader/data/vanilla_recipe_fixes/data/cwagecraft/recipes/smelting/raw_uranium_smelting.json"
+hash = "aa2acd29b919d78ad544edee703ec2a93cca11799d4fcedcb20032be09feb390"
+
+[[files]]
+file = "config/openloader/data/vanilla_recipe_fixes/pack.mcmeta"
+hash = "89446e37eba63c1ceb0f666c47d79f148c223b396970a6284c3466364facb0e1"
 
 [[files]]
 file = "config/tramplenomore.json"
