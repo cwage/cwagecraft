@@ -5,6 +5,7 @@
     "item": "mysticalagriculture:soulstone_smooth",
     "count": 1
   },
+  "isSmelting": true,
   "energy": 1600,
   "experience": 0.1
 }

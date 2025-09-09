@@ -234,15 +234,15 @@ hash = "f82cce7ea75efeeadfb56099cd950a5bee5720d7a35d6af117232b2e8d125f4e"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/cwagecraft/recipes/smelting/soulstone_cobble_to_soulstone.json"
-hash = "5698907b0cde13d1428121ecd662ec74874c84648c380e3f93157bceab56a3e4"
+hash = "20c4293724af09e166201a624a04811cd70919ba1ce9434aa071eeb8480e04be"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/cwagecraft/recipes/smelting/soulstone_smooth_to_soul_dust.json"
-hash = "329f36340953f40d50b6e60dfc848048ffe7f297eea7e1b2362bea1421bab98d"
+hash = "e94a1beec12249725d02d3f44fc7da7b01b2dbd1320ec8cc49f83da87a045967"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/cwagecraft/recipes/smelting/soulstone_to_smooth.json"
-hash = "a55a7ccb61ea5a09f77da6b1d7300729890f6d5d01a1a4b0ce7b909f516909b0"
+hash = "6a3f78f19fd247ccbe00f99732f09145b6749203cd0b84d4c54ec79f2762349f"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/beef_cooking.json"
@@ -326,15 +326,15 @@ hash = "b81ccd42352e6fa4be48e51c6c9160c0e6136f4090333fc22d8e601cc0374d21"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelting/soulstone_cobble_to_soulstone.json"
-hash = "e75c8d689c4c11277d8bed14899e0345017c5e14eed0709e2103e976ae185660"
+hash = "781db502f3da9ff42e75b3f990edddb92cc54e37654f3cb5f0b94013baf9a5d4"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelting/soulstone_smooth_to_soul_dust.json"
-hash = "331721e2244196df9870709e3aec9a1de735e0a816789a28d2c25c5205c573f1"
+hash = "120dd56677b294b2bcf341a88b44a2d289d9741b5ca7ad5c87b64e38ff6bc93b"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelting/soulstone_to_smooth.json"
-hash = "305387973889fd790c1063c7e014b58cd4d0fd39c1c03b44b5718b0efad0fc60"
+hash = "5ca6805bba44c3b6581fd5e16348cfb58e178741c40941ea4c796bcfb00c5a53"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/aluminum_ingot.json"
