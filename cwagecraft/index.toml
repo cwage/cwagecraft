@@ -233,6 +233,18 @@ file = "config/openloader/data/enderio_recipe_additions/README.md"
 hash = "f82cce7ea75efeeadfb56099cd950a5bee5720d7a35d6af117232b2e8d125f4e"
 
 [[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/cwagecraft/recipes/smelting/soulstone_cobble_to_soulstone.json"
+hash = "5698907b0cde13d1428121ecd662ec74874c84648c380e3f93157bceab56a3e4"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/cwagecraft/recipes/smelting/soulstone_smooth_to_soul_dust.json"
+hash = "329f36340953f40d50b6e60dfc848048ffe7f297eea7e1b2362bea1421bab98d"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/cwagecraft/recipes/smelting/soulstone_to_smooth.json"
+hash = "a55a7ccb61ea5a09f77da6b1d7300729890f6d5d01a1a4b0ce7b909f516909b0"
+
+[[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/beef_cooking.json"
 hash = "96a6950c8e331d6835011f840f57c409ab94ab87a74e138f13027c9b528baa29"
 
@@ -311,6 +323,18 @@ hash = "e61f8e13e95c8952ba8d96b8dd8b275e45790c1335c63fbfcf22717246d76a13"
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/stone_to_smooth.json"
 hash = "b81ccd42352e6fa4be48e51c6c9160c0e6136f4090333fc22d8e601cc0374d21"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelting/soulstone_cobble_to_soulstone.json"
+hash = "e75c8d689c4c11277d8bed14899e0345017c5e14eed0709e2103e976ae185660"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelting/soulstone_smooth_to_soul_dust.json"
+hash = "331721e2244196df9870709e3aec9a1de735e0a816789a28d2c25c5205c573f1"
+
+[[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelting/soulstone_to_smooth.json"
+hash = "305387973889fd790c1063c7e014b58cd4d0fd39c1c03b44b5718b0efad0fc60"
 
 [[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/sagmill/aluminum_ingot.json"
