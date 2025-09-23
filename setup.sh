@@ -87,7 +87,7 @@ build_index() {
         /\[update.modrinth\]/{in_mr=1;next}
         /\[update.curseforge\]/{in_cf=1;next}
         /\[/{in_mr=0;in_cf=0}
-        in_mr && /mod-id =/ {gsub(/.*= \"|\"/,"",$0);mr=$0}
+        in_mr && /mod-id =/ {gsub(/.*= "|"/,"",$0);mr=$0}
         in_cf && /project-id =/ {gsub(/.*= /,"",$0);proj=$0}
         END{print mr, proj}
     ' "$f")
@@ -179,7 +179,7 @@ export_mods_yaml() {
         /\[update.modrinth\]/{in_mr=1;next}
         /\[update.curseforge\]/{in_cf=1;next}
         /\[/{in_mr=0;in_cf=0}
-        in_mr && /mod-id =/ {gsub(/.*= \"|\"/,"",$0);mr=$0}
+        in_mr && /mod-id =/ {gsub(/.*= "|"/,"",$0);mr=$0}
         in_cf && /project-id =/ {gsub(/.*= /,"",$0);proj=$0}
         END{print mr, proj}
     ' "$f")
