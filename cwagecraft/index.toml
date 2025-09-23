@@ -257,6 +257,10 @@ file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/all
 hash = "8f4bf25c4f1f677ccfd4b6cbc6a331cedb9085c0cc1144dd1cb8157a93f8969f"
 
 [[files]]
+file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/clear_glass_from_vanilla.json"
+hash = "d5d96586dc342e1cdbd1c05c0a8b2debe470eba9a5e74842ecf6fde208f8bc87"
+
+[[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/cobblestone_to_stone.json"
 hash = "b75268e68f06c4a71684fc805a02dde3591f20ac703e21a5fd01a396c4a14ad2"
 
@@ -689,6 +693,10 @@ file = "kubejs/server_scripts/disable_platinum_jetpack.js"
 hash = "9fff6c72c629326f2cbd018de485200d65189e6c4e5e677b33afa94189aac149"
 
 [[files]]
+file = "kubejs/server_scripts/remove_cyclic_smooth_glass.js"
+hash = "f928bbe90c60063c78cdee590741307408e49f7094fe734e2892b1daabc9efa5"
+
+[[files]]
 file = "kubejs/startup_scripts/constants.js"
 hash = "24aa6877fadc790405bbee0398e55df7fa7dc4708345ef6e5ac11d23885970d5"
 
@@ -914,7 +922,7 @@ metafile = true
 
 [[files]]
 file = "mods/enderio.pw.toml"
-hash = "1164df93f3a3b7a8697c69cc51d2bb27c408cb35e5a8b8e0e8255348f6f0bcf5"
+hash = "84e37ac3a18c4262fe5eaef6c49e2d118147ed486b79b9ba9d7a0620bb3d94c5"
 metafile = true
 
 [[files]]
