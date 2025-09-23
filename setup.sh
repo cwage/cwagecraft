@@ -60,8 +60,8 @@ done
 
 # Build selection set if --upgrade-only was provided
 if [[ -n "$UPGRADE_ONLY" ]]; then
-  # Remove spaces and split on commas
-  UPGRADE_ONLY=${UPGRADE_ONLY// /}
+  # Remove all common whitespace and split on commas
+  UPGRADE_ONLY=$(printf '%s' "$UPGRADE_ONLY" | tr -d ' \t\r\n')
   IFS=',' read -r -a __uo_arr <<< "$UPGRADE_ONLY"
   for __slug in "${__uo_arr[@]}"; do
     [[ -z "$__slug" ]] && continue
