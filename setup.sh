@@ -13,24 +13,61 @@ MODS_YAML="$OUT_DIR/mods.yaml"
 
 UPGRADE=0
 EXPORT=0
+UPGRADE_ONLY=""
+declare -A UPGRADE_ONLY_SET=()
 
 usage() {
   cat <<EOF
-Usage: ./setup.sh [--upgrade] [--export-mods]
+Usage: ./setup.sh [--upgrade] [--upgrade-only slug1,slug2] [--export-mods]
 
   --upgrade      Update all pinned mods to latest (re-adds each mod)
+  --upgrade-only Comma-separated slugs to upgrade (others stay pinned)
   --export-mods  Generate mods.yaml from currently installed mods and exit
 EOF
 }
 
-for arg in "$@"; do
-  case "$arg" in
-    --upgrade) UPGRADE=1 ;;
-    --export-mods) EXPORT=1 ;;
-    -h|--help) usage; exit 0 ;;
-    *) echo "Unknown arg: $arg"; usage; exit 1 ;;
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --upgrade)
+      UPGRADE=1
+      shift
+      ;;
+    --upgrade-only)
+      shift
+      UPGRADE_ONLY="${1:-}"
+      if [[ -z "$UPGRADE_ONLY" || "$UPGRADE_ONLY" == --* ]]; then
+        echo "ERROR: --upgrade-only requires a comma-separated slug list"
+        usage
+        exit 1
+      fi
+      shift
+      ;;
+    --export-mods)
+      EXPORT=1
+      shift
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    *)
+      echo "Unknown arg: $1"
+      usage
+      exit 1
+      ;;
   esac
 done
+
+# Build selection set if --upgrade-only was provided
+if [[ -n "$UPGRADE_ONLY" ]]; then
+  # Remove spaces and split on commas
+  UPGRADE_ONLY=${UPGRADE_ONLY// /}
+  IFS=',' read -r -a __uo_arr <<< "$UPGRADE_ONLY"
+  for __slug in "${__uo_arr[@]}"; do
+    [[ -z "$__slug" ]] && continue
+    UPGRADE_ONLY_SET["$__slug"]=1
+  done
+fi
 
 echo "==> Reset"
 rm -rf "$MRPACK"
@@ -87,7 +124,7 @@ build_index() {
         /\[update.modrinth\]/{in_mr=1;next}
         /\[update.curseforge\]/{in_cf=1;next}
         /\[/{in_mr=0;in_cf=0}
-        in_mr && /mod-id =/ {gsub(/.*= \"|\"/,"",$0);mr=$0}
+        in_mr && /mod-id =/ {gsub(/.*= "|"/,"",$0);mr=$0}
         in_cf && /project-id =/ {gsub(/.*= /,"",$0);proj=$0}
         END{print mr, proj}
     ' "$f")
@@ -154,14 +191,25 @@ process_mod() {
   if [[ -z "$modfile" && -n "$slug" ]]; then
     modfile=$(find_mod_file_by_slug "$slug") || true
   fi
-  if [[ -n "$modfile" && $UPGRADE -eq 0 ]]; then
-    echo "    ✓ Present (pinned): $name"
-    return 0
-  fi
-  if [[ -n "$modfile" && $UPGRADE -eq 1 ]]; then
-    echo "    ~ Upgrading: $name"
-    rm -f "$modfile"
-    build_index
+  # Determine upgrade intent
+  if [[ -n "$modfile" ]]; then
+    if [[ ${#UPGRADE_ONLY_SET[@]} -gt 0 ]]; then
+      if [[ -n "${UPGRADE_ONLY_SET[$slug]:-}" ]]; then
+        echo "    ~ Upgrading (selected): $name"
+        rm -f "$modfile"
+        build_index
+      else
+        echo "    ✓ Present (pinned): $name"
+        return 0
+      fi
+    elif [[ $UPGRADE -eq 1 ]]; then
+      echo "    ~ Upgrading: $name"
+      rm -f "$modfile"
+      build_index
+    else
+      echo "    ✓ Present (pinned): $name"
+      return 0
+    fi
   fi
   add_mod_with_retry "$name" "$slug" "$mr" "$cf"
   build_index
