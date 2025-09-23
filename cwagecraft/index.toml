@@ -165,14 +165,6 @@ file = "config/openloader/data/compressed_cobble_tags/pack.mcmeta"
 hash = "fe8d2276e3eaf60e3b1fb4c413bfb1c8427899e58b28649d9e3db4877eefa7f9"
 
 [[files]]
-file = "config/openloader/data/cwagecraft_recipe_additions/data/cwagecraft/recipes/powered_spawner.json"
-hash = "04c07cc9d8330ddceb53254662c3adcacd643a9853f7146cedbabbe6cb18c849"
-
-[[files]]
-file = "config/openloader/data/cwagecraft_recipe_additions/pack.mcmeta"
-hash = "a3ffe11850add467580c50b8743259667a3e744c20b2dee60f0adfcb8bfefaa5"
-
-[[files]]
 file = "config/openloader/data/cyclic_recipe_fixes/README.md"
 hash = "991b32137ec52531f25da17af6060ca4e48ea40cb4b61f53930efcd1fc51d6ab"
 
