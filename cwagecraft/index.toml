@@ -321,18 +321,6 @@ file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/all
 hash = "e61f8e13e95c8952ba8d96b8dd8b275e45790c1335c63fbfcf22717246d76a13"
 
 [[files]]
-file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/soulstone_from_cobble.json"
-hash = "cd783876825f3d3bce3be50b6b483d0719cebee1f6bcd99c41a83758accc8f84"
-
-[[files]]
-file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/soulstone_smooth_to_dust.json"
-hash = "a93c11a51c83fc37df5a1c9764db428470f7ac9b56b86c3c0eeca0a5c70480da"
-
-[[files]]
-file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/soulstone_to_smooth.json"
-hash = "fd5da772d6165eede26c151a7259d507c7181318f86e943c655f2a1b6f2c322b"
-
-[[files]]
 file = "config/openloader/data/enderio_recipe_additions/data/enderio/recipes/alloy_smelter/stone_to_smooth.json"
 hash = "b81ccd42352e6fa4be48e51c6c9160c0e6136f4090333fc22d8e601cc0374d21"
 
