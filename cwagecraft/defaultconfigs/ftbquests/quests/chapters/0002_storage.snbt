@@ -1,5 +1,6 @@
 #nbt
 {
+  id: 3L,
   filename: "storage",
   title: "Storage (RS)",
   icon: "refinedstorage:controller",
@@ -37,4 +38,3 @@
     }
   ]
 }
-

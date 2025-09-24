@@ -1,5 +1,6 @@
 #nbt
 {
+  id: 2L,
   filename: "power_processing",
   title: "Power & Processing",
   icon: "powah:energizing_rod_starter",
@@ -39,4 +40,3 @@
     }
   ]
 }
-

@@ -1,5 +1,6 @@
 #nbt
 {
+  id: 5L,
   filename: "mystical_agriculture",
   title: "Mystical Agriculture",
   icon: "mysticalagriculture:inferium_essence",
@@ -41,4 +42,3 @@
     }
   ]
 }
-

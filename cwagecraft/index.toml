@@ -685,6 +685,30 @@ file = "defaultconfigs/ftb-ultimine-forge.toml"
 hash = "a4d1f7501d81af76a804d181e80ac854fa904cf4484d7f108e67b5bfb50ca16b"
 
 [[files]]
+file = "defaultconfigs/ftbquests/quests/chapters/0000_getting_started.snbt"
+hash = "920314b588918ffb0dcc93c8df5bc10192263c2b24a718b1c66a1e817c464820"
+
+[[files]]
+file = "defaultconfigs/ftbquests/quests/chapters/0001_power_processing.snbt"
+hash = "3d6287b0efec9c21b420cf5800d036074c1617dd43d33006e989aacda094f7cf"
+
+[[files]]
+file = "defaultconfigs/ftbquests/quests/chapters/0002_storage.snbt"
+hash = "34e614d10062d599d68cdd58506eba5b27e06ec47b1f286f67b163f12f6d18cc"
+
+[[files]]
+file = "defaultconfigs/ftbquests/quests/chapters/0003_create_basics.snbt"
+hash = "4f67eccc0b2533fbfc2eb4f11270b488b59dcffb7e28acfd9294cc9c35954725"
+
+[[files]]
+file = "defaultconfigs/ftbquests/quests/chapters/0004_mystical_agriculture.snbt"
+hash = "f8bd2781e4ff9031d29024a09fcab26f15814e794249b778198f65a1aa327196"
+
+[[files]]
+file = "defaultconfigs/ftbquests/quests/chapters/0005_exploration_utilities.snbt"
+hash = "7d46dd31a0ae19591f67806232556614911efa2633a56ae9f713be110f1a84db"
+
+[[files]]
 file = "defaultconfigs/pylons-server.toml"
 hash = "51d076ed014be250278963cd6d04910baaf8b08c0d14e017d6d76e3cb3d2578c"
 
@@ -1015,6 +1039,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "691798dd9acfd386bc9332249cd4c1291c646af4d97999090ec0528d9bb35c88"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "218ceb46f632cbcdef9f1156c9d138ac7ad52e387f7d1cf2fac92952f92f8fd1"
 metafile = true
 
 [[files]]

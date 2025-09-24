@@ -1,5 +1,6 @@
 #nbt
 {
+  id: 6L,
   filename: "exploration_utilities",
   title: "Exploration & Utilities",
   icon: "waystones:waystone",
@@ -38,4 +39,3 @@
     }
   ]
 }
-

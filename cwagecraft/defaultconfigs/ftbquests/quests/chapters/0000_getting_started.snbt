@@ -1,5 +1,6 @@
 #nbt
 {
+  id: 1L,
   filename: "getting_started",
   title: "Getting Started",
   icon: "minecraft:book",
@@ -67,4 +68,3 @@
     }
   ]
 }
-

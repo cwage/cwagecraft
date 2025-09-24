@@ -1,5 +1,6 @@
 #nbt
 {
+  id: 4L,
   filename: "create_basics",
   title: "Create Basics",
   icon: "create:cogwheel",
@@ -37,4 +38,3 @@
     }
   ]
 }
-

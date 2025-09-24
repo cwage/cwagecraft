@@ -1,0 +1,14 @@
+#nbt
+{
+  title: "cwagecraft Quests",
+  icon: "minecraft:book",
+  chapters: [
+    { id: 1L, filename: "getting_started" },
+    { id: 2L, filename: "power_processing" },
+    { id: 3L, filename: "storage" },
+    { id: 4L, filename: "create_basics" },
+    { id: 5L, filename: "mystical_agriculture" },
+    { id: 6L, filename: "exploration_utilities" }
+  ]
+}
+

@@ -269,6 +269,12 @@ else
         process_mod "$name" "$slug" "$mr" "$cf"
       fi
       name=""; slug=""; mr=""; cf=""; have_record=1
+      # Handle inline "- name: value" on the same line
+      if [[ "$trimmed" =~ ^-[[:space:]]+name:[[:space:]]*(.*)$ ]]; then
+        val="${BASH_REMATCH[1]}"
+        val="${val#\"}"; val="${val%\"}"
+        name="$val"
+      fi
       continue
     fi
     key="${trimmed%%:*}"
