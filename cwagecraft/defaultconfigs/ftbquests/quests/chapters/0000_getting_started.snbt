@@ -1,0 +1,70 @@
+#nbt
+{
+  filename: "getting_started",
+  title: "Getting Started",
+  icon: "minecraft:book",
+  description: [
+    "Welcome to cwagecraft!",
+    "Use JEI (U) to view recipes and usages."
+  ],
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: 1000L,
+      title: "Crafting Table",
+      x: 0,
+      y: 0,
+      tasks: [
+        { id: 1001L, type: "item", item: "minecraft:crafting_table" }
+      ],
+      rewards: [
+        { id: 1002L, type: "item", item: "minecraft:apple", count: 4 }
+      ]
+    },
+    {
+      id: 1010L,
+      title: "Place a Waystone",
+      x: 2,
+      y: 0,
+      tasks: [
+        { id: 1011L, type: "item", item: "waystones:waystone" }
+      ],
+      dependencies: [ 1000L ]
+    },
+    {
+      id: 1020L,
+      title: "Backpack",
+      x: 4,
+      y: 0,
+      tasks: [
+        { id: 1021L, type: "item", item: "sophisticatedbackpacks:backpack" }
+      ],
+      dependencies: [ 1000L ]
+    },
+    {
+      id: 1030L,
+      title: "Claim a Chunk",
+      x: 6,
+      y: 0,
+      tasks: [
+        { id: 1031L, type: "checkmark" }
+      ],
+      description: [
+        "Open FTB Chunks map (default: M)",
+        "Claim your base chunk to protect it."
+      ],
+      dependencies: [ 1000L ]
+    },
+    {
+      id: 1040L,
+      title: "First Power",
+      x: 8,
+      y: 0,
+      tasks: [
+        { id: 1041L, type: "item", item: "powah:energizing_rod_starter" }
+      ],
+      dependencies: [ 1000L ]
+    }
+  ]
+}
+
