@@ -551,3 +551,7 @@ mods:
     slug: zerocore
     mr: 
     cf: 247921
+  - name: "FTB Quests (Forge)"
+    slug: ftb-quests-forge
+    mr: 
+    cf: 289412
