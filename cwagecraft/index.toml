@@ -18,7 +18,7 @@ hash = "ae71603d0f57e9d48db4b6a995198c5ba7e44ec8286eccf9a7d6d724fd003910"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/0001_power_processing.snbt"
-hash = "134852d1f4894d9a755133a20bdd524287689c62654830d2b8c2acd92ab9bedc"
+hash = "d8c6e5bad830d3cdb1ece8ef15bfee5b3ace1b0f6d861595f16c375f4b296514"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/0002_storage.snbt"
@@ -30,11 +30,11 @@ hash = "73b3373dabdd2e7058d642cc2cef357ec90917a54adb3c6881b2dee4c9750193"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/0004_mystical_agriculture.snbt"
-hash = "00517c75c2e15d82c912c0b8055c9b439c0f753629e17fa3b401dab3e325f87b"
+hash = "24884f38476c73e111b36ae658612cb2e39ec1e10a2e4401dfcfef8d61e3a331"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/0005_exploration_utilities.snbt"
-hash = "783fba5d206b4807d5682cbf9437f6b48c0c543d725211cad9cf8bb257a3f069"
+hash = "2c22910d27127d84127a1ec959c60b3f72344d41fa1e6c9c34b7ae29b4afc28f"
 
 [[files]]
 file = "config/ftbquests/quests/quest_file.snbt"

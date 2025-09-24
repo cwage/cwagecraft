@@ -2,7 +2,7 @@
 {
   id: 2L,
   filename: "power_processing",
-  title: "Power & Processing",
+  title: "Power and Processing",
   icon: "powah:energizing_rod_starter",
   default_hide_dependency_lines: false,
   quests: [
@@ -40,4 +40,3 @@
     }
   ]
 }
-

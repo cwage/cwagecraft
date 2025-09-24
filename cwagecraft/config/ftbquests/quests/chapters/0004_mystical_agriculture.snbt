@@ -30,7 +30,7 @@
     },
     {
       id: 5030L,
-      title: "Soulstone & Dust",
+      title: "Soulstone and Dust",
       x: 6,
       y: 0,
       description: ["Smelt soulstone into variants and dust."],
@@ -42,4 +42,3 @@
     }
   ]
 }
-

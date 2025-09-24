@@ -2,7 +2,7 @@
 {
   id: 6L,
   filename: "exploration_utilities",
-  title: "Exploration & Utilities",
+  title: "Exploration and Utilities",
   icon: "waystones:waystone",
   quests: [
     {
@@ -39,4 +39,3 @@
     }
   ]
 }
-
