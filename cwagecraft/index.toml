@@ -686,27 +686,31 @@ hash = "a4d1f7501d81af76a804d181e80ac854fa904cf4484d7f108e67b5bfb50ca16b"
 
 [[files]]
 file = "defaultconfigs/ftbquests/quests/chapters/0000_getting_started.snbt"
-hash = "920314b588918ffb0dcc93c8df5bc10192263c2b24a718b1c66a1e817c464820"
+hash = "a83aaddc4a14fa92cf298d805e097e01f217f4a8671c2555c1f5272c31e605fe"
 
 [[files]]
 file = "defaultconfigs/ftbquests/quests/chapters/0001_power_processing.snbt"
-hash = "3d6287b0efec9c21b420cf5800d036074c1617dd43d33006e989aacda094f7cf"
+hash = "60bdccd12d1df0e8f2a55827fb1dc5e61789787bc137995aa64957686bf0c595"
 
 [[files]]
 file = "defaultconfigs/ftbquests/quests/chapters/0002_storage.snbt"
-hash = "34e614d10062d599d68cdd58506eba5b27e06ec47b1f286f67b163f12f6d18cc"
+hash = "cc6105fb602e61093e5882db2042b0c5f3b9cf3cda6f6e850b19efbcec377647"
 
 [[files]]
 file = "defaultconfigs/ftbquests/quests/chapters/0003_create_basics.snbt"
-hash = "4f67eccc0b2533fbfc2eb4f11270b488b59dcffb7e28acfd9294cc9c35954725"
+hash = "2ed1ae1d28646f499c0da2d0b212bbc30be709ffddae18e19daa6beedeb4b91b"
 
 [[files]]
 file = "defaultconfigs/ftbquests/quests/chapters/0004_mystical_agriculture.snbt"
-hash = "f8bd2781e4ff9031d29024a09fcab26f15814e794249b778198f65a1aa327196"
+hash = "7760c3071d11c007fa61c74c28ccb7b42b7363f577bb073beabf2334aa62d306"
 
 [[files]]
 file = "defaultconfigs/ftbquests/quests/chapters/0005_exploration_utilities.snbt"
-hash = "7d46dd31a0ae19591f67806232556614911efa2633a56ae9f713be110f1a84db"
+hash = "3547342693d12443f6e72469de8424526208e56bed2327a903f1990fba8b3353"
+
+[[files]]
+file = "defaultconfigs/ftbquests/quests/quest_file.snbt"
+hash = "d5efd28eb999c33359cad933102f52df7de85a1a247dab1988bc4fbd02a13532"
 
 [[files]]
 file = "defaultconfigs/pylons-server.toml"
