@@ -1,0 +1,40 @@
+#nbt
+{
+  filename: "storage",
+  title: "Storage (RS)",
+  icon: "refinedstorage:controller",
+  quests: [
+    {
+      id: 3000L,
+      title: "Controller",
+      x: 0,
+      y: 0,
+      tasks: [ { id: 3001L, type: "item", item: "refinedstorage:controller" } ]
+    },
+    {
+      id: 3010L,
+      title: "Grid",
+      x: 2,
+      y: 0,
+      tasks: [ { id: 3011L, type: "item", item: "refinedstorage:grid" } ],
+      dependencies: [ 3000L ]
+    },
+    {
+      id: 3020L,
+      title: "Disk Drive",
+      x: 4,
+      y: 0,
+      tasks: [ { id: 3021L, type: "item", item: "refinedstorage:disk_drive" } ],
+      dependencies: [ 3000L ]
+    },
+    {
+      id: 3030L,
+      title: "1K Disk",
+      x: 6,
+      y: 0,
+      tasks: [ { id: 3031L, type: "item", item: "refinedstorage:1k_storage_disk" } ],
+      dependencies: [ 3020L ]
+    }
+  ]
+}
+

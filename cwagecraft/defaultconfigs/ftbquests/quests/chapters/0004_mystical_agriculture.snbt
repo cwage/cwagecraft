@@ -1,0 +1,44 @@
+#nbt
+{
+  filename: "mystical_agriculture",
+  title: "Mystical Agriculture",
+  icon: "mysticalagriculture:inferium_essence",
+  quests: [
+    {
+      id: 5000L,
+      title: "Inferium Essence",
+      x: 0,
+      y: 0,
+      tasks: [ { id: 5001L, type: "item", item: "mysticalagriculture:inferium_essence" } ]
+    },
+    {
+      id: 5010L,
+      title: "Infusion Altar",
+      x: 2,
+      y: 0,
+      tasks: [ { id: 5011L, type: "item", item: "mysticalagriculture:infusion_altar" } ],
+      dependencies: [ 5000L ]
+    },
+    {
+      id: 5020L,
+      title: "Infusion Pedestal",
+      x: 4,
+      y: 0,
+      tasks: [ { id: 5021L, type: "item", item: "mysticalagriculture:infusion_pedestal" } ],
+      dependencies: [ 5010L ]
+    },
+    {
+      id: 5030L,
+      title: "Soulstone & Dust",
+      x: 6,
+      y: 0,
+      description: ["Smelt soulstone into variants and dust."],
+      tasks: [
+        { id: 5031L, type: "item", item: "mysticalagriculture:soulstone" },
+        { id: 5032L, type: "item", item: "mysticalagriculture:soul_dust" }
+      ],
+      dependencies: [ 5000L ]
+    }
+  ]
+}
+

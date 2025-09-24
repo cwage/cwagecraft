@@ -1,0 +1,41 @@
+#nbt
+{
+  filename: "exploration_utilities",
+  title: "Exploration & Utilities",
+  icon: "waystones:waystone",
+  quests: [
+    {
+      id: 6000L,
+      title: "Mining Dimension",
+      x: 0,
+      y: 0,
+      tasks: [ { id: 6001L, type: "item", item: "mining_dimension:teleporter" } ]
+    },
+    {
+      id: 6010L,
+      title: "Chunk Claiming",
+      x: 2,
+      y: 0,
+      description: ["Open map (M) and claim a chunk."],
+      tasks: [ { id: 6011L, type: "checkmark" } ],
+      dependencies: [ 6000L ]
+    },
+    {
+      id: 6020L,
+      title: "Waystones Network",
+      x: 4,
+      y: 0,
+      tasks: [ { id: 6021L, type: "item", item: "waystones:waystone" } ],
+      dependencies: [ 6000L ]
+    },
+    {
+      id: 6030L,
+      title: "Traveler Backpack",
+      x: 6,
+      y: 0,
+      tasks: [ { id: 6031L, type: "item", item: "sophisticatedbackpacks:backpack" } ],
+      dependencies: [ 6000L ]
+    }
+  ]
+}
+

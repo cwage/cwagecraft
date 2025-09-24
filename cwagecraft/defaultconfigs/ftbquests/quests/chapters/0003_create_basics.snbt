@@ -1,0 +1,40 @@
+#nbt
+{
+  filename: "create_basics",
+  title: "Create Basics",
+  icon: "create:cogwheel",
+  quests: [
+    {
+      id: 4000L,
+      title: "Andesite Alloy",
+      x: 0,
+      y: 0,
+      tasks: [ { id: 4001L, type: "item", item: "create:andesite_alloy" } ]
+    },
+    {
+      id: 4010L,
+      title: "Encased Fan",
+      x: 2,
+      y: 0,
+      tasks: [ { id: 4011L, type: "item", item: "create:encased_fan" } ],
+      dependencies: [ 4000L ]
+    },
+    {
+      id: 4020L,
+      title: "Mechanical Press",
+      x: 4,
+      y: 0,
+      tasks: [ { id: 4021L, type: "item", item: "create:mechanical_press" } ],
+      dependencies: [ 4000L ]
+    },
+    {
+      id: 4030L,
+      title: "Depot",
+      x: 6,
+      y: 0,
+      tasks: [ { id: 4031L, type: "item", item: "create:depot" } ],
+      dependencies: [ 4020L ]
+    }
+  ]
+}
+

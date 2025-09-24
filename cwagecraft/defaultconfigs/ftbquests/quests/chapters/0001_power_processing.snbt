@@ -1,0 +1,42 @@
+#nbt
+{
+  filename: "power_processing",
+  title: "Power & Processing",
+  icon: "powah:energizing_rod_starter",
+  default_hide_dependency_lines: false,
+  quests: [
+    {
+      id: 2000L,
+      title: "Starter Generator",
+      x: 0,
+      y: 0,
+      description: ["Generate your first FE power."] ,
+      tasks: [ { id: 2001L, type: "item", item: "powah:energizing_rod_starter" } ]
+    },
+    {
+      id: 2010L,
+      title: "Alloy Smelter",
+      x: 2,
+      y: 0,
+      tasks: [ { id: 2011L, type: "item", item: "enderio:alloy_smelter" } ],
+      dependencies: [ 2000L ]
+    },
+    {
+      id: 2020L,
+      title: "SAG Mill",
+      x: 4,
+      y: 0,
+      tasks: [ { id: 2021L, type: "item", item: "enderio:sag_mill" } ],
+      dependencies: [ 2010L ]
+    },
+    {
+      id: 2030L,
+      title: "Capacitor Bank",
+      x: 6,
+      y: 0,
+      tasks: [ { id: 2031L, type: "item", item: "enderio:basic_capacitor_bank" } ],
+      dependencies: [ 2000L ]
+    }
+  ]
+}
+
