@@ -169,6 +169,18 @@ file = "config/openloader/data/cwagecraft_recipe_additions/data/cwagecraft/recip
 hash = "04c07cc9d8330ddceb53254662c3adcacd643a9853f7146cedbabbe6cb18c849"
 
 [[files]]
+file = "config/openloader/data/cwagecraft_recipe_additions/data/cwagecraft/recipes/soul_dust_from_soulstone_smooth_smelting.json"
+hash = "f1bd8c65f16c394344d6d6736b7cc9e86826eef20272e9b2da9a5ec711fb8be9"
+
+[[files]]
+file = "config/openloader/data/cwagecraft_recipe_additions/data/cwagecraft/recipes/soulstone_from_cobble_smelting.json"
+hash = "66bb5726a5725e4d4fe6aefbf44a77e2f2751e191f74f731f40798ed884195fc"
+
+[[files]]
+file = "config/openloader/data/cwagecraft_recipe_additions/data/cwagecraft/recipes/soulstone_smooth_from_soulstone_smelting.json"
+hash = "3c770cfcf3b9c953b0c6db46e9962c8710e0e15c14efcf8cbbd483d83746fc20"
+
+[[files]]
 file = "config/openloader/data/cwagecraft_recipe_additions/pack.mcmeta"
 hash = "a3ffe11850add467580c50b8743259667a3e744c20b2dee60f0adfcb8bfefaa5"
 
