@@ -1,0 +1,10 @@
+{
+  "type": "enderio:alloy_smelting",
+  "energy": 1600,
+  "experience": 0.1,
+  "inputs": [
+    { "count": 1, "ingredient": { "item": "mysticalagriculture:soulstone_smooth" } }
+  ],
+  "result": { "item": "mysticalagriculture:soul_dust", "count": 1 }
+}
+

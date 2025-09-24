@@ -1,0 +1,10 @@
+{
+  "type": "enderio:alloy_smelting",
+  "energy": 1600,
+  "experience": 0.1,
+  "inputs": [
+    { "count": 1, "ingredient": { "item": "mysticalagriculture:soulstone_cobble" } }
+  ],
+  "result": { "item": "mysticalagriculture:soulstone", "count": 1 }
+}
+
