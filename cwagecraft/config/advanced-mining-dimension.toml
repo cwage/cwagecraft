@@ -1,0 +1,18 @@
+# Advanced Mining Dimension Configuration
+# This configuration enables modded ore generation in the mining dimension
+
+[general]
+    # Enable modded ore generation in the mining dimension
+    enableModdedOres = true
+    # Ore generation multiplier (higher = more ores)
+    oreGenerationMultiplier = 1.5
+    # Include Forge ore tags in generation
+    includeForgeOreTags = true
+
+[ores]
+    # Enable specific modded ores
+    enableMekanismOres = true
+    enableThermalOres = true
+    enableRFToolsOres = true
+    enableImmersiveEngineeringOres = true
+    enableCreateOres = true

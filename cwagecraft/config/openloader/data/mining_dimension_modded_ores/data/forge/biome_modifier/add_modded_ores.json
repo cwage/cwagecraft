@@ -1,0 +1,18 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "#c:mining_dimension",
+    "#forge:mining_dimension",
+    "advanced_mining_dimension:mining_dimension"
+  ],
+  "features": [
+    "mekanism:ore_osmium",
+    "mekanism:ore_tin",
+    "mekanism:ore_uranium",
+    "thermal:ore_tin", 
+    "thermal:ore_lead",
+    "thermal:ore_silver",
+    "thermal:ore_nickel"
+  ],
+  "step": "underground_ores"
+}

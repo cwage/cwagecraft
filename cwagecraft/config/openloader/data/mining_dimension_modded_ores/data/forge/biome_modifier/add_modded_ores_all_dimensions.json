@@ -1,0 +1,16 @@
+{
+  "type": "forge:add_features", 
+  "biomes": {
+    "type": "forge:all"
+  },
+  "features": [
+    "mekanism:ore_osmium",
+    "mekanism:ore_tin", 
+    "mekanism:ore_uranium",
+    "thermal:ore_tin",
+    "thermal:ore_lead",
+    "thermal:ore_silver",
+    "thermal:ore_nickel"
+  ],
+  "step": "underground_ores"
+}
